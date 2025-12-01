@@ -1,0 +1,152 @@
+[
+  {
+    "id": "flight-001",
+    "topic": "vé máy bay",
+    "title": "Thời điểm săn vé máy bay nội địa rẻ nhất trong năm",
+    "content": "Tại Việt Nam, thời điểm giá rẻ thường rơi vào 3 giai đoạn: (1) mùa thấp điểm tháng 8–11 (trừ lễ 2/9), (2) sau Tết Nguyên Đán khi nhu cầu di chuyển giảm mạnh, (3) các đợt flash sale của Vietjet, Bamboo, Vietravel Airlines và Vietnam Airlines. Bạn nên đặt vé trước 20–45 ngày để có mức giá tốt nhất. Không nên đặt vé vào chiều thứ 6, sáng thứ 7 hoặc tối Chủ nhật vì là giờ cao điểm nhu cầu tăng mạnh.",
+    "tags": ["vé máy bay", "săn vé", "giá rẻ"]
+  },
+  {
+    "id": "flight-002",
+    "topic": "vé máy bay",
+    "title": "Bí quyết săn vé rẻ dành cho người đi tự túc",
+    "content": "Luôn bật chế độ 'ẩn danh' khi tìm vé để tránh bị tăng giá do cookie. So sánh cùng lúc trên 3 nền tảng: Traveloka, Skyscanner và Google Flights. Đối với các chặng như SGN–PQC, SGN–DAD, SGN–NHA, bạn nên kiểm tra giờ bay vào khung 22:00–06:00 vì nhiều hãng thường thả vé giá thấp vào ban đêm. Luôn kiểm tra thêm hành lý và thuế phí vì vé rẻ bất ngờ đôi khi chỉ bao gồm giá cơ bản.",
+    "tags": ["tự túc", "bay đêm", "tiết kiệm"]
+  },
+  {
+    "id": "flight-003",
+    "topic": "giờ bay",
+    "title": "Chọn giờ bay phù hợp để tránh delay",
+    "content": "Các chuyến bay buổi sáng trước 9h thường ít bị trễ nhất, đặc biệt trên các chặng đông như SGN–HAN, SGN–DAD. Bay chiều tối từ 17h–23h có nguy cơ delay cao vì ảnh hưởng dây chuyền từ các chuyến trước đó. Nếu bạn có lịch trình cần đúng giờ (check-in tour, đi họp, sự kiện), hãy chọn chuyến sáng hoặc trưa.",
+    "tags": ["giờ bay", "delay", "kinh nghiệm"]
+  },
+  {
+    "id": "luggage-001",
+    "topic": "hành lý",
+    "title": "Checklist hành lý du lịch phổ biến nhất (bản đầy đủ)",
+    "content": "Giấy tờ: CCCD/CMND, bằng lái, hộ chiếu (đi nước ngoài), vé máy bay, booking khách sạn. \nThiết bị: điện thoại, sạc, pin dự phòng, tai nghe, sạc laptop, ổ cắm du lịch. \nY tế cá nhân: thuốc đau đầu, đau bụng, men tiêu hóa, thuốc say tàu xe, băng cá nhân, dầu gió. \nQuần áo: đủ theo số ngày, thêm 1 bộ dự phòng; áo khoác mỏng; swimsuit nếu đi biển. \nKhác: túi zip chống nước, khăn giấy, khẩu trang, túi giặt đồ bẩn. \nTIP: Để tránh hành lý quá ký, bạn nên mang quần áo dễ phối với nhau, hạn chế mang giày nặng.",
+    "tags": ["hành lý", "checklist", "chuẩn bị"]
+  },
+  {
+    "id": "luggage-002",
+    "topic": "hành lý",
+    "title": "Lưu ý quan trọng khi sắp xếp vali để không bị xáo trộn",
+    "content": "Cuộn quần áo theo dạng ống để tiết kiệm diện tích và giảm nhăn. Đồ nặng như giày đặt sát đáy vali, gần bánh xe. Đồ dễ vỡ bọc bằng khăn hoặc áo và để vào giữa để giảm xung động. Luôn mang theo 1 bộ đồ, giấy tờ và thuốc men quan trọng vào balo xách tay trong trường hợp hành lý ký gửi bị thất lạc hoặc giao chậm.",
+    "tags": ["vali", "sắp xếp", "đồ dễ vỡ"]
+  },
+  {
+    "id": "transport-001",
+    "topic": "phương tiện di chuyển",
+    "title": "Nên thuê xe máy hay đi taxi/Grab khi du lịch?",
+    "content": "Đi xe máy giúp bạn linh hoạt, chi phí rẻ (120k–180k/ngày tại các điểm du lịch). Phù hợp với Đà Lạt, Đà Nẵng, Quy Nhơn, Phú Quốc. Nhược: trời mưa gió hoặc nắng quá sẽ mệt, cần biết đường. Taxi/Grab phù hợp với gia đình, nhóm lớn hoặc người đi lần đầu. Chi phí cao hơn nhưng ít rủi ro. Tip: tại Phú Quốc và Đà Lạt, một số điểm cách xa nhau, bạn nên kết hợp cả hai để tiết kiệm năng lượng.",
+    "tags": ["phương tiện", "xe máy", "Grab", "taxi"]
+  },
+  {
+    "id": "transport-002",
+    "topic": "phương tiện di chuyển",
+    "title": "Thuê xe máy an toàn (checklist đầy đủ)",
+    "content": "Trước khi nhận xe, hãy kiểm tra: thắng trước – thắng sau, đèn pha – xin nhan, lốp còn độ bám, tiếng máy có đều hay không. Hãy chụp hình xe từ mọi góc để tránh tranh cãi khi trả xe. Hỏi rõ: thời gian thuê, phí trễ, hỗ trợ cứu hộ nếu xe hỏng giữa đường. Luôn đội nón bảo hiểm chuẩn và mang theo giấy tờ tùy thân khi lái xe.",
+    "tags": ["thuê xe máy", "an toàn", "di chuyển"]
+  },
+  {
+    "id": "weather-001",
+    "topic": "thời tiết",
+    "title": "Chọn thời điểm du lịch theo mùa",
+    "content": "Miền Bắc đẹp nhất vào mùa thu (9–11) với thời tiết se lạnh và ít mưa. Miền Trung nên đi từ 2–8 vì cuối năm thường mưa bão. Miền Nam đi quanh năm nhưng tháng 5–10 là mùa mưa nên cần mang áo mưa mỏng. Đà Lạt đẹp nhất tháng 11–4, tránh tháng 7–9 vì hay mưa lớn. Phú Quốc mùa đẹp 11–4, còn 5–10 biển động và nước đục hơn.",
+    "tags": ["mùa đẹp", "thời tiết", "theo mùa"]
+  },
+
+  {
+    "id": "dalat-001",
+    "topic": "Đà Lạt",
+    "title": "Kinh nghiệm đi Đà Lạt cho người mới (chi tiết)",
+    "content": "Đà Lạt rất rộng, các điểm nằm xa nhau 5–20km nên nên chia theo khu vực: khu trung tâm (Hồ Xuân Hương, Chợ Đà Lạt, Quảng trường), khu đồi thông – hồ Tuyền Lâm (đường hầm đất sét, Thiền Viện Trúc Lâm), khu đồi chè Cầu Đất, khu đồi Thiên Phúc Đức. Bạn nên thuê xe máy để di chuyển tiện hơn. Sáng sớm Đà Lạt lạnh khoảng 13–17°C, nên mang áo khoác, khăn, và tránh tắm đêm vì dễ cảm lạnh.",
+    "tags": ["đà lạt", "lịch trình", "di chuyển"]
+  },
+  {
+    "id": "dalat-002",
+    "topic": "Đà Lạt",
+    "title": "Đi Đà Lạt mùa mưa – cần chuẩn bị gì?",
+    "content": "Tháng 6–9 là mùa mưa ở Đà Lạt, các điểm ngoài trời như đồi chè, cắm trại có thể bị hạn chế. Bạn nên mang áo mưa gấp siêu mỏng, giày chống trượt, túi chống nước cho điện thoại. Ưu tiên các điểm indoor như bảo tàng, quán cafe view đồi, studio chụp ảnh. Đường đèo sau mưa trơn, nếu không quen đi xe máy hãy chọn taxi.",
+    "tags": ["đà lạt", "mùa mưa", "an toàn"]
+  },
+  {
+    "id": "danang-001",
+    "topic": "Đà Nẵng",
+    "title": "Lịch trình Đà Nẵng – Hội An 4N3Đ chuẩn đẹp",
+    "content": "Ngày 1: Biển Mỹ Khê, cầu Rồng – cầu Tình Yêu. Ngày 2: Bà Nà Hills (đi sớm), tối dạo sông Hàn. Ngày 3: Ngũ Hành Sơn – Hội An tối, thả đèn hoa đăng. Ngày 4: Tắm biển, ăn hải sản Nam Ô rồi về. Tip: nếu đi mùa đông (12–2), biển lạnh, bạn nên tăng thời gian chơi ở Hội An hoặc suối nóng Núi Thần Tài.",
+    "tags": ["đà nẵng", "hội an", "lịch trình"]
+  },
+  {
+    "id": "hoian-001",
+    "topic": "Hội An",
+    "title": "Thời điểm đẹp nhất để chụp ảnh ở Hội An",
+    "content": "16h–17h là giờ vàng, ánh nắng còn nhẹ. 17h30–19h là lúc phố cổ lên đèn lung linh nhất. Hãy đi vào ngày 14 âm lịch mỗi tháng, khi phố treo đầy lồng đèn. Mang giày bệt vì phải đi bộ nhiều. Lưu ý giữ túi xách vì phố đông.",
+    "tags": ["hội an", "chụp ảnh", "lồng đèn"]
+  },
+  {
+    "id": "phuquoc-001",
+    "topic": "Phú Quốc",
+    "title": "Kinh nghiệm đi Bắc Đảo – Nam Đảo",
+    "content": "Bắc đảo: Safari, VinWonders, GrandWorld – phù hợp gia đình. Nam đảo: Hòn Thơm, Mây Rút, Móng Tay, Gầm Ghì – nước trong nhất, thích hợp lặn san hô. Nếu đi cano, nên mang quần áo khô, túi chống nước vì nước tạt mạnh. Đi đảo nên đi tour để an toàn, không nên tự thuê thuyền nếu không quen.",
+    "tags": ["phú quốc", "bắc đảo", "nam đảo"]
+  },
+  {
+    "id": "nhatrang-001",
+    "topic": "Nha Trang",
+    "title": "Đi tour 4 đảo Nha Trang – những điều cần biết",
+    "content": "Tour 4 đảo gồm Hòn Mun – Hòn Một – Làng Chài – Bãi Tranh hoặc Vịnh San Hô. Điều quan trọng là chọn ngày biển êm (tháng 3–9). Đi lặn bình oxy cần người hỗ trợ chuyên nghiệp. Mang đồ dễ khô, túi chống nước, tránh mang quá nhiều đồ giá trị.",
+    "tags": ["nha trang", "tour đảo", "kinh nghiệm"]
+  },
+  {
+    "id": "cantho-001",
+    "topic": "Cần Thơ",
+    "title": "Đi chợ nổi Cái Răng – giờ đẹp nhất",
+    "content": "5h30–7h là lúc chợ đông nhất. Bạn có thể ăn hủ tiếu, cà phê, trái cây trên ghe. Nắng sớm khá gắt nên mang nón và áo khoác mỏng. Tránh đứng sát mép ghe vì nước chảy mạnh.",
+    "tags": ["cần thơ", "chợ nổi", "sáng sớm"]
+  },
+
+  {
+    "id": "food-dalat-001",
+    "topic": "ẩm thực đà lạt",
+    "title": "Đặc sản Đà Lạt nên thử",
+    "content": "Bánh căn, bánh ướt lòng gà, lẩu bò Atiso, sữa đậu nành nóng, bánh mì xíu mại. Quán gợi ý: Bánh ướt lòng gà Long (Hải Thượng), Bánh căn Nhà Chung, Lẩu bò Ba Toa quán Gỗ. Buổi tối trời lạnh nên thử lẩu hoặc đồ nướng.",
+    "tags": ["đà lạt", "ẩm thực", "quán ngon"]
+  },
+  {
+    "id": "food-danang-001",
+    "topic": "ẩm thực đà nẵng",
+    "title": "Đặc sản Đà Nẵng – quán thật sự ngon",
+    "content": "Mì Quảng: Mì Quảng Bà Mua. Hải sản: Bé Mặn, Năm Đảnh. Bánh xèo – nem lụi: Bà Dưỡng. Bún chả cá: Hờn. Nên đi sớm vì thường đông.",
+    "tags": ["đà nẵng", "ẩm thực", "quán địa phương"]
+  },
+  {
+    "id": "food-phuquoc-001",
+    "topic": "ẩm thực phú quốc",
+    "title": "Hải sản Phú Quốc – ăn chỗ nào ngon?",
+    "content": "Quán Ra Khơi, quán Ớt Ngọt, Xin Chào (view biển đẹp). Món nên thử: gỏi cá trích, nhum nướng mỡ hành, ghẹ Hàm Ninh, bún quậy Phú Quốc. Đi chợ đêm thì nên trả giá nhẹ vì có một số gian hàng nói thách.",
+    "tags": ["phú quốc", "hải sản", "đặc sản"]
+  },
+
+  {
+    "id": "safety-001",
+    "topic": "an toàn",
+    "title": "Lưu ý an toàn khi đi du lịch một mình",
+    "content": "Không nên đi vào hẻm vắng hoặc khu xa trung tâm buổi tối. Không chia sẻ thông tin khách sạn lên mạng xã hội khi đang ở. Luôn để 1 người thân biết lịch trình. Mang theo pin dự phòng đầy. Khi đi taxi hoặc xe máy Grab, hãy gửi biển số xe cho người thân nếu đi đêm.",
+    "tags": ["một mình", "an toàn", "self-travel"]
+  },
+  {
+    "id": "cost-001",
+    "topic": "chi phí",
+    "title": "Cách ước tính chi phí cơ bản cho chuyến đi",
+    "content": "Bạn có thể chia chi phí: (1) di chuyển (vé máy bay/xe), (2) khách sạn, (3) ăn uống, (4) vé tham quan, (5) mua sắm, (6) dự phòng. Trung bình du lịch trong nước: 900k–1.4 triệu/ngày/người (tùy điểm đến). Đi biển thường tốn hơn đi núi do chi phí vui chơi.",
+    "tags": ["chi phí", "ngân sách", "lên kế hoạch"]
+  },
+  {
+    "id": "hotel-002",
+    "topic": "khách sạn",
+    "title": "Cách chọn khách sạn không bị 'hớ'",
+    "content": "Luôn kiểm tra: vị trí cách trung tâm bao xa, đánh giá về độ sạch, tiếng ồn, an ninh, hình ảnh thực tế từ người dùng. Nếu đi biển, ưu tiên khách sạn gần biển (5 phút đi bộ). Nếu đi gia đình, nên chọn khách sạn có thang máy và phòng rộng. Đừng tin ảnh quảng cáo 100%, hãy đọc 5–10 bình luận gần nhất để nắm tình trạng hiện tại.",
+    "tags": ["khách sạn", "lưu trú", "kinh nghiệm"]
+  }
+]

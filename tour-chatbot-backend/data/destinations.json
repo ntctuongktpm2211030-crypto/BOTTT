@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "dest-1",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "name": "Trung tâm Cần Thơ & Bến Ninh Kiều",
+    "description": "Thành phố trung tâm vùng Tây Nam Bộ, nổi tiếng với bến Ninh Kiều, chợ nổi, ẩm thực miệt vườn.",
+    "highlights": [
+      "Bến Ninh Kiều",
+      "Chợ nổi Cái Răng",
+      "Du thuyền trên sông Hậu"
+    ],
+    "bestTime": "Tháng 11 – 4 (mùa khô, ít mưa)",
+    "tags": ["can tho", "tay do", "cho noi", "song nuoc"],
+    "lat": 10.0342,
+    "lng": 105.7223
+  },
+  {
+    "id": "dest-2",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "name": "Đà Nẵng – Thành phố biển và cầu",
+    "description": "Thành phố đáng sống với bãi biển Mỹ Khê, các cây cầu biểu tượng và gần Hội An – Bà Nà.",
+    "highlights": [
+      "Biển Mỹ Khê",
+      "Cầu Rồng",
+      "Bán đảo Sơn Trà"
+    ],
+    "bestTime": "Tháng 3 – 8 (trời đẹp, tắm biển)",
+    "tags": ["da nang", "bien", "my khe", "cau rong"],
+    "lat": 16.0544,
+    "lng": 108.2022
+  },
+  {
+    "id": "dest-3",
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "name": "Hà Nội – Thủ đô nghìn năm",
+    "description": "Trung tâm văn hóa – chính trị, nổi bật với phố cổ, hồ Hoàn Kiếm, các di tích lịch sử.",
+    "highlights": [
+      "Phố cổ Hà Nội",
+      "Hồ Hoàn Kiếm",
+      "Lăng Chủ tịch Hồ Chí Minh"
+    ],
+    "bestTime": "Tháng 10 – 4 (thời tiết mát, ít nóng)",
+    "tags": ["ha noi", "pho co", "lich su", "am thuc duong pho"],
+    "lat": 21.0278,
+    "lng": 105.8342
+  },
+  {
+    "id": "dest-4",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "name": "TP. Hồ Chí Minh – Đô thị sôi động",
+    "description": "Trung tâm kinh tế lớn nhất cả nước với nhịp sống sôi động, mua sắm, ẩm thực đa dạng.",
+    "highlights": [
+      "Nhà thờ Đức Bà",
+      "Bưu điện trung tâm",
+      "Phố đi bộ Nguyễn Huệ"
+    ],
+    "bestTime": "Quanh năm (mùa khô: 12 – 4 dễ đi lại hơn)",
+    "tags": ["sai gon", "mua sam", "dem", "am thuc"],
+    "lat": 10.8231,
+    "lng": 106.6297
+  },
+  {
+    "id": "dest-5",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "name": "Đà Lạt – Thành phố sương mù",
+    "description": "Thành phố trên cao nguyên với khí hậu mát mẻ, nhiều hoa, đồi thông, quán cà phê view đẹp.",
+    "highlights": [
+      "Hồ Xuân Hương",
+      "Thung lũng Tình Yêu",
+      "Đồi chè Cầu Đất"
+    ],
+    "bestTime": "Tháng 11 – 4 (ít mưa, trời se lạnh)",
+    "tags": ["da lat", "cao nguyen", "checkin", "cafe"],
+    "lat": 11.9404,
+    "lng": 108.4583
+  },
+  {
+    "id": "dest-6",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "name": "Phú Quốc – Đảo ngọc",
+    "description": "Hòn đảo lớn với biển xanh, cát trắng, nhiều resort nghỉ dưỡng, khu vui chơi giải trí.",
+    "highlights": [
+      "Bãi Sao",
+      "Sun World Hon Thom",
+      "Chợ đêm Phú Quốc"
+    ],
+    "bestTime": "Tháng 11 – 4 (biển êm, trời trong)",
+    "tags": ["phu quoc", "dao", "resort", "bien"],
+    "lat": 10.2899,
+    "lng": 103.984
+  },
+  {
+    "id": "dest-7",
+    "city": "Nha Trang",
+    "country": "Vietnam",
+    "name": "Nha Trang – Thành phố biển",
+    "description": "Thành phố biển nổi tiếng với đường bờ biển dài, các đảo đẹp và hoạt động lặn biển.",
+    "highlights": [
+      "VinWonders Nha Trang",
+      "Hòn Mun",
+      "Tháp Bà Ponagar"
+    ],
+    "bestTime": "Tháng 3 – 8",
+    "tags": ["nha trang", "bien", "lan bien", "dao"],
+    "lat": 12.2388,
+    "lng": 109.1967
+  },
+  {
+    "id": "dest-8",
+    "city": "Hoi An",
+    "country": "Vietnam",
+    "name": "Hội An – Phố cổ đèn lồng",
+    "description": "Đô thị cổ được UNESCO công nhận, nổi bật với đèn lồng, nhà cổ và ẩm thực đường phố.",
+    "highlights": [
+      "Phố cổ Hội An",
+      "Chùa Cầu",
+      "Thuyền hoa sông Hoài"
+    ],
+    "bestTime": "Tháng 2 – 4, 8 – 10",
+    "tags": ["hoi an", "pho co", "den long", "di san"],
+    "lat": 15.8801,
+    "lng": 108.338
+  },
+  {
+    "id": "dest-9",
+    "city": "Hue",
+    "country": "Vietnam",
+    "name": "Huế – Cố đô",
+    "description": "Thành phố di sản với quần thể kinh thành, lăng tẩm vua Nguyễn và dòng Hương Giang thơ mộng.",
+    "highlights": [
+      "Đại Nội Huế",
+      "Lăng Khải Định",
+      "Sông Hương – Cầu Trường Tiền"
+    ],
+    "bestTime": "Tháng 1 – 4",
+    "tags": ["hue", "co do", "di san", "am thuc cung dinh"],
+    "lat": 16.4637,
+    "lng": 107.5909
+  },
+  {
+    "id": "dest-10",
+    "city": "Sa Pa",
+    "country": "Vietnam",
+    "name": "Sa Pa – Thị trấn trong mây",
+    "description": "Điểm du lịch vùng núi phía Bắc với ruộng bậc thang, Fansipan và bản làng dân tộc.",
+    "highlights": [
+      "Fansipan",
+      "Bản Cát Cát",
+      "Ruộng bậc thang Mường Hoa"
+    ],
+    "bestTime": "Tháng 9 – 11, 3 – 5",
+    "tags": ["sapa", "ruong bac thang", "leo nui", "khi hau lanh"],
+    "lat": 22.335,
+    "lng": 103.843
+  },
+  {
+    "id": "dest-11",
+    "city": "Ha Long",
+    "country": "Vietnam",
+    "name": "Hạ Long – Kỳ quan thiên nhiên",
+    "description": "Vịnh Hạ Long với hàng nghìn hòn đảo đá vôi, được UNESCO công nhận là di sản thiên nhiên.",
+    "highlights": [
+      "Du thuyền vịnh Hạ Long",
+      "Động Thiên Cung",
+      "Đảo Titop"
+    ],
+    "bestTime": "Tháng 3 – 5, 9 – 11",
+    "tags": ["ha long", "vinh", "di san", "du thuyen"],
+    "lat": 20.9714,
+    "lng": 107.0448
+  },
+  {
+    "id": "dest-12",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "name": "Ninh Bình – Vịnh Hạ Long trên cạn",
+    "description": "Điểm đến nổi bật với núi đá vôi, hang động, chùa và cảnh quan đồng lúa đẹp.",
+    "highlights": [
+      "Tràng An",
+      "Tam Cốc – Bích Động",
+      "Chùa Bái Đính"
+    ],
+    "bestTime": "Tháng 2 – 5",
+    "tags": ["ninh binh", "trang an", "tam coc", "hang dong"],
+    "lat": 20.2539,
+    "lng": 105.975
+  },
+  {
+    "id": "dest-13",
+    "city": "Phan Thiet",
+    "country": "Vietnam",
+    "name": "Phan Thiết – Mũi Né",
+    "description": "Thành phố biển với đồi cát, làng chài và nhiều resort ven biển.",
+    "highlights": [
+      "Mũi Né",
+      "Đồi cát bay",
+      "Làng chài Mũi Né"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["phan thiet", "mui ne", "doi cat", "bien"],
+    "lat": 10.9804,
+    "lng": 108.2615
+  },
+  {
+    "id": "dest-14",
+    "city": "Quy Nhon",
+    "country": "Vietnam",
+    "name": "Quy Nhơn – Biển xanh & Eo Gió",
+    "description": "Thành phố biển yên bình, nổi bật với Eo Gió, Kỳ Co và hải sản tươi ngon.",
+    "highlights": [
+      "Eo Gió",
+      "Kỳ Co",
+      "Tháp Đôi"
+    ],
+    "bestTime": "Tháng 3 – 9",
+    "tags": ["quy nhon", "eo gio", "ky co", "hai san"],
+    "lat": 13.782,
+    "lng": 109.219
+  },
+  {
+    "id": "dest-15",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "name": "Vũng Tàu – Biển gần Sài Gòn",
+    "description": "Điểm tắm biển gần TP.HCM, thuận tiện cho chuyến đi 2 ngày 1 đêm.",
+    "highlights": [
+      "Tượng Chúa Ki-tô Vua",
+      "Bãi Sau",
+      "Ngọn hải đăng Vũng Tàu"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["vung tau", "bien", "gan sai gon"],
+    "lat": 10.4114,
+    "lng": 107.1362
+  },
+  {
+    "id": "dest-16",
+    "city": "Tuy Hoa",
+    "country": "Vietnam",
+    "name": "Tuy Hòa – Phú Yên",
+    "description": "Vùng biển hoang sơ với Gành Đá Đĩa, hải sản rẻ và ít đông khách.",
+    "highlights": [
+      "Gành Đá Đĩa",
+      "Mũi Điện",
+      "Đầm Ô Loan"
+    ],
+    "bestTime": "Tháng 1 – 8",
+    "tags": ["phu yen", "tuy hoa", "ganh da dia"],
+    "lat": 13.0955,
+    "lng": 109.3209
+  },
+  {
+    "id": "dest-17",
+    "city": "Con Dao",
+    "country": "Vietnam",
+    "name": "Côn Đảo – Thiên đường yên tĩnh",
+    "description": "Quần đảo với biển trong xanh, lịch sử nhà tù Côn Đảo và không khí tĩnh lặng.",
+    "highlights": [
+      "Bãi Đầm Trầu",
+      "Nghĩa trang Hàng Dương",
+      "Nhà tù Côn Đảo"
+    ],
+    "bestTime": "Tháng 3 – 9",
+    "tags": ["con dao", "dao", "lich su", "bien dep"],
+    "lat": 8.6966,
+    "lng": 106.6144
+  },
+  {
+    "id": "dest-18",
+    "city": "Buon Ma Thuot",
+    "country": "Vietnam",
+    "name": "Buôn Ma Thuột – Thủ phủ cà phê",
+    "description": "Thành phố cao nguyên với văn hóa Tây Nguyên, thác nước và cà phê nổi tiếng.",
+    "highlights": [
+      "Bảo tàng Cà phê thế giới",
+      "Thác Dray Nur – Dray Sap",
+      "Làng Buôn Đôn"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["tay nguyen", "ca phe", "thac nuoc"],
+    "lat": 12.6675,
+    "lng": 108.0378
+  },
+  {
+    "id": "dest-19",
+    "city": "Pleiku",
+    "country": "Vietnam",
+    "name": "Pleiku – Phố núi Gia Lai",
+    "description": "Phố núi với hồ T’Nưng, cà phê và không khí se lạnh.",
+    "highlights": [
+      "Biển Hồ T’Nưng",
+      "Đồi chè",
+      "Núi lửa Chư Đăng Ya (mùa hoa dã quỳ)"
+    ],
+    "bestTime": "Tháng 11 – 3",
+    "tags": ["gia lai", "pleiku", "pho nui"],
+    "lat": 13.983,
+    "lng": 108.002
+  },
+  {
+    "id": "dest-20",
+    "city": "Rach Gia",
+    "country": "Vietnam",
+    "name": "Rạch Giá – Cửa ngõ ra Phú Quốc",
+    "description": "Thành phố biển thuộc Kiên Giang, điểm trung chuyển đi Phú Quốc, Nam Du.",
+    "highlights": [
+      "Khu đô thị lấn biển",
+      "Chợ Rạch Giá",
+      "Cảng tàu đi đảo"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["rach gia", "kien giang", "cang bien"],
+    "lat": 10.0125,
+    "lng": 105.0809
+  },
+  {
+    "id": "dest-21",
+    "city": "Chau Doc",
+    "country": "Vietnam",
+    "name": "Châu Đốc – An Giang",
+    "description": "Thành phố biên giới nổi tiếng với hành hương núi Sam và chợ Châu Đốc.",
+    "highlights": [
+      "Miếu Bà Chúa Xứ",
+      "Núi Sam",
+      "Làng cá bè Châu Đốc"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["chau doc", "an giang", "hanh huong"],
+    "lat": 10.7026,
+    "lng": 105.0745
+  },
+  {
+    "id": "dest-22",
+    "city": "Long Xuyen",
+    "country": "Vietnam",
+    "name": "Long Xuyên – An Giang",
+    "description": "Thành phố sông nước hiền hòa, gần nhiều điểm du lịch miền Tây.",
+    "highlights": [
+      "Chợ Long Xuyên",
+      "Khu tưởng niệm Chủ tịch Tôn Đức Thắng",
+      "Các cù lao trên sông Hậu"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["long xuyen", "an giang", "song hau"],
+    "lat": 10.3864,
+    "lng": 105.4352
+  },
+  {
+    "id": "dest-23",
+    "city": "My Tho",
+    "country": "Vietnam",
+    "name": "Mỹ Tho – Tiền Giang",
+    "description": "Cửa ngõ miền Tây với tour tứ linh, chùa Vĩnh Tràng, vườn trái cây.",
+    "highlights": [
+      "Chùa Vĩnh Tràng",
+      "Cù lao Thới Sơn",
+      "Du thuyền sông Tiền"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["my tho", "tien giang", "song tien"],
+    "lat": 10.3541,
+    "lng": 106.3623
+  },
+  {
+    "id": "dest-24",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "name": "Bến Tre – Xứ dừa",
+    "description": "Vùng đất sông nước với những rặng dừa bạt ngàn, thích hợp tour sinh thái.",
+    "highlights": [
+      "Du thuyền kênh rạch",
+      "Làng nghề kẹo dừa",
+      "Vườn trái cây"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["ben tre", "dua", "sinh thai"],
+    "lat": 10.2415,
+    "lng": 106.375
+  },
+  {
+    "id": "dest-25",
+    "city": "Vinh Long",
+    "country": "Vietnam",
+    "name": "Vĩnh Long – Miệt vườn sông nước",
+    "description": "Điểm đến miệt vườn với nhiều homestay và tour trải nghiệm nông nghiệp.",
+    "highlights": [
+      "Cù lao An Bình",
+      "Vườn trái cây",
+      "Chợ nổi Trà Ôn (gần)"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["vinh long", "miet vuon", "song nuoc"],
+    "lat": 10.2537,
+    "lng": 105.9722
+  },
+  {
+    "id": "dest-26",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "name": "Sóc Trăng – Đất chùa Khmer",
+    "description": "Tỉnh miền Tây với nhiều chùa Khmer, món bún nước lèo đặc trưng.",
+    "highlights": [
+      "Chùa Dơi",
+      "Chùa Kh'leang",
+      "Bánh pía – bún nước lèo"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["soc trang", "kmer", "chua", "bun nuoc leo"],
+    "lat": 9.6033,
+    "lng": 105.9739
+  },
+  {
+    "id": "dest-27",
+    "city": "Bac Lieu",
+    "country": "Vietnam",
+    "name": "Bạc Liêu – Quê công tử Bạc Liêu",
+    "description": "Nổi tiếng với giai thoại công tử Bạc Liêu, cánh đồng điện gió, đờn ca tài tử.",
+    "highlights": [
+      "Nhà công tử Bạc Liêu",
+      "Cánh đồng điện gió",
+      "Nhà thờ Tắc Sậy (gần Cà Mau)"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["bac lieu", "dien gio", "cong tu bac lieu"],
+    "lat": 9.2941,
+    "lng": 105.7278
+  },
+  {
+    "id": "dest-28",
+    "city": "Ca Mau",
+    "country": "Vietnam",
+    "name": "Cà Mau – Đất mũi cực Nam",
+    "description": "Điểm cực Nam Tổ quốc, nổi tiếng với rừng ngập mặn và hải sản.",
+    "highlights": [
+      "Mũi Cà Mau",
+      "Vườn quốc gia Mũi Cà Mau",
+      "Chợ Cà Mau"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["ca mau", "dat mui", "hai san"],
+    "lat": 9.1769,
+    "lng": 105.1524
+  },
+  {
+    "id": "dest-29",
+    "city": "Tra Vinh",
+    "country": "Vietnam",
+    "name": "Trà Vinh – Miền chùa Khmer",
+    "description": "Tỉnh ven biển miền Tây, nhiều chùa Khmer đẹp và yên bình.",
+    "highlights": [
+      "Ao Bà Om",
+      "Chùa Hang",
+      "Chùa Âng"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["tra vinh", "kmer", "chua"],
+    "lat": 9.9347,
+    "lng": 106.345
+  },
+  {
+    "id": "dest-30",
+    "city": "Tay Ninh",
+    "country": "Vietnam",
+    "name": "Tây Ninh – Núi Bà Đen",
+    "description": "Tỉnh giáp Campuchia, nổi tiếng với núi Bà Đen và Tòa thánh Cao Đài.",
+    "highlights": [
+      "Núi Bà Đen (cáp treo)",
+      "Tòa thánh Cao Đài",
+      "Hồ Dầu Tiếng"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["tay ninh", "nui ba den", "cao dai"],
+    "lat": 11.31,
+    "lng": 106.098
+  },
+  {
+    "id": "dest-31",
+    "city": "Cao Lanh",
+    "country": "Vietnam",
+    "name": "Cao Lãnh – Đồng Tháp",
+    "description": "Thành phố thuộc Đồng Tháp, gần các điểm tham quan sen và vườn quốc gia.",
+    "highlights": [
+      "Khu du lịch Xẻo Quýt",
+      "Vườn quốc gia Tràm Chim",
+      "Làng hoa Sa Đéc (gần)"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["cao lanh", "dong thap", "tram chim"],
+    "lat": 10.4545,
+    "lng": 105.6326
+  },
+  {
+    "id": "dest-32",
+    "city": "Can Gio",
+    "country": "Vietnam",
+    "name": "Cần Giờ – Rừng ngập mặn",
+    "description": "Huyện biển thuộc TP.HCM với rừng ngập mặn, hải sản tươi, yên tĩnh.",
+    "highlights": [
+      "Khu du lịch Vàm Sát",
+      "Đảo khỉ",
+      "Biển Cần Giờ"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["can gio", "rung ngap man", "hai san"],
+    "lat": 10.4126,
+    "lng": 106.9542
+  },
+  {
+    "id": "dest-33",
+    "city": "Moc Chau",
+    "country": "Vietnam",
+    "name": "Mộc Châu – Cao nguyên hoa",
+    "description": "Cao nguyên với đồi chè, hoa mận, hoa cải, khí hậu mát.",
+    "highlights": [
+      "Đồi chè trái tim",
+      "Thác Dải Yếm",
+      "Bản Lóng Luông"
+    ],
+    "bestTime": "Tháng 1 – 4, 10 – 12",
+    "tags": ["moc chau", "son la", "doi che", "hoa"],
+    "lat": 20.85,
+    "lng": 104.7
+  },
+  {
+    "id": "dest-34",
+    "city": "Mai Chau",
+    "country": "Vietnam",
+    "name": "Mai Châu – Thung lũng bản làng",
+    "description": "Thung lũng thuộc Hòa Bình với nhà sàn, ruộng lúa và văn hóa Thái.",
+    "highlights": [
+      "Bản Lác",
+      "Bản Poom Coọng",
+      "Đạp xe ngắm ruộng lúa"
+    ],
+    "bestTime": "Tháng 9 – 11, 3 – 5",
+    "tags": ["mai chau", "hoa binh", "ban lang"],
+    "lat": 20.705,
+    "lng": 105.105
+  },
+  {
+    "id": "dest-35",
+    "city": "Dong Hoi",
+    "country": "Vietnam",
+    "name": "Đồng Hới – Quảng Bình",
+    "description": "Điểm dừng chính khi khám phá Phong Nha – Kẻ Bàng, hang động kỳ vĩ.",
+    "highlights": [
+      "Phong Nha – Kẻ Bàng",
+      "Động Thiên Đường",
+      "Sông Nhật Lệ"
+    ],
+    "bestTime": "Tháng 2 – 8",
+    "tags": ["dong hoi", "quang binh", "phong nha"],
+    "lat": 17.473,
+    "lng": 106.598
+  },
+  {
+    "id": "dest-36",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "name": "Quảng Ninh – Bãi biển & đảo",
+    "description": "Ngoài Hạ Long còn có Cô Tô, Quan Lạn với bãi biển hoang sơ.",
+    "highlights": [
+      "Đảo Cô Tô",
+      "Đảo Quan Lạn",
+      "Bãi Cháy"
+    ],
+    "bestTime": "Tháng 4 – 9",
+    "tags": ["quang ninh", "co to", "quan lan"],
+    "lat": 21.0064,
+    "lng": 107.2925
+  },
+  {
+    "id": "dest-37",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "name": "Lào Cai – Cửa ngõ Sa Pa",
+    "description": "Tỉnh biên giới có cửa khẩu Lào Cai – Hà Khẩu và nhiều bản làng vùng cao.",
+    "highlights": [
+      "Cửa khẩu Lào Cai",
+      "Chợ vùng cao",
+      "Đường lên Sa Pa"
+    ],
+    "bestTime": "Tháng 9 – 11, 3 – 5",
+    "tags": ["lao cai", "bien gioi", "sa pa"],
+    "lat": 22.4856,
+    "lng": 103.9707
+  },
+  {
+    "id": "dest-38",
+    "city": "Lang Son",
+    "country": "Vietnam",
+    "name": "Lạng Sơn – Thành phố biên giới",
+    "description": "Thành phố miền núi phía Bắc, nổi tiếng với chợ biên giới, ẩm thực vịt quay.",
+    "highlights": [
+      "Chợ Đông Kinh",
+      "Ải Chi Lăng (khu vực lịch sử)",
+      "Chùa Tam Thanh – Nhị Thanh"
+    ],
+    "bestTime": "Tháng 9 – 4",
+    "tags": ["lang son", "bien gioi", "cho"],
+    "lat": 21.8537,
+    "lng": 106.761
+  },
+  {
+    "id": "dest-39",
+    "city": "Ha Giang",
+    "country": "Vietnam",
+    "name": "Hà Giang – Cao nguyên đá",
+    "description": "Điểm trekking, phượt nổi tiếng với đèo Mã Pí Lèng, ruộng hoa tam giác mạch.",
+    "highlights": [
+      "Đèo Mã Pí Lèng",
+      "Cột cờ Lũng Cú",
+      "Phố cổ Đồng Văn"
+    ],
+    "bestTime": "Tháng 10 – 11 (hoa tam giác mạch), 3 – 5",
+    "tags": ["ha giang", "ma pi leng", "phuot"],
+    "lat": 22.8028,
+    "lng": 104.9784
+  },
+  {
+    "id": "dest-40",
+    "city": "Kon Tum",
+    "country": "Vietnam",
+    "name": "Kon Tum – Nhà thờ gỗ",
+    "description": "Tỉnh Tây Nguyên với nhà thờ gỗ, làng Kon Klor và văn hóa dân tộc Ba Na.",
+    "highlights": [
+      "Nhà thờ gỗ Kon Tum",
+      "Cầu treo Kon Klor",
+      "Làng văn hóa Ba Na"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["kon tum", "tay nguyen", "nha tho go"],
+    "lat": 14.3545,
+    "lng": 108.0076
+  },
+  {
+    "id": "dest-41",
+    "city": "Phan Rang",
+    "country": "Vietnam",
+    "name": "Phan Rang – Ninh Thuận",
+    "description": "Thành phố nắng gió với vườn nho, biển Ninh Chữ và tháp Chăm.",
+    "highlights": [
+      "Biển Ninh Chữ",
+      "Tháp Po Klong Garai",
+      "Vườn nho Ba Mọi"
+    ],
+    "bestTime": "Tháng 12 – 8",
+    "tags": ["phan rang", "ninh thuan", "nho", "bien"],
+    "lat": 11.5643,
+    "lng": 108.9886
+  },
+  {
+    "id": "dest-42",
+    "city": "Cam Ranh",
+    "country": "Vietnam",
+    "name": "Cam Ranh – Bãi Dài",
+    "description": "Khu vực ven biển có nhiều resort mới, bãi Dài cát trắng nước trong.",
+    "highlights": [
+      "Bãi Dài",
+      "Resort ven biển",
+      "Cảng Cam Ranh (đi đảo)"
+    ],
+    "bestTime": "Tháng 3 – 8",
+    "tags": ["cam ranh", "bai dai", "resort"],
+    "lat": 11.9214,
+    "lng": 109.1591
+  },
+  {
+    "id": "dest-43",
+    "city": "Sa Dec",
+    "country": "Vietnam",
+    "name": "Sa Đéc – Làng hoa miền Tây",
+    "description": "Thành phố thuộc Đồng Tháp, nổi tiếng với làng hoa Sa Đéc và nhà cổ Huỳnh Thủy Lê.",
+    "highlights": [
+      "Làng hoa Sa Đéc",
+      "Nhà cổ Huỳnh Thủy Lê",
+      "Bến sông Sa Đéc"
+    ],
+    "bestTime": "Tháng 12 – 2 (mùa hoa Tết)",
+    "tags": ["sa dec", "lang hoa", "dong thap"],
+    "lat": 10.2982,
+    "lng": 105.7486
+  },
+  {
+    "id": "dest-44",
+    "city": "Gia Nghia",
+    "country": "Vietnam",
+    "name": "Gia Nghĩa – Đắk Nông",
+    "description": "Thành phố cao nguyên trẻ, gần các thác nước và hồ tự nhiên.",
+    "highlights": [
+      "Thác Trinh Nữ (khu vực)",
+      "Hồ Tà Đùng (đi từ Đắk Nông hoặc Lâm Đồng)",
+      "Các nông trại cà phê"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["dak nong", "gia nghia", "cao nguyen"],
+    "lat": 12.0042,
+    "lng": 107.688
+  },
+  {
+    "id": "dest-45",
+    "city": "Quang Ngai",
+    "country": "Vietnam",
+    "name": "Quảng Ngãi – Lý Sơn",
+    "description": "Tỉnh ven biển có đảo Lý Sơn với tỏi, cảnh quan núi lửa và biển xanh.",
+    "highlights": [
+      "Đảo Lý Sơn",
+      "Biển Mỹ Khê Quảng Ngãi",
+      "Cánh đồng tỏi"
+    ],
+    "bestTime": "Tháng 3 – 8",
+    "tags": ["quang ngai", "ly son", "toi"],
+    "lat": 15.1214,
+    "lng": 108.804
+  },
+  {
+    "id": "dest-46",
+    "city": "Thanh Hoa",
+    "country": "Vietnam",
+    "name": "Thanh Hóa – Sầm Sơn",
+    "description": "Tỉnh Bắc Trung Bộ với bãi biển Sầm Sơn và các di tích lịch sử.",
+    "highlights": [
+      "Biển Sầm Sơn",
+      "Thành nhà Hồ",
+      "Hải sản Sầm Sơn"
+    ],
+    "bestTime": "Tháng 4 – 8",
+    "tags": ["thanh hoa", "sam son", "bien"],
+    "lat": 19.8067,
+    "lng": 105.7764
+  },
+  {
+    "id": "dest-47",
+    "city": "Vinh",
+    "country": "Vietnam",
+    "name": "Vinh – Nghệ An",
+    "description": "Thành phố lớn Bắc Trung Bộ, cửa ngõ đi Cửa Lò, Quê Bác.",
+    "highlights": [
+      "Biển Cửa Lò",
+      "Làng Sen – Kim Liên",
+      "Núi Quyết"
+    ],
+    "bestTime": "Tháng 4 – 8",
+    "tags": ["vinh", "nghe an", "cua lo"],
+    "lat": 18.6733,
+    "lng": 105.6923
+  },
+  {
+    "id": "dest-48",
+    "city": "Ha Tinh",
+    "country": "Vietnam",
+    "name": "Hà Tĩnh – Biển & núi",
+    "description": "Tỉnh ven biển với bãi biển Thiên Cầm, núi Hồng Lĩnh, nhiều làng quê yên bình.",
+    "highlights": [
+      "Biển Thiên Cầm",
+      "Núi Hồng Lĩnh",
+      "Chùa Hương Tích (Hà Tĩnh)"
+    ],
+    "bestTime": "Tháng 4 – 8",
+    "tags": ["ha tinh", "thien cam", "bien"],
+    "lat": 18.3428,
+    "lng": 105.9057
+  },
+  {
+    "id": "dest-49",
+    "city": "Phu Tho",
+    "country": "Vietnam",
+    "name": "Phú Thọ – Đất Tổ Hùng Vương",
+    "description": "Tỉnh trung du Bắc Bộ, nổi tiếng với Đền Hùng và lễ hội Giỗ Tổ mùng 10/3 âm lịch.",
+    "highlights": [
+      "Đền Hùng",
+      "Lễ hội Giỗ Tổ",
+      "Đồi chè trung du"
+    ],
+    "bestTime": "Tháng 2 – 4",
+    "tags": ["phu tho", "den hung", "gio to"],
+    "lat": 21.404,
+    "lng": 105.226
+  },
+  {
+    "id": "dest-50",
+    "city": "Mu Cang Chai",
+    "country": "Vietnam",
+    "name": "Mù Cang Chải – Ruộng bậc thang",
+    "description": "Huyện vùng cao Yên Bái với ruộng bậc thang nổi tiếng, điểm đến trekking mùa lúa chín.",
+    "highlights": [
+      "Ruộng bậc thang La Pán Tẩn",
+      "Đèo Khau Phạ",
+      "Bản người H’Mông"
+    ],
+    "bestTime": "Tháng 9 – 10 (mùa lúa chín)",
+    "tags": ["mu cang chai", "yen bai", "ruong bac thang"],
+    "lat": 21.785,
+    "lng": 104.133
+  },
+  {
+    "id": "dest-51",
+    "city": "Cat Ba",
+    "country": "Vietnam",
+    "name": "Cát Bà – Quần đảo sinh thái",
+    "description": "Quần đảo ngoài khơi Hải Phòng, nổi tiếng với vịnh Lan Hạ, rừng quốc gia và bãi tắm đẹp.",
+    "highlights": [
+      "Vịnh Lan Hạ",
+      "Vườn quốc gia Cát Bà",
+      "Bãi tắm Cát Cò"
+    ],
+    "bestTime": "Tháng 4 – 9",
+    "tags": ["cat ba", "lan ha", "hai phong", "dao"],
+    "lat": 20.8,
+    "lng": 107.05
+  },
+  {
+    "id": "dest-52",
+    "city": "Hai Phong",
+    "country": "Vietnam",
+    "name": "Hải Phòng – Thành phố hoa phượng đỏ",
+    "description": "Thành phố cảng lớn miền Bắc, nổi tiếng với ẩm thực hải sản, gần Đồ Sơn và Cát Bà.",
+    "highlights": [
+      "Khu phố cũ Hải Phòng",
+      "Biển Đồ Sơn",
+      "Cảng Hải Phòng"
+    ],
+    "bestTime": "Tháng 10 – 4",
+    "tags": ["hai phong", "do son", "hai san"],
+    "lat": 20.8449,
+    "lng": 106.6881
+  },
+  {
+    "id": "dest-53",
+    "city": "Tam Dao",
+    "country": "Vietnam",
+    "name": "Tam Đảo – Đà Lạt miền Bắc",
+    "description": "Thị trấn trên núi thuộc Vĩnh Phúc, khí hậu mát, nhiều resort và quán cafe trên mây.",
+    "highlights": [
+      "Nhà thờ đá Tam Đảo",
+      "Cầu Mây",
+      "Đền Bà Chúa Thượng Ngàn"
+    ],
+    "bestTime": "Tháng 3 – 11",
+    "tags": ["tam dao", "vinh phuc", "nghi duong"],
+    "lat": 21.454,
+    "lng": 105.643
+  },
+  {
+    "id": "dest-54",
+    "city": "Bac Kan",
+    "country": "Vietnam",
+    "name": "Bắc Kạn – Hồ Ba Bể",
+    "description": "Tỉnh miền núi phía Bắc, nổi tiếng với hồ Ba Bể, hang động và rừng nguyên sinh.",
+    "highlights": [
+      "Hồ Ba Bể",
+      "Động Puông",
+      "Thác Đầu Đẳng"
+    ],
+    "bestTime": "Tháng 10 – 4",
+    "tags": ["bac kan", "ba be", "hang dong"],
+    "lat": 22.1471,
+    "lng": 105.8348
+  },
+  {
+    "id": "dest-55",
+    "city": "Cao Bang",
+    "country": "Vietnam",
+    "name": "Cao Bằng – Thác Bản Giốc",
+    "description": "Tỉnh biên giới với cảnh quan hùng vĩ, thác Bản Giốc và các di tích lịch sử cách mạng.",
+    "highlights": [
+      "Thác Bản Giốc",
+      "Động Ngườm Ngao",
+      "Khu di tích Pác Bó"
+    ],
+    "bestTime": "Tháng 9 – 4",
+    "tags": ["cao bang", "ban gioc", "bien gioi"],
+    "lat": 22.6657,
+    "lng": 106.257
+  },
+  {
+    "id": "dest-56",
+    "city": "Dien Bien Phu",
+    "country": "Vietnam",
+    "name": "Điện Biên Phủ – Chiến trường lịch sử",
+    "description": "Thành phố lịch sử với nhiều di tích về chiến dịch Điện Biên Phủ.",
+    "highlights": [
+      "Đồi A1",
+      "Hầm De Castries",
+      "Bảo tàng Chiến thắng Điện Biên Phủ"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["dien bien", "dien bien phu", "lich su"],
+    "lat": 21.386,
+    "lng": 103.023
+  },
+  {
+    "id": "dest-57",
+    "city": "Thai Nguyen",
+    "country": "Vietnam",
+    "name": "Thái Nguyên – Đồi chè Tân Cương",
+    "description": "Tỉnh trung du phía Bắc, nổi tiếng với chè Thái và bảo tàng văn hóa các dân tộc.",
+    "highlights": [
+      "Đồi chè Tân Cương",
+      "Hồ Núi Cốc",
+      "Bảo tàng Văn hóa các dân tộc Việt Nam"
+    ],
+    "bestTime": "Tháng 9 – 4",
+    "tags": ["thai nguyen", "che thai", "trung du"],
+    "lat": 21.5928,
+    "lng": 105.8442
+  },
+  {
+    "id": "dest-58",
+    "city": "Nam Dinh",
+    "country": "Vietnam",
+    "name": "Nam Định – Thành Nam",
+    "description": "Tỉnh đồng bằng ven biển, nổi tiếng với nhà thờ lớn, phở bò Nam Định, biển Thịnh Long.",
+    "highlights": [
+      "Nhà thờ Chính tòa Nam Định",
+      "Biển Thịnh Long",
+      "Làng nghề dệt"
+    ],
+    "bestTime": "Tháng 10 – 4",
+    "tags": ["nam dinh", "thanh nam", "pho bo"],
+    "lat": 20.4203,
+    "lng": 106.168
+  },
+  {
+    "id": "dest-59",
+    "city": "Hai Duong",
+    "country": "Vietnam",
+    "name": "Hải Dương – Vùng đất làng nghề",
+    "description": "Tỉnh đồng bằng với nhiều làng nghề truyền thống và di tích lịch sử.",
+    "highlights": [
+      "Côn Sơn – Kiếp Bạc",
+      "Làng gốm Chu Đậu",
+      "Bánh đậu xanh Hải Dương"
+    ],
+    "bestTime": "Tháng 10 – 4",
+    "tags": ["hai duong", "con son", "lang nghe"],
+    "lat": 20.9386,
+    "lng": 106.3207
+  },
+  {
+    "id": "dest-60",
+    "city": "Hoa Binh",
+    "country": "Vietnam",
+    "name": "Hòa Bình – Thủy điện & lòng hồ",
+    "description": "Tỉnh miền núi với lòng hồ thủy điện Hòa Bình và bản làng dân tộc.",
+    "highlights": [
+      "Thủy điện Hòa Bình",
+      "Lòng hồ sông Đà",
+      "Bản người Mường"
+    ],
+    "bestTime": "Tháng 10 – 4",
+    "tags": ["hoa binh", "song da", "thuy dien"],
+    "lat": 20.8172,
+    "lng": 105.3376
+  },
+  {
+    "id": "dest-61",
+    "city": "Quang Tri",
+    "country": "Vietnam",
+    "name": "Quảng Trị – Địa đạo & cầu Hiền Lương",
+    "description": "Tỉnh miền Trung với nhiều di tích lịch sử chiến tranh và cảnh biển.",
+    "highlights": [
+      "Địa đạo Vịnh Mốc",
+      "Cầu Hiền Lương – Sông Bến Hải",
+      "Nghĩa trang Trường Sơn"
+    ],
+    "bestTime": "Tháng 1 – 4",
+    "tags": ["quang tri", "lich su", "chien tranh"],
+    "lat": 16.75,
+    "lng": 107.2
+  },
+  {
+    "id": "dest-62",
+    "city": "Quang Nam",
+    "country": "Vietnam",
+    "name": "Quảng Nam – Thánh địa Mỹ Sơn",
+    "description": "Ngoài Hội An, Quảng Nam còn nổi tiếng với thánh địa Mỹ Sơn – di sản văn hóa thế giới.",
+    "highlights": [
+      "Thánh địa Mỹ Sơn",
+      "Làng gốm Thanh Hà",
+      "Làng mộc Kim Bồng"
+    ],
+    "bestTime": "Tháng 2 – 4, 8 – 10",
+    "tags": ["quang nam", "my son", "di san"],
+    "lat": 15.539,
+    "lng": 108.019
+  },
+  {
+    "id": "dest-63",
+    "city": "Binh Dinh",
+    "country": "Vietnam",
+    "name": "Bình Định – Đất võ trời văn",
+    "description": "Tỉnh duyên hải với văn hóa võ cổ truyền, tháp Chăm và biển đẹp.",
+    "highlights": [
+      "Tháp Bánh Ít",
+      "Bảo tàng Quang Trung (Tây Sơn)",
+      "Biển Quy Nhơn – Kỳ Co – Eo Gió"
+    ],
+    "bestTime": "Tháng 3 – 9",
+    "tags": ["binh dinh", "tay son", "vo co truyen"],
+    "lat": 13.782,
+    "lng": 109.219
+  },
+  {
+    "id": "dest-64",
+    "city": "Binh Thuan",
+    "country": "Vietnam",
+    "name": "Bình Thuận – Biển & cát",
+    "description": "Tỉnh ven biển nắng gió với nhiều cung đường ven biển đẹp, gần Phan Thiết – Mũi Né.",
+    "highlights": [
+      "Cung đường ven biển Hòa Thắng – Hòa Phú",
+      "Biển Thuận Quý – Kê Gà",
+      "Hải đăng Kê Gà"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["binh thuan", "ke ga", "ven bien"],
+    "lat": 11.0904,
+    "lng": 108.0721
+  },
+  {
+    "id": "dest-65",
+    "city": "Binh Phuoc",
+    "country": "Vietnam",
+    "name": "Bình Phước – Rừng quốc gia & hồ",
+    "description": "Tỉnh miền Đông Nam Bộ với nhiều rừng cao su, vườn quốc gia và hồ thủy điện.",
+    "highlights": [
+      "Vườn quốc gia Bù Gia Mập",
+      "Hồ Suối Lam",
+      "Rừng cao su mùa thay lá"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["binh phuoc", "rung", "cao su"],
+    "lat": 11.75,
+    "lng": 106.9
+  },
+  {
+    "id": "dest-66",
+    "city": "Dong Nai",
+    "country": "Vietnam",
+    "name": "Đồng Nai – Thác & rừng",
+    "description": "Tỉnh công nghiệp nhưng còn nhiều điểm du lịch sinh thái, thác nước, rừng.",
+    "highlights": [
+      "Thác Giang Điền",
+      "Khu du lịch Bửu Long",
+      "Vườn quốc gia Cát Tiên (giáp Lâm Đồng – Bình Phước)"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["dong nai", "thac nuoc", "sinh thai"],
+    "lat": 10.953,
+    "lng": 106.82
+  },
+  {
+    "id": "dest-67",
+    "city": "Tien Giang",
+    "country": "Vietnam",
+    "name": "Tiền Giang – Cù lao & vườn trái cây",
+    "description": "Tỉnh miền Tây với nhiều vườn trái cây, tour chèo xuồng kênh rạch.",
+    "highlights": [
+      "Cù lao Thới Sơn",
+      "Vườn trái cây Cái Bè",
+      "Chợ nổi Cái Bè"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["tien giang", "cai be", "miet vuon"],
+    "lat": 10.449,
+    "lng": 106.342
+  },
+  {
+    "id": "dest-68",
+    "city": "Kien Giang",
+    "country": "Vietnam",
+    "name": "Kiên Giang – Nam Du & Hà Tiên",
+    "description": "Tỉnh ven biển với nhiều đảo đẹp như Nam Du, Hải Tặc và thị xã du lịch Hà Tiên.",
+    "highlights": [
+      "Quần đảo Nam Du",
+      "Quần đảo Hải Tặc",
+      "Hà Tiên – Bình San"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["kien giang", "nam du", "dao"],
+    "lat": 10.0159,
+    "lng": 105.0809
+  },
+  {
+    "id": "dest-69",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "name": "An Giang – Núi Cấm & rừng tràm",
+    "description": "Tỉnh miền Tây giáp Campuchia với nhiều núi, rừng tràm và điểm hành hương.",
+    "highlights": [
+      "Núi Cấm",
+      "Rừng tràm Trà Sư",
+      "Núi Sam – Miếu Bà Chúa Xứ"
+    ],
+    "bestTime": "Tháng 12 – 4",
+    "tags": ["an giang", "tra su", "nui cam"],
+    "lat": 10.52,
+    "lng": 105.12
+  },
+  {
+    "id": "dest-70",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "name": "Cần Thơ – Cồn Sơn & vườn trái cây",
+    "description": "Ngoài bến Ninh Kiều, Cần Thơ còn có nhiều cồn sinh thái và miệt vườn.",
+    "highlights": [
+      "Cồn Sơn",
+      "Cồn Ấu",
+      "Vườn trái cây Phong Điền"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["can tho", "con son", "miet vuon"],
+    "lat": 10.055,
+    "lng": 105.715
+  },
+  {
+    "id": "dest-71",
+    "city": "Lam Dong",
+    "country": "Vietnam",
+    "name": "Lâm Đồng – Bảo Lộc & đồi chè",
+    "description": "Ngoài Đà Lạt, Lâm Đồng còn có Bảo Lộc với trà, cà phê, thác nước đẹp.",
+    "highlights": [
+      "Thác Damb’ri",
+      "Đồi chè Tâm Châu",
+      "Tu viện Bát Nhã"
+    ],
+    "bestTime": "Tháng 11 – 4",
+    "tags": ["bao loc", "lam dong", "tra"],
+    "lat": 11.547,
+    "lng": 107.814
+  },
+  {
+    "id": "dest-72",
+    "city": "Khanh Hoa",
+    "country": "Vietnam",
+    "name": "Khánh Hòa – Đảo Bình Ba & Bình Hưng",
+    "description": "Ngoài Nha Trang, Khánh Hòa còn có nhiều đảo hoang sơ với nước trong, hải sản ngon.",
+    "highlights": [
+      "Đảo Bình Ba",
+      "Đảo Bình Hưng",
+      "Vịnh Vân Phong"
+    ],
+    "bestTime": "Tháng 3 – 8",
+    "tags": ["khanh hoa", "binh ba", "binh hung"],
+    "lat": 11.9,
+    "lng": 109.2
+  },
+  {
+    "id": "dest-73",
+    "city": "Quang Binh",
+    "country": "Vietnam",
+    "name": "Quảng Bình – Hang Sơn Đoòng (vùng)",
+    "description": "Tỉnh miền Trung với hệ thống hang động kỳ vĩ, trong đó có Sơn Đoòng nổi tiếng thế giới.",
+    "highlights": [
+      "Hang Sơn Đoòng (tour chuyên nghiệp)",
+      "Hang Én",
+      "Sông Chày – Hang Tối"
+    ],
+    "bestTime": "Tháng 2 – 8",
+    "tags": ["quang binh", "son doong", "phong nha"],
+    "lat": 17.54,
+    "lng": 106.24
+  },
+  {
+    "id": "dest-74",
+    "city": "Yen Bai",
+    "country": "Vietnam",
+    "name": "Yên Bái – Hồ Thác Bà",
+    "description": "Ngoài Mù Cang Chải, Yên Bái còn có hồ Thác Bà – một trong những hồ nhân tạo lớn.",
+    "highlights": [
+      "Hồ Thác Bà",
+      "Du thuyền ngắm đảo",
+      "Làng chài trên hồ"
+    ],
+    "bestTime": "Tháng 9 – 4",
+    "tags": ["yen bai", "thac ba", "ho nuoc"],
+    "lat": 21.722,
+    "lng": 104.911
+  },
+  {
+    "id": "dest-75",
+    "city": "Lai Chau",
+    "country": "Vietnam",
+    "name": "Lai Châu – Đèo Ô Quy Hồ & Sin Suối Hồ",
+    "description": "Tỉnh vùng cao Tây Bắc với nhiều đèo đẹp, bản làng dân tộc còn nguyên sơ.",
+    "highlights": [
+      "Đèo Ô Quy Hồ (giáp Lào Cai – Lai Châu)",
+      "Bản Sin Suối Hồ",
+      "Thị trấn Tam Đường"
+    ],
+    "bestTime": "Tháng 9 – 11, 3 – 5",
+    "tags": ["lai chau", "o quy ho", "ban lang"],
+    "lat": 22.3964,
+    "lng": 103.458
+  },
+  {
+    "id": "dest-76",
+    "city": "Son La",
+    "country": "Vietnam",
+    "name": "Sơn La – Nhà tù & cao nguyên Mộc Châu (vùng)",
+    "description": "Tỉnh Tây Bắc với di tích nhà tù Sơn La, nhiều cao nguyên, đồi chè.",
+    "highlights": [
+      "Nhà tù Sơn La",
+      "Cao nguyên Mộc Châu (trong tỉnh)",
+      "Thủy điện Sơn La"
+    ],
+    "bestTime": "Tháng 9 – 4",
+    "tags": ["son la", "tay bac", "cao nguyen"],
+    "lat": 21.328,
+    "lng": 103.91
+  },
+  {
+    "id": "dest-77",
+    "city": "Tuyen Quang",
+    "country": "Vietnam",
+    "name": "Tuyên Quang – Lễ hội trung thu & Na Hang",
+    "description": "Tỉnh trung du miền núi có hồ Na Hang, lễ hội đèn trung thu nổi tiếng.",
+    "highlights": [
+      "Hồ Na Hang – Lâm Bình",
+      "Lễ hội đèn Trung thu Tuyên Quang",
+      "Các làng bản dân tộc"
+    ],
+    "bestTime": "Tháng 9 – 11, dịp trung thu",
+    "tags": ["tuyen quang", "na hang", "trung thu"],
+    "lat": 21.819,
+    "lng": 105.214
+  },
+  {
+    "id": "dest-78",
+    "city": "Bac Giang",
+    "country": "Vietnam",
+    "name": "Bắc Giang – Vải thiều Lục Ngạn",
+    "description": "Tỉnh phía Bắc nổi tiếng với vải thiều Lục Ngạn và nhiều chùa cổ.",
+    "highlights": [
+      "Vùng vải thiều Lục Ngạn (mùa vải)",
+      "Chùa Vĩnh Nghiêm",
+      "Hồ Cấm Sơn"
+    ],
+    "bestTime": "Tháng 5 – 6 (mùa vải), 10 – 3",
+    "tags": ["bac giang", "vai thieu", "luc ngan"],
+    "lat": 21.2731,
+    "lng": 106.1946
+  },
+  {
+    "id": "dest-79",
+    "city": "Vinh Phuc",
+    "country": "Vietnam",
+    "name": "Vĩnh Phúc – Hồ Đại Lải",
+    "description": "Tỉnh gần Hà Nội, nổi tiếng với hồ Đại Lải, resort cuối tuần và gần Tam Đảo.",
+    "highlights": [
+      "Hồ Đại Lải",
+      "Flamingo Đại Lải",
+      "Gần Tam Đảo"
+    ],
+    "bestTime": "Tháng 3 – 11",
+    "tags": ["vinh phuc", "dai lai", "resort"],
+    "lat": 21.342,
+    "lng": 105.603
+  },
+  {
+    "id": "dest-80",
+    "city": "Bac Ninh",
+    "country": "Vietnam",
+    "name": "Bắc Ninh – Quan họ & làng tranh Đông Hồ",
+    "description": "Tỉnh nhỏ gần Hà Nội, nổi tiếng với dân ca quan họ và làng tranh dân gian Đông Hồ.",
+    "highlights": [
+      "Làng tranh Đông Hồ",
+      "Đình – chùa cổ",
+      "Lễ hội quan họ"
+    ],
+    "bestTime": "Tháng 1 – 4 (mùa lễ hội)",
+    "tags": ["bac ninh", "quan ho", "dong ho"],
+    "lat": 21.1861,
+    "lng": 106.0763
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "policy-booking-tips-01",
+    "category": "booking_tips",
+    "title": "Lưu ý khi đặt tour qua bên thứ ba",
+    "summary": "Những điểm cần kiểm tra trước khi đặt tour trên các website hoặc công ty lữ hành.",
+    "content": "Ứng dụng này chỉ hỗ trợ gợi ý lịch trình, không trực tiếp bán tour hay nhận thanh toán. Khi đặt tour qua các đơn vị khác (website, app, công ty lữ hành), bạn nên: (1) Kiểm tra rõ thông tin đơn vị tổ chức: tên công ty, địa chỉ, số điện thoại, mã số thuế; (2) Đọc kỹ mô tả tour: lịch trình chi tiết, đã bao gồm/không bao gồm gì, điều kiện áp dụng giá; (3) Xem đánh giá của khách hàng trước đó để tránh đặt nhầm các tour kém chất lượng; (4) Chụp/ lưu lại màn hình thông tin tour và giá tại thời điểm đặt để làm bằng chứng nếu cần hỗ trợ sau này.",
+    "keywords": ["luu y dat tour", "dat tour online", "booking tips", "ben thu ba"]
+  },
+  {
+    "id": "policy-payment-tips-01",
+    "category": "payment_tips",
+    "title": "Lưu ý khi thanh toán tour/ vé",
+    "summary": "Gợi ý thanh toán an toàn khi đặt tour hoặc dịch vụ du lịch trên các nền tảng khác.",
+    "content": "Vì ứng dụng chỉ gợi ý kế hoạch du lịch, bạn sẽ thanh toán trực tiếp với bên cung cấp dịch vụ (hãng bay, khách sạn, công ty tour...). Để thanh toán an toàn, bạn nên: (1) Ưu tiên thanh toán qua các cổng uy tín (VNPay, Momo, ZaloPay, PayPal, thẻ quốc tế có 3D Secure); (2) Kiểm tra chính xác tên đơn vị nhận tiền trước khi chuyển khoản; (3) Hạn chế chuyển khoản vào tài khoản cá nhân nếu không rõ thông tin; (4) Kiểm tra email/xác nhận đơn hàng sau khi thanh toán, đảm bảo có mã booking hoặc thông tin liên hệ hỗ trợ; (5) Không chia sẻ mã OTP, mã CVV hoặc mật khẩu internet banking cho bất kỳ ai.",
+    "keywords": ["thanh toan an toan", "payment tips", "chuyen khoan", "vi dien tu"]
+  },
+  {
+    "id": "policy-cancel-tips-01",
+    "category": "cancellation_tips",
+    "title": "Lưu ý về hủy/đổi tour và vé",
+    "summary": "Những điều nên hỏi kỹ trước khi đặt tour để tránh mất phí hủy cao.",
+    "content": "Mỗi đơn vị tổ chức tour, mỗi hãng hàng không sẽ có chính sách hủy/đổi riêng, ứng dụng này không đại diện cho bất kỳ bên nào. Trước khi đặt, bạn nên: (1) Hỏi rõ các mốc thời gian hủy được hoàn bao nhiêu % (trước 7 ngày, 3 ngày, 24h...); (2) Kiểm tra xem tour có điều kiện 'không hoàn hủy' hay 'hoàn/đổi mất phí' không; (3) Với vé máy bay, kiểm tra rõ loại vé (tiết kiệm, tiêu chuẩn, linh hoạt...) vì mỗi loại có điều kiện đổi/hủy khác nhau; (4) Lưu lại email/điều khoản hủy để sau này có bằng chứng nếu cần làm việc với bên cung cấp dịch vụ; (5) Trong mùa cao điểm, nên dự trù khả năng phải đổi ngày và hỏi trước phí đổi.",
+    "keywords": ["huy tour", "doi ve", "hoan huy", "cancellation tips"]
+  }
+]

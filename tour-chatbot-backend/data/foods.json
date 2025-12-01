@@ -1,0 +1,1786 @@
+[
+  {
+    "id": "food-danang-1",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "dishName": "Bún chả cá Đà Nẵng",
+    "summary": "Món bún với chả cá biển, nước dùng thanh, hơi cay nhẹ, đặc trưng Đà Nẵng.",
+    "restaurants": [
+      {
+        "name": "Bún Chả Cá 109",
+        "address": "109 Nguyễn Chí Thanh, Hải Châu, Đà Nẵng",
+        "priceLevel": "medium",
+        "note": "Quán địa phương nổi tiếng, nên đi sớm để tránh hết chả cá."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun cha ca", "da nang", "seafood", "breakfast"]
+  },
+  {
+    "id": "food-danang-2",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "dishName": "Bánh xèo Đà Nẵng",
+    "summary": "Bánh xèo vỏ mỏng, nhân tôm thịt, ăn kèm rau sống và nước chấm kiểu miền Trung.",
+    "restaurants": [
+      {
+        "name": "Bánh Xèo Bà Dưỡng",
+        "address": "K280/23 Hoàng Diệu, Hải Châu, Đà Nẵng",
+        "priceLevel": "medium",
+        "note": "Rất đông khách, nên đi nhóm nhỏ hoặc tránh giờ cao điểm."
+      }
+    ],
+    "approxPricePerPerson": 60000,
+    "currency": "VND",
+    "tags": ["banh xeo", "da nang", "street food"]
+  },
+  {
+    "id": "food-hcm-1",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "dishName": "Bánh mì Sài Gòn",
+    "summary": "Ổ bánh mì pate – chả – jambon đầy ú, đặc trưng Sài Gòn.",
+    "restaurants": [
+      {
+        "name": "Bánh Mì Huỳnh Hoa",
+        "address": "26–32 Lê Thị Riêng, P. Bến Thành, Quận 1, TP. HCM",
+        "priceLevel": "high",
+        "note": "Rất nổi tiếng, giá cao hơn mặt bằng chung nhưng nhân rất nhiều."
+      }
+    ],
+    "approxPricePerBanhMi": 65000,
+    "currency": "VND",
+    "tags": ["banh mi", "saigon", "street food"]
+  },
+  {
+    "id": "food-hcm-2",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "dishName": "Cơm tấm sườn bì chả",
+    "summary": "Cơm tấm với sườn nướng to, bì, chả trứng – món ăn “quốc dân” của Sài Gòn.",
+    "restaurants": [
+      {
+        "name": "Cơm Tấm Ba Ghiền",
+        "address": "84 Đặng Văn Ngữ, P. 10, Phú Nhuận, TP. HCM",
+        "priceLevel": "medium",
+        "note": "Nổi tiếng với miếng sườn rất to, được nhiều food blogger review."
+      }
+    ],
+    "approxPricePerPlate": 90000,
+    "currency": "VND",
+    "tags": ["com tam", "saigon", "street food"]
+  },
+  {
+    "id": "food-dalat-1",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Bánh tráng nướng Đà Lạt",
+    "summary": "“Pizza Đà Lạt” với trứng, xúc xích, hành lá, phô mai, nướng giòn trên than.",
+    "restaurants": [
+      {
+        "name": "Quầy bánh tráng nướng – Chợ đêm Đà Lạt",
+        "address": "Khu chợ đêm Đà Lạt, đường Nguyễn Thị Minh Khai, P.1, Đà Lạt",
+        "priceLevel": "low",
+        "note": "Rất nhiều quầy, có thể gọi thêm phô mai, thịt xông khói."
+      }
+    ],
+    "approxPricePerPiece": 30000,
+    "currency": "VND",
+    "tags": ["banh trang nuong", "da lat", "night market", "street food"]
+  },
+  {
+    "id": "food-dalat-2",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Lẩu gà lá é",
+    "summary": "Lẩu gà nóng với lá é thơm the, ăn rất hợp với thời tiết se lạnh Đà Lạt.",
+    "restaurants": [
+      {
+        "name": "Lẩu Gà Lá É Tao Ngộ",
+        "address": "27 Lê Đại Hành, Đà Lạt",
+        "priceLevel": "medium",
+        "note": "Đi đông người gọi nồi lớn sẽ tiết kiệm hơn."
+      }
+    ],
+    "approxPricePerPot": 250000,
+    "currency": "VND",
+    "tags": ["lau ga la e", "da lat", "hotpot"]
+  },
+  {
+    "id": "food-cantho-1",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Nem nướng Cần Thơ",
+    "summary": "Nem nướng ăn kèm bánh hỏi, rau sống, chấm nước mắm chua ngọt.",
+    "restaurants": [
+      {
+        "name": "Nem Nướng Thanh Vân",
+        "address": "17 Hòa Bình, Tân An, Ninh Kiều, Cần Thơ",
+        "priceLevel": "medium",
+        "note": "Quán lâu đời nổi tiếng tại trung tâm Ninh Kiều."
+      }
+    ],
+    "approxPricePerPerson": 70000,
+    "currency": "VND",
+    "tags": ["nem nuong", "can tho", "street food"]
+  },
+  {
+    "id": "food-cantho-2",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Bún riêu ghe trên chợ nổi Cái Răng",
+    "summary": "Bún riêu ghe bán trên thuyền, trải nghiệm ăn sáng ngay giữa chợ nổi.",
+    "restaurants": [
+      {
+        "name": "Ghe bún riêu chợ nổi Cái Răng",
+        "address": "Khu vực chợ nổi Cái Răng, Cần Thơ (ăn trên thuyền)",
+        "priceLevel": "low",
+        "note": "Nên đi tour sớm (khoảng 5–7h sáng) để ăn khi còn nóng."
+      }
+    ],
+    "approxPricePerBowl": 40000,
+    "currency": "VND",
+    "tags": ["bun rieu", "cai rang", "floating market", "can tho"]
+  },
+
+
+  {
+    "id": "food-angiang-1",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Bún cá Long Xuyên",
+    "summary": "Bún cá đặc sản An Giang, nước dùng từ cá lóc, vị ngọt thanh, ăn kèm rau sống miền Tây.",
+    "restaurants": [
+      {
+        "name": "Bún Cá Cô Hai Long Xuyên",
+        "address": "52A Nguyễn Thái Học, TP. Long Xuyên, An Giang",
+        "priceLevel": "low",
+        "note": "Quán bún cá địa phương nổi tiếng, nước dùng đậm đà, nên đi sớm vì khá đông khách."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun ca", "an giang", "long xuyen", "specialty"]
+  },
+  {
+    "id": "food-angiang-2",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Bún cá Châu Đốc",
+    "summary": "Đặc sản bún cá Châu Đốc, nước lèo vàng óng từ nghệ, cá lóc tươi, ăn kèm rau sống phong phú.",
+    "restaurants": [
+      {
+        "name": "Bún Cá Dì Lệ",
+        "address": "Đường Lê Công Thành, TP. Châu Đốc, An Giang",
+        "priceLevel": "low",
+        "note": "Quán được người địa phương yêu thích, bán sáng đến tối, giá mềm."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun ca", "chau doc", "an giang", "street food"]
+  },
+  {
+    "id": "food-angiang-3",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Cơm tấm Long Xuyên",
+    "summary": "Cơm tấm Long Xuyên – đặc sản An Giang với hạt tấm nhuyễn, nước mắm sánh đậm, topping phong phú.",
+    "restaurants": [
+      {
+        "name": "Cơm Tấm Cây Điệp",
+        "address": "67 Lý Tự Trọng, P. Mỹ Long, TP. Long Xuyên, An Giang",
+        "priceLevel": "low",
+        "note": "Quán cơm tấm lâu đời, giá bình dân, được dân địa phương ưa chuộng."
+      }
+    ],
+    "approxPricePerPlate": 35000,
+    "currency": "VND",
+    "tags": ["com tam", "long xuyen", "an giang", "specialty"]
+  },
+  {
+    "id": "food-angiang-4",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Cơm tấm Long Xuyên – Ống Khói",
+    "summary": "Phiên bản cơm tấm Long Xuyên với thịt nướng thơm, nước mắm đậm, được nhiều review khen.",
+    "restaurants": [
+      {
+        "name": "Cơm Tấm 8 Diệu (Ống Khói)",
+        "address": "200 Đặng Dung, P. Mỹ Long, TP. Long Xuyên, An Giang",
+        "priceLevel": "low",
+        "note": "Quán nổi tiếng, thịt ướp mật ong nướng rất thơm, giá dễ chịu."
+      }
+    ],
+    "approxPricePerPlate": 30000,
+    "currency": "VND",
+    "tags": ["com tam", "long xuyen", "an giang", "street food"]
+  },
+  {
+    "id": "food-hanoi-1",
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "dishName": "Phở bò Hà Nội",
+    "summary": "Món phở bò nước trong, thơm mùi quế hồi, đặc trưng thủ đô.",
+    "restaurants": [
+      {
+        "name": "Phở Bát Đàn",
+        "address": "49 Bát Đàn, Hoàn Kiếm, Hà Nội",
+        "priceLevel": "medium",
+        "note": "Xếp hàng tự phục vụ, đông vào buổi sáng."
+      }
+    ],
+    "approxPricePerBowl": 40000,
+    "currency": "VND",
+    "tags": ["pho", "ha noi", "pho bo", "breakfast"]
+  },
+  {
+    "id": "food-hanoi-2",
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "dishName": "Bún chả Hà Nội",
+    "summary": "Thịt nướng than hoa ăn kèm bún, rau sống và nước mắm chua ngọt.",
+    "restaurants": [
+      {
+        "name": "Bún Chả Hương Liên",
+        "address": "24 Lê Văn Hưu, Hai Bà Trưng, Hà Nội",
+        "priceLevel": "medium",
+        "note": "Nổi tiếng từng đón Tổng thống Mỹ Obama."
+      }
+    ],
+    "approxPricePerPerson": 70000,
+    "currency": "VND",
+    "tags": ["bun cha", "ha noi", "grilled pork"]
+  },
+  {
+    "id": "food-hanoi-3",
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "dishName": "Bún thang",
+    "summary": "Bún với nước dùng trong, trứng, gà xé, giò lụa, tôm khô.",
+    "restaurants": [
+      {
+        "name": "Bún Thang Cầu Gỗ",
+        "address": "32 Cầu Gỗ, Hoàn Kiếm, Hà Nội",
+        "priceLevel": "medium",
+        "note": "Món thanh nhẹ, hợp ăn sáng."
+      }
+    ],
+    "approxPricePerBowl": 45000,
+    "currency": "VND",
+    "tags": ["bun thang", "ha noi", "traditional"]
+  },
+
+  {
+    "id": "food-hcm-1",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "dishName": "Bánh mì Sài Gòn",
+    "summary": "Ổ bánh mì pate – chả – jambon đầy ú, đặc trưng Sài Gòn.",
+    "restaurants": [
+      {
+        "name": "Bánh Mì Huỳnh Hoa",
+        "address": "26–32 Lê Thị Riêng, P. Bến Thành, Quận 1, TP. HCM",
+        "priceLevel": "high",
+        "note": "Rất nổi tiếng, giá cao hơn mặt bằng chung nhưng nhân rất nhiều."
+      }
+    ],
+    "approxPricePerBanhMi": 65000,
+    "currency": "VND",
+    "tags": ["banh mi", "saigon", "street food"]
+  },
+  {
+    "id": "food-hcm-2",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "dishName": "Cơm tấm sườn bì chả",
+    "summary": "Cơm tấm với sườn nướng to, bì, chả trứng – món ăn “quốc dân” của Sài Gòn.",
+    "restaurants": [
+      {
+        "name": "Cơm Tấm Ba Ghiền",
+        "address": "84 Đặng Văn Ngữ, P. 10, Phú Nhuận, TP. HCM",
+        "priceLevel": "medium",
+        "note": "Nổi tiếng với miếng sườn rất to, được nhiều food blogger review."
+      }
+    ],
+    "approxPricePerPlate": 90000,
+    "currency": "VND",
+    "tags": ["com tam", "saigon", "street food"]
+  },
+  {
+    "id": "food-hcm-3",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "dishName": "Hủ tiếu gõ",
+    "summary": "Hủ tiếu nước hoặc khô, bán trên xe đẩy, quen thuộc với người Sài Gòn.",
+    "restaurants": [
+      {
+        "name": "Hủ Tiếu Gõ Hẻm 284",
+        "address": "Hẻm 284 Lê Văn Sỹ, Quận 3, TP. HCM",
+        "priceLevel": "low",
+        "note": "Phù hợp ăn khuya, giá bình dân."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["hu tieu", "saigon", "night food"]
+  },
+
+  {
+    "id": "food-danang-1",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "dishName": "Bún chả cá Đà Nẵng",
+    "summary": "Món bún với chả cá biển, nước dùng thanh, hơi cay nhẹ, đặc trưng Đà Nẵng.",
+    "restaurants": [
+      {
+        "name": "Bún Chả Cá 109",
+        "address": "109 Nguyễn Chí Thanh, Hải Châu, Đà Nẵng",
+        "priceLevel": "medium",
+        "note": "Quán địa phương nổi tiếng, nên đi sớm để tránh hết chả cá."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun cha ca", "da nang", "seafood", "breakfast"]
+  },
+  {
+    "id": "food-danang-2",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "dishName": "Bánh xèo Đà Nẵng",
+    "summary": "Bánh xèo vỏ mỏng, nhân tôm thịt, ăn kèm rau sống và nước chấm kiểu miền Trung.",
+    "restaurants": [
+      {
+        "name": "Bánh Xèo Bà Dưỡng",
+        "address": "K280/23 Hoàng Diệu, Hải Châu, Đà Nẵng",
+        "priceLevel": "medium",
+        "note": "Rất đông khách, nên đi nhóm nhỏ hoặc tránh giờ cao điểm."
+      }
+    ],
+    "approxPricePerPerson": 60000,
+    "currency": "VND",
+    "tags": ["banh xeo", "da nang", "street food"]
+  },
+  {
+    "id": "food-danang-3",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "dishName": "Mì Quảng Đà Nẵng",
+    "summary": "Mì Quảng với tôm, thịt, trứng cút, ăn kèm rau sống và bánh tráng.",
+    "restaurants": [
+      {
+        "name": "Mì Quảng Bà Mua",
+        "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+        "priceLevel": "medium",
+        "note": "Thực đơn đa dạng, có nhiều loại mì Quảng."
+      }
+    ],
+    "approxPricePerBowl": 40000,
+    "currency": "VND",
+    "tags": ["mi quang", "da nang", "noodles"]
+  },
+
+  {
+    "id": "food-hue-1",
+    "city": "Hue",
+    "country": "Vietnam",
+    "dishName": "Bún bò Huế",
+    "summary": "Đặc sản trứ danh của Huế với nước dùng thơm sả, đậm vị, ăn kèm chả bò, giò heo và rau sống.",
+    "restaurants": [
+      {
+        "name": "Bún Bò Mệ Kéo",
+        "address": "20 Bạch Đằng, Phường Phú Cát, TP. Huế",
+        "priceLevel": "medium",
+        "note": "Quán lâu đời, bán từ sáng sớm, nước dùng đậm chất Huế."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun bo", "hue", "noodle", "specialty"]
+  },
+  {
+    "id": "food-hue-2",
+    "city": "Hue",
+    "country": "Vietnam",
+    "dishName": "Bánh bèo – Nậm – Lọc",
+    "summary": "Combo bánh truyền thống Huế gồm bánh bèo, bánh nậm và bánh lọc với tôm thịt đậm đà.",
+    "restaurants": [
+      {
+        "name": "Bánh Bèo – Nậm – Lọc Bà Đỏ",
+        "address": "8 Nguyễn Bỉnh Khiêm, TP. Huế",
+        "priceLevel": "low",
+        "note": "Phần bánh đa dạng, nước mắm pha chuẩn vị Huế, giá rất mềm."
+      }
+    ],
+    "approxPricePerServing": 30000,
+    "currency": "VND",
+    "tags": ["banh beo", "banh loc", "hue", "street food"]
+  },
+  {
+    "id": "food-hue-3",
+    "city": "Hue",
+    "country": "Vietnam",
+    "dishName": "Cơm hến",
+    "summary": "Cơm trộn với hến xào, tóp mỡ, rau sống và nước mắm ruốc – món ăn dân dã đậm chất Huế.",
+    "restaurants": [
+      {
+        "name": "Cơm Hến Hoa Đông",
+        "address": "64 Kiệt 7 Ưng Bình, Vĩ Dạ, Huế",
+        "priceLevel": "low",
+        "note": "Một trong những quán cơm hến ngon nổi tiếng, vị đậm – mắm ruốc đặc trưng Huế."
+      }
+    ],
+    "approxPricePerBowl": 15000,
+    "currency": "VND",
+    "tags": ["com hen", "hue", "local food"]
+  },
+  {
+    "id": "food-hue-4",
+    "city": "Hue",
+    "country": "Vietnam",
+    "dishName": "Bánh khoái Huế",
+    "summary": "Bánh khoái với vỏ giòn, nhân tôm – thịt – giá, ăn kèm rau sống và nước lèo đậu phộng đặc trưng.",
+    "restaurants": [
+      {
+        "name": "Bánh Khoái Hồng Mai",
+        "address": "110 Đinh Tiên Hoàng, TP. Huế",
+        "priceLevel": "medium",
+        "note": "Nước lèo ngon, bánh giòn, topping đầy đặn – chuẩn vị."
+      }
+    ],
+    "approxPricePerServing": 40000,
+    "currency": "VND",
+    "tags": ["banh khoai", "hue", "street food"]
+  },
+  {
+    "id": "food-hue-5",
+    "city": "Hue",
+    "country": "Vietnam",
+    "dishName": "Chè Huế",
+    "summary": "Huế nổi tiếng với hơn 20 loại chè như chè bột lọc heo quay, chè đậu đỏ, chè hạt sen, chè khoai môn.",
+    "restaurants": [
+      {
+        "name": "Chè Hẻm",
+        "address": "1 Kiệt 29 Hùng Vương, TP. Huế",
+        "priceLevel": "low",
+        "note": "Nhiều loại chè đặc trưng, vị ngọt vừa, quán đông vào buổi tối."
+      }
+    ],
+    "approxPricePerCup": 15000,
+    "currency": "VND",
+    "tags": ["che hue", "dessert", "hue", "street food"]
+  },
+
+ {
+    "id": "food-haiphong-1",
+    "city": "Hai Phong",
+    "country": "Vietnam",
+    "dishName": "Bánh đa cua Bà Cụ",
+    "summary": "Tô bánh đa cua chuẩn vị Hải Phòng với nước dùng từ cua đồng, topping đa dạng như chả lá lốt, chả cá, tôm, thịt.",
+    "restaurants": [
+      {
+        "name": "Bánh Đa Cua Bà Cụ",
+        "address": "179 Cầu Đất, Ngô Quyền, Hải Phòng",
+        "priceLevel": "medium",
+        "note": "Quán lâu đời rất nổi tiếng, nên đi sớm vì thường đông khách và dễ hết topping."
+      }
+    ],
+    "approxPricePerBowl": 40000,
+    "currency": "VND",
+    "tags": [
+      "banh da cua",
+      "hai phong",
+      "specialty",
+      "noodle",
+      "breakfast"
+    ]
+  },
+  {
+    "id": "food-haiphong-2",
+    "city": "Hai Phong",
+    "country": "Vietnam",
+    "dishName": "Nem cua bể Thuận Yến",
+    "summary": "Nem cua bể cuốn vuông, chiên vàng giòn, nhân cua bể, tôm, thịt và rau củ, ăn kèm rau sống và nước mắm chua ngọt.",
+    "restaurants": [
+      {
+        "name": "Nem Cua Bể Thuận Yến",
+        "address": "88 Trần Nhật Duật, Ngô Quyền, Hải Phòng",
+        "priceLevel": "medium",
+        "note": "Quán nem cua bể nổi tiếng ở trung tâm, nem đầy đặn, nước chấm đậm đà."
+      }
+    ],
+    "approxPricePerServing": 70000,
+    "currency": "VND",
+    "tags": [
+      "nem cua be",
+      "hai phong",
+      "seafood",
+      "specialty"
+    ]
+  },
+  {
+    "id": "food-haiphong-3",
+    "city": "Hai Phong",
+    "country": "Vietnam",
+    "dishName": "Bánh mì que cay Hải Phòng",
+    "summary": "Ổ bánh mì que nhỏ, giòn, pate đậm và tương ớt cay đặc trưng, ăn vặt rất nổi tiếng ở Hải Phòng.",
+    "restaurants": [
+      {
+        "name": "Bánh Mì Cay Hai Bà Trưng",
+        "address": "19 Hai Bà Trưng, Lê Chân, Hải Phòng",
+        "priceLevel": "low",
+        "note": "Quán bánh mì cay được nhiều review, giá rẻ, phù hợp ăn vặt hoặc mua làm quà."
+      }
+    ],
+    "approxPricePerBanhMi": 10000,
+    "currency": "VND",
+    "tags": [
+      "banh mi que",
+      "banh mi cay",
+      "hai phong",
+      "street food",
+      "snack"
+    ]
+  },
+  {
+    "id": "food-haiphong-4",
+    "city": "Hai Phong",
+    "country": "Vietnam",
+    "dishName": "Ốc Hải Phòng",
+    "summary": "Các loại ốc luộc, xào, hấp với nước chấm chua ngọt cay, là món ăn vặt nổi tiếng khi foodtour Hải Phòng.",
+    "restaurants": [
+      {
+        "name": "Hương Ốc",
+        "address": "274 Hàng Kênh, Lê Chân, Hải Phòng",
+        "priceLevel": "medium",
+        "note": "Quán ốc được nhiều bài review giới thiệu, menu đa dạng, phù hợp đi nhóm bạn."
+      }
+    ],
+    "approxPricePerPerson": 120000,
+    "currency": "VND",
+    "tags": [
+      "oc",
+      "seafood",
+      "hai phong",
+      "street food",
+      "night food"
+    ]
+  },
+    {
+    "id": "food-quangninh-1",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Chả mực Hạ Long",
+    "summary": "Đặc sản trứ danh Quảng Ninh, chả mực giã tay dai giòn, thơm mùi mực tươi.",
+    "restaurants": [
+      {
+        "name": "Chả Mực Hạ Long - Bà Béo",
+        "address": "Số 36 Cao Thắng, TP. Hạ Long, Quảng Ninh",
+        "priceLevel": "high",
+        "note": "Nổi tiếng nhiều năm, chuyên chả mực giã tay chuẩn vị."
+      }
+    ],
+    "approxPricePerKg": 450000,
+    "currency": "VND",
+    "tags": ["cha muc", "quang ninh", "ha long", "seafood"]
+  },
+  {
+    "id": "food-quangninh-2",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Sam biển Quảng Yên",
+    "summary": "Món sam biển chế biến thành nhiều món như sam xào, sam trộn gỏi, sam nướng.",
+    "restaurants": [
+      {
+        "name": "Quán Sam Quảng Yên",
+        "address": "Phường Yên Hải, Thị xã Quảng Yên, Quảng Ninh",
+        "priceLevel": "medium",
+        "note": "Món sam đặc biệt, khó tìm ở nơi khác."
+      }
+    ],
+    "approxPricePerPlate": 120000,
+    "currency": "VND",
+    "tags": ["sam bien", "quang yen", "seafood", "quang ninh"]
+  },
+  {
+    "id": "food-quangninh-3",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Sá sùng Vân Đồn",
+    "summary": "Sá sùng khô dùng nấu nước dùng ngọt thanh hoặc xào tỏi cực thơm.",
+    "restaurants": [
+      {
+        "name": "Hải Sản Sá Sùng Vân Đồn",
+        "address": "Xã Quan Lạn, Huyện Vân Đồn, Quảng Ninh",
+        "priceLevel": "high",
+        "note": "Đặc sản cao cấp, giá cao vì đánh bắt khó."
+      }
+    ],
+    "approxPricePerKg": 3000000,
+    "currency": "VND",
+    "tags": ["sa sung", "van don", "quang ninh", "seafood"]
+  },
+  {
+    "id": "food-quangninh-4",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Ngán biển",
+    "summary": "Ngán biển có thể chế biến thành rượu ngán, cháo ngán, ngán nướng hoặc ngán hấp.",
+    "restaurants": [
+      {
+        "name": "Hải Sản Làng Chài Cửa Vạn",
+        "address": "Bến tàu du lịch Bãi Cháy, Hạ Long, Quảng Ninh",
+        "priceLevel": "medium",
+        "note": "Quán chuyên hải sản tươi, có phục vụ các món từ ngán."
+      }
+    ],
+    "approxPricePerDish": 150000,
+    "currency": "VND",
+    "tags": ["ngan bien", "ha long", "quang ninh", "seafood"]
+  },
+  {
+    "id": "food-quangninh-5",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Ruốc lỗ Tiên Yên",
+    "summary": "Món ruốc biển được làm từ con ruốc nhỏ, xào lên ăn rất đưa cơm.",
+    "restaurants": [
+      {
+        "name": "Đặc Sản Tiên Yên",
+        "address": "Huyện Tiên Yên, Quảng Ninh",
+        "priceLevel": "low",
+        "note": "Ruốc lỗ là món đặc trưng ít nơi có."
+      }
+    ],
+    "approxPricePerJar": 50000,
+    "currency": "VND",
+    "tags": ["ruoc lo", "tien yen", "quang ninh"]
+  },
+  {
+    "id": "food-quangninh-6",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Gà Tiên Yên",
+    "summary": "Gà đồi Tiên Yên được nuôi tự nhiên, thịt chắc, da vàng óng.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Gà Tiên Yên A Phủ",
+        "address": "Quốc lộ 18C, Huyện Tiên Yên, Quảng Ninh",
+        "priceLevel": "medium",
+        "note": "Gà quay mật ong rất nổi tiếng."
+      }
+    ],
+    "approxPricePerHalfChicken": 180000,
+    "currency": "VND",
+    "tags": ["ga tien yen", "quang ninh", "specialty"]
+  },
+  {
+    "id": "food-quangninh-7",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Bánh gật gù Tiên Yên",
+    "summary": "Bánh cuốn dạng dài mềm mịn, ăn với nước chấm pha mỡ gà rất ngon.",
+    "restaurants": [
+      {
+        "name": "Bánh Gật Gù Tiên Yên – Quán Cô Sáu",
+        "address": "Thị trấn Tiên Yên, Quảng Ninh",
+        "priceLevel": "low",
+        "note": "Món dân dã nhưng rất đáng thử."
+      }
+    ],
+    "approxPricePerServing": 20000,
+    "currency": "VND",
+    "tags": ["banh gat gu", "tien yen", "quang ninh", "street food"]
+  },
+  {
+    "id": "food-quangninh-8",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "dishName": "Tu hài Quảng Ninh",
+    "summary": "Tu hài nướng mỡ hành, hấp sả hoặc ăn sống với chanh – thịt ngọt, giòn dai.",
+    "restaurants": [
+      {
+        "name": "Nhà hàng Hồng Hạnh 3",
+        "address": "50 Hạ Long, Bãi Cháy, TP. Hạ Long",
+        "priceLevel": "high",
+        "note": "Một trong những nhà hàng hải sản nổi tiếng nhất Hạ Long."
+      }
+    ],
+    "approxPricePerKg": 450000,
+    "currency": "VND",
+    "tags": ["tu hai", "ha long", "quang ninh", "seafood"]
+  },
+
+   {
+    "id": "food-ninhbinh-1",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Cơm cháy Ninh Bình",
+    "summary": "Món cơm cháy giòn rụm ăn kèm sốt dê hoặc sốt chà bông đặc trưng.",
+    "restaurants": [
+      {
+        "name": "Cơm Cháy Dũng Phố Núi",
+        "address": "Số 28 Vân Giang, TP. Ninh Bình",
+        "priceLevel": "medium",
+        "note": "Cơm cháy giòn, sốt dê đậm vị."
+      }
+    ],
+    "approxPricePerPack": 40000,
+    "currency": "VND",
+    "tags": ["com chay", "ninh binh", "specialty"]
+  },
+  {
+    "id": "food-ninhbinh-2",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Thịt dê núi",
+    "summary": "Đặc sản nổi tiếng, dê núi săn chắc, chế biến thành tái chanh, hấp, nướng, xào lăn.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Thăng Long",
+        "address": "Số 35 Đinh Tiên Hoàng, TP. Ninh Bình",
+        "priceLevel": "high",
+        "note": "Một trong những quán dê nổi tiếng nhất Ninh Bình."
+      }
+    ],
+    "approxPricePerDish": 150000,
+    "currency": "VND",
+    "tags": ["de nui", "ninh binh", "meat", "specialty"]
+  },
+  {
+    "id": "food-ninhbinh-3",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Miến lươn Ninh Bình",
+    "summary": "Miến lươn dai, lươn chiên giòn hoặc xào mềm, nước dùng thơm đậm vị.",
+    "restaurants": [
+      {
+        "name": "Miến Lươn Bà Phấn",
+        "address": "Số 999 Trần Hưng Đạo, TP. Ninh Bình",
+        "priceLevel": "medium",
+        "note": "Lươn chiên giòn đặc biệt, nước dùng thanh."
+      }
+    ],
+    "approxPricePerBowl": 40000,
+    "currency": "VND",
+    "tags": ["mien luon", "ninh binh", "noodles"]
+  },
+  {
+    "id": "food-ninhbinh-4",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Gỏi cá nhệch",
+    "summary": "Món gỏi nổi tiếng từ cá nhệch tươi, ăn kèm nước chấm 'chẻo' đặc trưng.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Cá Nhệch Gia Truyền",
+        "address": "Gia Viễn, Ninh Bình",
+        "priceLevel": "medium",
+        "note": "Nước chấm chẻo chuẩn vị vùng ven biển Ninh Bình."
+      }
+    ],
+    "approxPricePerPlate": 120000,
+    "currency": "VND",
+    "tags": ["goi ca", "ca nhech", "ninh binh", "seafood"]
+  },
+  {
+    "id": "food-ninhbinh-5",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Ốc núi Ninh Bình",
+    "summary": "Ốc núi sống tự nhiên, thịt giòn ngọt, chế biến hấp, xào sả ớt hoặc nướng.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Hoàng Giang",
+        "address": "Thung Nham, Ninh Hải, Hoa Lư, Ninh Bình",
+        "priceLevel": "high",
+        "note": "Có ốc núi theo mùa, nên hỏi trước."
+      }
+    ],
+    "approxPricePerPlate": 150000,
+    "currency": "VND",
+    "tags": ["oc nui", "ninh binh", "specialty"]
+  },
+  {
+    "id": "food-ninhbinh-6",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Bún mọc Kim Sơn",
+    "summary": "Bún mọc với mọc thịt heo chuẩn vị Kim Sơn, nước dùng trong ngọt thanh.",
+    "restaurants": [
+      {
+        "name": "Bún Mọc Kim Sơn – Cô Hương",
+        "address": "Kim Sơn, Ninh Bình",
+        "priceLevel": "low",
+        "note": "Quán địa phương, vị rất truyền thống."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun moc", "kim son", "ninh binh", "noodles"]
+  },
+  {
+    "id": "food-ninhbinh-7",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Bánh đa cá rô",
+    "summary": "Bánh đa đỏ ăn kèm cá rô đồng chiên giòn, nước dùng đậm đà.",
+    "restaurants": [
+      {
+        "name": "Bánh Đa Cá Rô – Cô Tuyết",
+        "address": "TP. Ninh Bình",
+        "priceLevel": "low",
+        "note": "Cá rô chiên giòn rất ngon."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["banh da", "ca ro", "ninh binh", "noodles"]
+  },
+  {
+    "id": "food-ninhbinh-8",
+    "city": "Ninh Binh",
+    "country": "Vietnam",
+    "dishName": "Rượu Kim Sơn",
+    "summary": "Rượu nếp nổi tiếng Kim Sơn, thơm nồng, men truyền thống.",
+    "restaurants": [
+      {
+        "name": "Làng Rượu Kim Sơn",
+        "address": "Kim Sơn, Ninh Bình",
+        "priceLevel": "medium",
+        "note": "Rượu thủ công truyền thống."
+      }
+    ],
+    "approxPricePerBottle": 70000,
+    "currency": "VND",
+    "tags": ["ruou kim son", "specialty", "ninh binh"]
+  }
+,
+
+  {
+    "id": "food-laocai-1",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Thịt lợn cắp nách",
+    "summary": "Lợn được nuôi thả tự nhiên, thịt thơm và săn chắc, nướng than là ngon nhất.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng A Phủ",
+        "address": "15 Fansipan, Sa Pa, Lào Cai",
+        "priceLevel": "high",
+        "note": "Đặc sản nổi tiếng Sa Pa, đông khách du lịch."
+      }
+    ],
+    "approxPricePerDish": 180000,
+    "currency": "VND",
+    "tags": ["lon cap nach", "sapa", "bbq", "specialty"]
+  },
+  {
+    "id": "food-laocai-2",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Cá hồi Sa Pa",
+    "summary": "Cá hồi nuôi ở vùng lạnh Sa Pa, thịt săn chắc, dùng làm sashimi, lẩu hoặc nướng.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Quỳnh Anh",
+        "address": "Lầu 2, 015 Xuân Viên, Sa Pa, Lào Cai",
+        "priceLevel": "high",
+        "note": "Lẩu cá hồi là món nổi tiếng nhất."
+      }
+    ],
+    "approxPricePerPot": 350000,
+    "currency": "VND",
+    "tags": ["ca hoi", "sapa", "hotpot", "seafood"]
+  },
+  {
+    "id": "food-laocai-3",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Gà bản nướng",
+    "summary": "Gà đồi Sa Pa nướng mật ong, da giòn, thịt chắc và ngọt.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Hoa Đào",
+        "address": "48 Lương Đình Của, Sa Pa",
+        "priceLevel": "medium",
+        "note": "Gà bản chuẩn vị, nên gọi trước."
+      }
+    ],
+    "approxPricePerChicken": 250000,
+    "currency": "VND",
+    "tags": ["ga ban", "ninh nuong", "sapa", "bbq"]
+  },
+  {
+    "id": "food-laocai-4",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Thắng cố",
+    "summary": "Món truyền thống của người Mông, nấu từ thịt ngựa cùng nhiều gia vị đặc trưng.",
+    "restaurants": [
+      {
+        "name": "Quán Thắng Cố A Páo",
+        "address": "Tổ 3, thị trấn Sa Pa",
+        "priceLevel": "medium",
+        "note": "Vị mạnh – hợp với người thích món truyền thống núi rừng."
+      }
+    ],
+    "approxPricePerBowl": 45000,
+    "currency": "VND",
+    "tags": ["thang co", "sapa", "mong", "soup"]
+  },
+  {
+    "id": "food-laocai-5",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Lẩu cá tầm",
+    "summary": "Cá tầm tươi từ vùng núi, thịt chắc, ít tanh, nấu lẩu chua cay.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Fansipan Terrace",
+        "address": "67 Fansipan, Sa Pa",
+        "priceLevel": "high",
+        "note": "Khung cảnh đẹp, rất hợp ăn tối."
+      }
+    ],
+    "approxPricePerPot": 300000,
+    "currency": "VND",
+    "tags": ["ca tam", "sapa", "hotpot"]
+  },
+  {
+    "id": "food-laocai-6",
+    "city": "Lao Cai",
+    "country": "Vietnam",
+    "dishName": "Xôi bảy màu",
+    "summary": "Xôi của người Nùng, 7 màu tự nhiên từ lá rừng, thơm dẻo.",
+    "restaurants": [
+      {
+        "name": "Chợ Phiên Bắc Hà",
+        "address": "Thị trấn Bắc Hà, Lào Cai",
+        "priceLevel": "low",
+        "note": "Bán nhiều vào sáng sớm."
+      }
+    ],
+    "approxPricePerPack": 20000,
+    "currency": "VND",
+    "tags": ["xoi", "bac ha", "ninh binh", "specialty"]
+  },
+
+    {
+    "id": "food-kiengiang-1",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "dishName": "Gỏi cá trích Phú Quốc",
+    "summary": "Cá trích tươi trộn hành tây, dừa nạo, chấm nước mắm Phú Quốc.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Ra Khơi",
+        "address": "131 Trần Hưng Đạo, Dương Đông, Phú Quốc",
+        "priceLevel": "medium",
+        "note": "Món gỏi cá nổi tiếng nhất Phú Quốc."
+      }
+    ],
+    "approxPricePerPlate": 150000,
+    "currency": "VND",
+    "tags": ["goi ca trich", "phu quoc", "seafood"]
+  },
+  {
+    "id": "food-kiengiang-2",
+    "city": "Ha Tien",
+    "country": "Vietnam",
+    "dishName": "Bún kèn Hà Tiên",
+    "summary": "Bún nấu từ cá nhồng/cá ngân xay, màu vàng nghệ, vị béo thơm.",
+    "restaurants": [
+      {
+        "name": "Bún Kèn Dì Thu",
+        "address": "42 Trần Hưng Đạo, Hà Tiên",
+        "priceLevel": "low",
+        "note": "Gia vị chuẩn người Hà Tiên."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun ken", "ha tien", "noodles"]
+  },
+  {
+    "id": "food-kiengiang-3",
+    "city": "Rach Gia",
+    "country": "Vietnam",
+    "dishName": "Bún cá Rạch Giá",
+    "summary": "Nước lèo vàng tươi, cá lóc đồng, ăn kèm rau sống miền Tây.",
+    "restaurants": [
+      {
+        "name": "Bún Cá 339",
+        "address": "339 Nguyễn Trung Trực, Rạch Giá",
+        "priceLevel": "low",
+        "note": "Quán lâu đời, nước lèo thơm."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun ca", "rach gia", "kien giang"]
+  },
+  {
+    "id": "food-kiengiang-4",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "dishName": "Bánh canh ghẹ",
+    "summary": "Ghẹ tươi bóc thịt, nước dùng ngọt thanh, sợi bánh canh mềm.",
+    "restaurants": [
+      {
+        "name": "Bánh Canh Ghẹ Quốc Anh",
+        "address": "30-4, Dương Đông, Phú Quốc",
+        "priceLevel": "medium",
+        "note": "Ghẹ chắc thịt, đông khách buổi sáng."
+      }
+    ],
+    "approxPricePerBowl": 60000,
+    "currency": "VND",
+    "tags": ["banh canh ghe", "phu quoc", "seafood"]
+  },
+  {
+    "id": "food-kiengiang-5",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "dishName": "Nhum biển nướng mỡ hành",
+    "summary": "Hấp/nướng mỡ hành, vị béo ngọt, đặc sản biển Kiên Giang.",
+    "restaurants": [
+      {
+        "name": "Làng Chài Hàm Ninh",
+        "address": "Hàm Ninh, Phú Quốc",
+        "priceLevel": "medium",
+        "note": "Nhum tươi theo mùa."
+      }
+    ],
+    "approxPricePerPiece": 40000,
+    "currency": "VND",
+    "tags": ["nhum", "phu quoc", "seafood"]
+  },
+  {
+    "id": "food-kiengiang-6",
+    "city": "Phu Quoc",
+    "country": "Vietnam",
+    "dishName": "Hải sản nướng Hàm Ninh",
+    "summary": "Khu làng chài nổi tiếng với hải sản tươi sống giá rẻ.",
+    "restaurants": [
+      {
+        "name": "Quán Ghẹ Hàm Ninh",
+        "address": "Làng Chài Hàm Ninh, Phú Quốc",
+        "priceLevel": "medium",
+        "note": "Nổi tiếng với ghẹ Hàm Ninh đỏ tươi."
+      }
+    ],
+    "approxPricePerDish": 120000,
+    "currency": "VND",
+    "tags": ["hai san", "ham ninh", "phu quoc"]
+  },
+
+   {
+    "id": "food-dalat-3",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Bánh ướt lòng gà",
+    "summary": "Món đặc sản độc đáo của Đà Lạt: bánh ướt ăn với lòng gà xé, nước mắm chua ngọt.",
+    "restaurants": [
+      {
+        "name": "Bánh Ướt Lòng Gà Long",
+        "address": "Số 202 Phan Đình Phùng, Đà Lạt",
+        "priceLevel": "medium",
+        "note": "Quán nổi tiếng nhất Đà Lạt, thường đông khách."
+      }
+    ],
+    "approxPricePerPlate": 40000,
+    "currency": "VND",
+    "tags": ["banh uot long ga", "da lat", "specialty"]
+  },
+  {
+    "id": "food-dalat-4",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Sữa đậu nành nóng",
+    "summary": "Đồ uống quen thuộc buổi tối Đà Lạt, uống nóng với bánh ngọt.",
+    "restaurants": [
+      {
+        "name": "Sữa Đậu Nành Hòa Bình",
+        "address": "Khu Hòa Bình, Đà Lạt",
+        "priceLevel": "low",
+        "note": "Mở đến khuya."
+      }
+    ],
+    "approxPricePerCup": 10000,
+    "currency": "VND",
+    "tags": ["sua dau nanh", "da lat", "drinks"]
+  },
+  {
+    "id": "food-dalat-5",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Kem bơ Đà Lạt",
+    "summary": "Kem bơ béo mịn nổi tiếng, ăn cùng kem dừa hoặc kem sữa.",
+    "restaurants": [
+      {
+        "name": "Kem Bơ Thanh Thảo",
+        "address": "76 Nguyễn Văn Trỗi, Đà Lạt",
+        "priceLevel": "low",
+        "note": "Quán kem bơ lâu đời."
+      }
+    ],
+    "approxPricePerCup": 25000,
+    "currency": "VND",
+    "tags": ["kem bo", "da lat", "dessert"]
+  },
+  {
+    "id": "food-dalat-6",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Xắp xắp",
+    "summary": "Gỏi bò khô kiểu Đà Lạt, ăn kèm đu đủ bào và đậu phộng.",
+    "restaurants": [
+      {
+        "name": "Xắp Xắp – Chợ Đêm Đà Lạt",
+        "address": "Chợ Đêm Đà Lạt, Nguyễn Thị Minh Khai",
+        "priceLevel": "low",
+        "note": "Buổi tối rất đông."
+      }
+    ],
+    "approxPricePerPlate": 20000,
+    "currency": "VND",
+    "tags": ["xap xap", "da lat", "street food"]
+  },
+  {
+    "id": "food-dalat-7",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Nem nướng Bà Hùng",
+    "summary": "Nem nướng dai, thơm, ăn cuốn bánh tráng với rau Đà Lạt.",
+    "restaurants": [
+      {
+        "name": "Nem Nướng Bà Hùng",
+        "address": "328 Phan Đình Phùng, Đà Lạt",
+        "priceLevel": "medium",
+        "note": "Quán đông, nên đi sớm."
+      }
+    ],
+    "approxPricePerPerson": 50000,
+    "currency": "VND",
+    "tags": ["nem nuong", "da lat"]
+  },
+  {
+    "id": "food-dalat-8",
+    "city": "Da Lat",
+    "country": "Vietnam",
+    "dishName": "Lẩu bò Ba Toa",
+    "summary": "Lẩu bò đặc trưng Đà Lạt, thịt mềm, nước ngọt, hợp với khí lạnh.",
+    "restaurants": [
+      {
+        "name": "Lẩu Bò Ba Toa Quán Gỗ",
+        "address": "1/29 Hoàng Diệu, Đà Lạt",
+        "priceLevel": "medium",
+        "note": "Quán gỗ nổi tiếng nhất khu Ba Toa."
+      }
+    ],
+    "approxPricePerPot": 300000,
+    "currency": "VND",
+    "tags": ["lau bo", "da lat", "hotpot"]
+  },
+
+   {
+    "id": "food-cantho-3",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Bánh xèo Cần Thơ",
+    "summary": "Bánh xèo vỏ giòn, nhân thịt – tôm – giá, ăn kèm rau miền Tây.",
+    "restaurants": [
+      {
+        "name": "Bánh Xèo 7 Tới",
+        "address": "45 Hoàng Quốc Việt, Ninh Kiều, Cần Thơ",
+        "priceLevel": "medium",
+        "note": "Không gian rộng, bánh lớn, nhiều rau."
+      }
+    ],
+    "approxPricePerPiece": 45000,
+    "currency": "VND",
+    "tags": ["banh xeo", "can tho", "street food"]
+  },
+  {
+    "id": "food-cantho-4",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Lẩu mắm",
+    "summary": "Đặc sản miền Tây: nhiều loại rau đồng, cá, thịt, nước mắm kho đậm đà.",
+    "restaurants": [
+      {
+        "name": "Lẩu Mắm Dạ Lý",
+        "address": "89 Ba Tháng Hai, Ninh Kiều, Cần Thơ",
+        "priceLevel": "high",
+        "note": "Lẩu mắm ngon nhất Cần Thơ, rất đông khách."
+      }
+    ],
+    "approxPricePerPot": 250000,
+    "currency": "VND",
+    "tags": ["lau mam", "can tho", "hotpot"]
+  },
+  {
+    "id": "food-cantho-5",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Pizza hủ tiếu",
+    "summary": "Hủ tiếu chiên giòn như pizza, topping thịt – trứng – tương ớt.",
+    "restaurants": [
+      {
+        "name": "Pizza Hủ Tiếu Sáu Hoài",
+        "address": "210 Võ Văn Kiệt, Bình Thủy, Cần Thơ",
+        "priceLevel": "low",
+        "note": "Món độc lạ, viral trên mạng xã hội."
+      }
+    ],
+    "approxPricePerPiece": 25000,
+    "currency": "VND",
+    "tags": ["hu tieu", "can tho", "unique"]
+  },
+  {
+    "id": "food-cantho-6",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Ốc nướng tiêu",
+    "summary": "Ốc nướng than, vị cay the của tiêu, rất hợp uống bia.",
+    "restaurants": [
+      {
+        "name": "Ốc Hạt Dẻ",
+        "address": "21 Lý Tự Trọng, Ninh Kiều, Cần Thơ",
+        "priceLevel": "medium",
+        "note": "Quán ốc nổi tiếng nhất Cần Thơ."
+      }
+    ],
+    "approxPricePerDish": 70000,
+    "currency": "VND",
+    "tags": ["oc", "grill", "can tho"]
+  },
+  {
+    "id": "food-cantho-7",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Vịt nấu chao",
+    "summary": "Vịt mềm, chao béo thơm, ăn với khoai môn.",
+    "restaurants": [
+      {
+        "name": "Vịt Nấu Chao Cẩm Tú",
+        "address": "34 Lý Tự Trọng, Cần Thơ",
+        "priceLevel": "medium",
+        "note": "Hương vị chuẩn miền Tây."
+      }
+    ],
+    "approxPricePerPot": 220000,
+    "currency": "VND",
+    "tags": ["vit nau chao", "can tho", "hotpot"]
+  },
+  {
+    "id": "food-cantho-8",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "dishName": "Bánh cống",
+    "summary": "Bánh chiên giòn, nhân đậu xanh và tôm, đặc sản miền Tây.",
+    "restaurants": [
+      {
+        "name": "Bánh Cống Cô Út",
+        "address": "54/6 Lý Tự Trọng, Cần Thơ",
+        "priceLevel": "low",
+        "note": "Món ăn vặt nổi tiếng Cần Thơ."
+      }
+    ],
+    "approxPricePerPiece": 10000,
+    "currency": "VND",
+    "tags": ["banh cong", "can tho", "street food"]
+  },
+
+  {
+    "id": "food-angiang-1",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Bún cá Long Xuyên",
+    "summary": "Bún cá đặc sản An Giang, nước dùng từ cá lóc, vị ngọt thanh, ăn kèm rau sống miền Tây.",
+    "restaurants": [
+      {
+        "name": "Bún Cá Cô Hai Long Xuyên",
+        "address": "52A Nguyễn Thái Học, TP. Long Xuyên, An Giang",
+        "priceLevel": "low",
+        "note": "Quán bún cá địa phương, nên đi sớm vì khá đông khách."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun ca", "an giang", "long xuyen", "specialty"]
+  },
+  {
+    "id": "food-angiang-2",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Bún cá Châu Đốc",
+    "summary": "Đặc sản bún cá Châu Đốc, nước lèo vàng óng từ nghệ, cá lóc tươi, ăn kèm rau sống.",
+    "restaurants": [
+      {
+        "name": "Bún Cá Dì Lệ",
+        "address": "Khu vực chợ Châu Đốc, TP. Châu Đốc, An Giang",
+        "priceLevel": "low",
+        "note": "Quán bình dân, được người địa phương yêu thích."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun ca", "chau doc", "an giang", "street food"]
+  },
+  {
+    "id": "food-angiang-3",
+    "city": "An Giang",
+    "country": "Vietnam",
+    "dishName": "Cơm tấm Long Xuyên",
+    "summary": "Cơm tấm Long Xuyên với hạt tấm nhuyễn, nước mắm sánh đậm, topping phong phú.",
+    "restaurants": [
+      {
+        "name": "Cơm Tấm Cây Điệp",
+        "address": "67 Lý Tự Trọng, P. Mỹ Long, TP. Long Xuyên, An Giang",
+        "priceLevel": "low",
+        "note": "Quán cơm tấm lâu đời, giá bình dân, được dân địa phương ưa chuộng."
+      }
+    ],
+    "approxPricePerPlate": 35000,
+    "currency": "VND",
+    "tags": ["com tam", "long xuyen", "an giang", "specialty"]
+  },
+
+   {
+    "id": "food-vungtau-1",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Bánh khọt",
+    "summary": "Bánh khọt vàng giòn, tôm tươi, ăn kèm rau sống.",
+    "restaurants": [
+      {
+        "name": "Bánh Khọt Gốc Vú Sữa",
+        "address": "14 Nguyễn Trường Tộ, Vũng Tàu",
+        "priceLevel": "medium",
+        "note": "Quán nổi tiếng nhất Vũng Tàu."
+      }
+    ],
+    "approxPricePerPortion": 55000,
+    "currency": "VND",
+    "tags": ["banh khot", "vung tau"]
+  },
+  {
+    "id": "food-vungtau-2",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Lẩu cá đuối",
+    "summary": "Cá đuối tươi, nước lẩu chua ngọt, ăn với bún và rau.",
+    "restaurants": [
+      {
+        "name": "Lẩu Cá Đuối Hoàng Minh",
+        "address": "44 Trương Công Định, Vũng Tàu",
+        "priceLevel": "medium",
+        "note": "Rất được du khách yêu thích."
+      }
+    ],
+    "approxPricePerPot": 180000,
+    "currency": "VND",
+    "tags": ["lau ca duoi", "vung tau", "hotpot"]
+  },
+  {
+    "id": "food-vungtau-3",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Hải sản nướng",
+    "summary": "Tôm – mực – sò nướng mọi, món không thể bỏ qua khi đến biển.",
+    "restaurants": [
+      {
+        "name": "Hải Sản Bãi Trước",
+        "address": "Đường Trần Phú, TP. Vũng Tàu",
+        "priceLevel": "high",
+        "note": "Nhiều quán, hải sản tươi."
+      }
+    ],
+    "approxPricePerDish": 150000,
+    "currency": "VND",
+    "tags": ["hai san", "grill", "vung tau"]
+  },
+  {
+    "id": "food-vungtau-4",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Bánh hỏi thịt nướng",
+    "summary": "Bánh hỏi mềm, thịt nướng thơm, ăn kèm mỡ hành và nước mắm.",
+    "restaurants": [
+      {
+        "name": "Bánh Hỏi An Nhứt",
+        "address": "Xã An Nhứt, Long Điền, Bà Rịa – Vũng Tàu",
+        "priceLevel": "low",
+        "note": "Một trong những nơi ngon nhất vùng."
+      }
+    ],
+    "approxPricePerPlate": 35000,
+    "currency": "VND",
+    "tags": ["banh hoi", "vung tau"]
+  },
+  {
+    "id": "food-vungtau-5",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Bánh bông lan trứng muối",
+    "summary": "Đặc sản nổi tiếng, mềm xốp, thơm bơ, trứng muối béo.",
+    "restaurants": [
+      {
+        "name": "Bông Lan Trứng Muối Gốc Cột Cờ",
+        "address": "17B Nguyễn Trường Tộ, Vũng Tàu",
+        "priceLevel": "low",
+        "note": "Thích hợp mua làm quà."
+      }
+    ],
+    "approxPricePerBox": 60000,
+    "currency": "VND",
+    "tags": ["banh bong lan", "vung tau", "dessert"]
+  },
+  {
+    "id": "food-vungtau-6",
+    "city": "Vung Tau",
+    "country": "Vietnam",
+    "dishName": "Bún súng",
+    "summary": "Đặc sản lâu đời Vũng Tàu, nước lèo thanh, hơi cay, ăn kèm súng non.",
+    "restaurants": [
+      {
+        "name": "Bún Súng Vũng Tàu",
+        "address": "40 Nguyễn Trường Tộ, Vũng Tàu",
+        "priceLevel": "low",
+        "note": "Món rất lạ đối với du khách."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun sung", "vung tau"]
+  },
+
+  {
+    "id": "food-dongthap-1",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Hủ tiếu Sa Đéc",
+    "summary": "Hủ tiếu sợi mềm, nước dùng trong, thịt tôm đầy đủ.",
+    "restaurants": [
+      {
+        "name": "Hủ Tiếu Bà Sâm",
+        "address": "Sa Đéc, Đồng Tháp",
+        "priceLevel": "low",
+        "note": "Quán lâu đời, chuẩn vị Sa Đéc."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["hu tieu", "sa dec", "dong thap"]
+  },
+  {
+    "id": "food-dongthap-2",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Cơm gà Cao Lãnh",
+    "summary": "Cơm gà truyền thống với gà thả vườn vàng dai.",
+    "restaurants": [
+      {
+        "name": "Cơm Gà Hương Sen",
+        "address": "Cao Lãnh, Đồng Tháp",
+        "priceLevel": "medium",
+        "note": "Gà ngon, giá hợp lý."
+      }
+    ],
+    "approxPricePerPlate": 45000,
+    "currency": "VND",
+    "tags": ["com ga", "cao lanh", "dong thap"]
+  },
+  {
+    "id": "food-dongthap-3",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Vịt quay Cao Lãnh",
+    "summary": "Món vịt quay nổi tiếng, da giòn, thịt mềm.",
+    "restaurants": [
+      {
+        "name": "Vịt Quay Tám Lửa",
+        "address": "Cao Lãnh, Đồng Tháp",
+        "priceLevel": "high",
+        "note": "Vịt quay nổi tiếng nhất vùng."
+      }
+    ],
+    "approxPricePerDish": 120000,
+    "currency": "VND",
+    "tags": ["vit quay", "cao lanh"]
+  },
+  {
+    "id": "food-dongthap-4",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Lẩu cá linh bông điên điển",
+    "summary": "Món theo mùa nước nổi, vị chua ngọt, bông điên điển thơm nhẹ.",
+    "restaurants": [
+      {
+        "name": "Quán Lẩu Mùa Nước Nổi",
+        "address": "Cao Lãnh, Đồng Tháp",
+        "priceLevel": "medium",
+        "note": "Có theo mùa."
+      }
+    ],
+    "approxPricePerPot": 200000,
+    "currency": "VND",
+    "tags": ["lau ca linh", "dong thap"]
+  },
+  {
+    "id": "food-dongthap-5",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Chuột đồng nướng",
+    "summary": "Đặc sản miền Tây, chuột đồng nướng thấm vị.",
+    "restaurants": [
+      {
+        "name": "Quán Chuột Đồng",
+        "address": "Cao Lãnh, Đồng Tháp",
+        "priceLevel": "medium",
+        "note": "Món lạ, đúng chất miền Tây."
+      }
+    ],
+    "approxPricePerDish": 90000,
+    "currency": "VND",
+    "tags": ["chuot dong", "grill", "dong thap"]
+  },
+  {
+    "id": "food-dongthap-6",
+    "city": "Dong Thap",
+    "country": "Vietnam",
+    "dishName": "Sen Đồng Tháp – xôi sen",
+    "summary": "Xôi từ hạt sen thơm, dẻo, ngọt nhẹ.",
+    "restaurants": [
+      {
+        "name": "Làng Hoa Sa Đéc",
+        "address": "Sa Đéc, Đồng Tháp",
+        "priceLevel": "low",
+        "note": "Đặc sản mua mang đi."
+      }
+    ],
+    "approxPricePerPack": 20000,
+    "currency": "VND",
+    "tags": ["sen", "xoi", "dong thap"]
+  },
+  {
+    "id": "food-bentre-1",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Kẹo dừa Bến Tre",
+    "summary": "Đặc sản nổi tiếng từ dừa: mềm, thơm, béo.",
+    "restaurants": [
+      {
+        "name": "Kẹo Dừa Thanh Long",
+        "address": "Mỏ Cày, Bến Tre",
+        "priceLevel": "low",
+        "note": "Chuẩn đặc sản làm quà."
+      }
+    ],
+    "approxPricePerPack": 30000,
+    "currency": "VND",
+    "tags": ["keo dua", "ben tre"]
+  },
+  {
+    "id": "food-bentre-2",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Cá tai tượng chiên xù",
+    "summary": "Cá chiên xù nguyên con, ăn cuốn bánh tráng.",
+    "restaurants": [
+      {
+        "name": "Nhà Vườn Cồn Phụng",
+        "address": "Cồn Phụng, Châu Thành, Bến Tre",
+        "priceLevel": "high",
+        "note": "Đặc sản miền sông nước."
+      }
+    ],
+    "approxPricePerDish": 250000,
+    "currency": "VND",
+    "tags": ["ca tai tuong", "ben tre"]
+  },
+  {
+    "id": "food-bentre-3",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Gỏi củ hũ dừa",
+    "summary": "Món gỏi chua ngọt từ củ hũ dừa giòn và ngọt tự nhiên.",
+    "restaurants": [
+      {
+        "name": "Nhà Hàng Hương Dừa",
+        "address": "Bến Tre City",
+        "priceLevel": "medium",
+        "note": "Món đặc sản từ dừa."
+      }
+    ],
+    "approxPricePerPlate": 50000,
+    "currency": "VND",
+    "tags": ["goi hu dua", "ben tre"]
+  },
+  {
+    "id": "food-bentre-4",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Bánh xèo ốc gạo",
+    "summary": "Bánh xèo nhân ốc gạo độc đáo, giòn thơm.",
+    "restaurants": [
+      {
+        "name": "Bánh Xèo Ngã Tư Sơn Đông",
+        "address": "Sơn Đông, Bến Tre",
+        "priceLevel": "medium",
+        "note": "Có món bánh xèo nhân ốc gạo đặc trưng."
+      }
+    ],
+    "approxPricePerPlate": 40000,
+    "currency": "VND",
+    "tags": ["banh xeo", "oc gao", "ben tre"]
+  },
+  {
+    "id": "food-bentre-5",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Bánh canh bột gạo",
+    "summary": "Sợi bánh canh từ bột gạo, nước dùng đậm đà.",
+    "restaurants": [
+      {
+        "name": "Bánh Canh Bột Gạo 66",
+        "address": "66 Đại lộ Đồng Khởi, Bến Tre",
+        "priceLevel": "low",
+        "note": "Món sáng dân dã."
+      }
+    ],
+    "approxPricePerBowl": 20000,
+    "currency": "VND",
+    "tags": ["banh canh", "ben tre"]
+  },
+  {
+    "id": "food-bentre-6",
+    "city": "Ben Tre",
+    "country": "Vietnam",
+    "dishName": "Chuối đập nướng",
+    "summary": "Chuối xiêm nướng, dẻo thơm, ăn với nước cốt dừa.",
+    "restaurants": [
+      {
+        "name": "Hàng Rong Chợ Bến Tre",
+        "address": "Chợ Bến Tre",
+        "priceLevel": "low",
+        "note": "Món ăn vặt địa phương."
+      }
+    ],
+    "approxPricePerPiece": 8000,
+    "currency": "VND",
+    "tags": ["chuoi nuong", "ben tre"]
+  },
+    {
+    "id": "food-soctrang-1",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Bún nước lèo Sóc Trăng",
+    "summary": "Nước lèo nấu mắm pro-hok, ăn kèm cá lóc, tôm, heo quay.",
+    "restaurants": [
+      {
+        "name": "Bún Nước Lèo Hai Xuyên",
+        "address": "25 Phú Lợi, Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Quán nổi tiếng nhất thành phố."
+      }
+    ],
+    "approxPricePerBowl": 35000,
+    "currency": "VND",
+    "tags": ["bun nuoc leo", "soc trang"]
+  },
+  {
+    "id": "food-soctrang-2",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Bánh pía",
+    "summary": "Bánh nhân đậu xanh – sầu riêng – trứng muối, đặc sản Sóc Trăng.",
+    "restaurants": [
+      {
+        "name": "Bánh Pía Tân Huê Viên",
+        "address": "168 Quốc Lộ 1A, Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Thương hiệu nổi tiếng nhất."
+      }
+    ],
+    "approxPricePerPack": 60000,
+    "currency": "VND",
+    "tags": ["banh pia", "soc trang", "dessert"]
+  },
+  {
+    "id": "food-soctrang-3",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Bún gỏi dà",
+    "summary": "Bún gỏi kiểu Khmer, nước dùng chua ngọt, ăn với tôm và thịt.",
+    "restaurants": [
+      {
+        "name": "Bún Gỏi Dà 68",
+        "address": "68 Phú Lợi, Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Rất hợp ăn sáng."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["bun goi da", "soc trang"]
+  },
+  {
+    "id": "food-soctrang-4",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Bánh cống Sóc Trăng",
+    "summary": "Bánh cống nhân đậu xanh – tôm, giòn rụm.",
+    "restaurants": [
+      {
+        "name": "Bánh Cống Cô Út",
+        "address": "Phú Lợi, Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Chuẩn món Khmer."
+      }
+    ],
+    "approxPricePerPiece": 8000,
+    "currency": "VND",
+    "tags": ["banh cong", "soc trang"]
+  },
+  {
+    "id": "food-soctrang-5",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Bún thịt nướng Sóc Trăng",
+    "summary": "Thịt nướng kiểu Khmer, đậm vị sả – nghệ.",
+    "restaurants": [
+      {
+        "name": "Bún Thịt Nướng Chợ Cũ",
+        "address": "Chợ Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Thịt nướng thơm."
+      }
+    ],
+    "approxPricePerPlate": 30000,
+    "currency": "VND",
+    "tags": ["bun thit nuong", "soc trang"]
+  },
+  {
+    "id": "food-soctrang-6",
+    "city": "Soc Trang",
+    "country": "Vietnam",
+    "dishName": "Hủ tiếu bò viên",
+    "summary": "Hủ tiếu nước trong, bò viên dai thơm.",
+    "restaurants": [
+      {
+        "name": "Hủ Tiếu Bò Viên 555",
+        "address": "555 Phú Lợi, Sóc Trăng",
+        "priceLevel": "low",
+        "note": "Ăn sáng rất ngon."
+      }
+    ],
+    "approxPricePerBowl": 30000,
+    "currency": "VND",
+    "tags": ["hu tieu", "soc trang"]
+  }
+]

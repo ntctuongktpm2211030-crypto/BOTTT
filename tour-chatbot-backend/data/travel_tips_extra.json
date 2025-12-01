@@ -1,0 +1,226 @@
+[
+  {
+    "id": "flight-004",
+    "topic": "vé máy bay",
+    "title": "So sánh vé máy bay qua nhiều ứng dụng đặt vé",
+    "content": "Không nên chỉ xem giá vé trên một ứng dụng, vì mỗi nền tảng có chính sách ưu đãi khác nhau. Hãy so sánh trên Traveloka, Skyscanner, Vietnambooking, Vietravel hoặc đặt trực tiếp trên web hãng. Đôi khi vé trên app của hãng bay rẻ hơn, nhưng có lúc các app tổng hợp lại có code giảm giá mạnh hơn. Luôn kiểm tra kỹ điều kiện hoàn, đổi, hành lý trước khi thanh toán.",
+    "tags": ["vé máy bay", "so sánh giá", "app đặt vé"]
+  },
+  {
+    "id": "flight-005",
+    "topic": "vé máy bay",
+    "title": "Chọn hãng bay theo nhu cầu, không phải lúc nào cũng rẻ nhất",
+    "content": "Nếu chuyến đi quan trọng, có giờ giấc cố định (họp, thi, sự kiện), bạn nên ưu tiên hãng có độ đúng giờ và dịch vụ ổn định, thậm chí giá cao hơn một chút. Nếu chỉ đi chơi thoải mái, không quá gấp, có thể chọn hãng giá rẻ để tiết kiệm. Với gia đình có trẻ nhỏ hoặc người lớn tuổi, nên ưu tiên hãng có hỗ trợ tốt, ghế ngồi rộng, ít delay.",
+    "tags": ["hãng bay", "ưu tiên", "dịch vụ"]
+  },
+  {
+    "id": "flight-006",
+    "topic": "vé máy bay",
+    "title": "Mẹo tránh bị 'móc túi' phí khi đặt vé online",
+    "content": "Khi đặt vé trên các ứng dụng, hãy đọc kỹ phần phí bổ sung như: phí chọn chỗ, phí đổi ngày, phí bảo hiểm, hành lý ký gửi. Đôi khi hệ thống tự tick sẵn bảo hiểm hoặc hành lý mà bạn không để ý. Trước khi bấm 'Thanh toán', hãy xem lại tổng tiền và thử bỏ những dịch vụ không cần thiết để giảm chi phí.",
+    "tags": ["phí ẩn", "vé máy bay", "thanh toán"]
+  },
+  {
+    "id": "flight-007",
+    "topic": "vé máy bay",
+    "title": "Kinh nghiệm transit khi bay nhiều chặng",
+    "content": "Nếu bạn phải bay nối chuyến, hãy đảm bảo thời gian transit tối thiểu 1,5–2 giờ để kịp làm thủ tục, đặc biệt ở các sân bay lớn như Nội Bài, Tân Sơn Nhất. Không nên chọn transit quá ngắn để tránh lỡ chuyến sau. Khi transit quốc tế, hãy kiểm tra xem có cần visa quá cảnh không, tránh tình huống đến sân bay mới bị chặn ở cửa nhập cảnh.",
+    "tags": ["transit", "nối chuyến", "quốc tế"]
+  },
+  {
+    "id": "luggage-003",
+    "topic": "hành lý",
+    "title": "Những thứ không nên bỏ vào hành lý ký gửi",
+    "content": "Các đồ quan trọng như tiền mặt, trang sức, laptop, máy ảnh, giấy tờ cá nhân và thuốc đặc trị tuyệt đối không nên bỏ vào hành lý ký gửi. Hành lý ký gửi có thể bị giao trễ, thất lạc hoặc bị va đập mạnh. Những thứ này nên được cất trong balo xách tay và luôn mang theo người.",
+    "tags": ["hành lý ký gửi", "đồ quý", "an toàn"]
+  },
+  {
+    "id": "luggage-004",
+    "topic": "hành lý",
+    "title": "Mẹo cân hành lý nhanh và tránh bị phạt quá ký",
+    "content": "Bạn có thể dùng cân treo nhỏ hoặc đứng lên cân rồi trừ đi cân nặng cơ thể để ước lượng vali. Nếu hành lý có nguy cơ quá ký, hãy ưu tiên bỏ ra những đồ nặng nhưng không quá cần thiết như nhiều đôi giày, mỹ phẩm lớn, đồ ăn. Nếu đi nhiều người, có thể chia lại hành lý qua lại giữa các vali để tối ưu số ký được phép mang.",
+    "tags": ["cân hành lý", "quá ký", "tiết kiệm"]
+  },
+  {
+    "id": "luggage-005",
+    "topic": "hành lý",
+    "title": "Chuẩn bị hành lý khi đi biển",
+    "content": "Khi đi biển, ngoài quần áo, bạn nên mang theo: kính mát, nón rộng vành, áo khoác chống nắng, dép kẹp, túi chống nước cho điện thoại và một bộ đồ bơi khô để thay. Nếu da dễ bắt nắng, hãy dùng kem chống nắng SPF 50+ và thoa lại sau mỗi 2–3 giờ. Có thể chuẩn bị thêm túi vải để đựng đồ ướt sau khi tắm biển.",
+    "tags": ["đi biển", "hành lý", "chống nắng"]
+  },
+  {
+    "id": "luggage-006",
+    "topic": "hành lý",
+    "title": "Chuẩn bị hành lý khi đi núi hoặc trekking",
+    "content": "Khi đi vùng núi hoặc trekking, hãy mang giày thể thao hoặc giày leo núi có độ bám tốt, áo khoác cản gió, áo mưa gấp, đèn pin nhỏ, chai nước cá nhân và một ít đồ ăn nhanh như bánh, chocolate. Mang thêm băng dán cá nhân, thuốc bôi côn trùng và một chiếc khăn đa năng để che nắng, giữ ấm hoặc dùng làm khăn choàng.",
+    "tags": ["núi", "trekking", "an toàn"]
+  },
+  {
+    "id": "transport-003",
+    "topic": "phương tiện di chuyển",
+    "title": "Kinh nghiệm di chuyển từ sân bay về trung tâm thành phố",
+    "content": "Mỗi sân bay thường có nhiều lựa chọn: taxi, Grab, xe buýt sân bay, xe trung chuyển của khách sạn. Taxi và Grab tiện nhất nhưng chi phí cao hơn. Xe buýt sân bay rẻ hơn nhưng cần xem kỹ điểm dừng. Trước khi đi, bạn nên tra sẵn khoảng giá trên Google Maps hoặc app gọi xe để tránh bị chặt chém. Nếu khách sạn có dịch vụ đưa đón, hãy hỏi giá trước để so sánh.",
+    "tags": ["sân bay", "về trung tâm", "taxi", "xe buýt"]
+  },
+  {
+    "id": "transport-004",
+    "topic": "phương tiện di chuyển",
+    "title": "Dùng Google Maps để tối ưu đường đi",
+    "content": "Google Maps không chỉ giúp bạn tìm đường mà còn gợi ý phương tiện di chuyển: đi bộ, bus, taxi. Bạn có thể lưu lại các điểm muốn đến bằng tính năng đánh dấu sao, sau đó sắp xếp tuyến đi theo cụm. Khi đi bộ trong khu du lịch, bật định vị và giữ bản đồ offline để tránh mất sóng.",
+    "tags": ["google maps", "định vị", "tối ưu lộ trình"]
+  },
+  {
+    "id": "transport-005",
+    "topic": "phương tiện di chuyển",
+    "title": "Đi tàu hỏa, xe khách hay máy bay?",
+    "content": "Máy bay nhanh nhưng chi phí cao. Tàu hỏa phù hợp với những bạn thích trải nghiệm ngắm cảnh, thời gian di chuyển dài nhưng an toàn và thoải mái chân tay hơn xe khách. Xe khách phù hợp với quãng đường 4–8 tiếng hoặc những nơi không có sân bay, nhưng dễ say xe. Hãy cân nhắc thời gian, ngân sách và thể lực của bạn để chọn phương tiện phù hợp.",
+    "tags": ["tàu hỏa", "xe khách", "so sánh phương tiện"]
+  },
+  {
+    "id": "weather-002",
+    "topic": "thời tiết",
+    "title": "Cách xử lý khi gặp mưa bất chợt trong chuyến đi",
+    "content": "Nếu dự báo có mưa, hãy luôn mang sẵn áo mưa mỏng trong balo. Khi gặp mưa lớn, hãy tìm chỗ trú an toàn, tránh trú dưới cây to hoặc gần biển khi có dấu hiệu giông gió. Thay đổi linh hoạt lịch trình: ưu tiên các hoạt động trong nhà như đi bảo tàng, trung tâm thương mại, quán café, sau đó quay lại các điểm ngoài trời khi thời tiết tốt hơn.",
+    "tags": ["mưa", "kế hoạch dự phòng", "thời tiết xấu"]
+  },
+  {
+    "id": "money-001",
+    "topic": "tiền bạc",
+    "title": "Quản lý tiền mặt và thẻ khi đi du lịch",
+    "content": "Không nên đem toàn bộ tiền mặt theo người. Bạn có thể chia ra làm 2–3 phần, cất ở những vị trí khác nhau (ví dụ: ví, túi bí mật, balo). Thẻ ngân hàng nên mang 1–2 chiếc, có internet banking để dễ nạp tiền nếu cần. Đừng rút quá nhiều tiền một lần, và nên chọn cây ATM ở khu vực đông người, có camera.",
+    "tags": ["tiền mặt", "thẻ ngân hàng", "an toàn tài chính"]
+  },
+  {
+    "id": "money-002",
+    "topic": "chi phí",
+    "title": "Giữ lại hoá đơn và ghi chép chi tiêu",
+    "content": "Khi đi theo nhóm, bạn nên dùng một ứng dụng ghi lại chi tiêu như Splitwise hoặc đơn giản là ghi chú trên điện thoại. Mỗi món lớn như vé tham quan, ăn uống, khách sạn, nên chụp lại hoá đơn. Cuối chuyến, việc tổng kết và chia tiền sẽ dễ và minh bạch hơn, tránh tranh cãi.",
+    "tags": ["chi tiêu", "ghi chép", "đi nhóm"]
+  },
+  {
+    "id": "health-002",
+    "topic": "sức khỏe",
+    "title": "Chăm sóc sức khỏe khi đi du lịch trời nắng nóng",
+    "content": "Tránh ra nắng trực tiếp trong khung giờ 11h–15h, nếu phải đi hãy đội nón, mang kính và dùng kem chống nắng. Uống nước thường xuyên, đừng đợi đến khi khát mới uống. Hạn chế uống quá nhiều nước ngọt có ga và rượu bia trong ngày nắng nóng vì dễ gây mệt mỏi.",
+    "tags": ["nắng nóng", "sức khỏe", "chống sốc nhiệt"]
+  },
+  {
+    "id": "health-003",
+    "topic": "sức khỏe",
+    "title": "Xử lý khi bị say xe, say sóng",
+    "content": "Nếu bạn hay say xe, hãy uống thuốc say xe trước 30 phút, không ăn quá no hoặc để bụng quá đói. Khi ngồi xe, chọn vị trí gần phía trước và gần cửa sổ. Nếu đi tàu/cano, hãy nhìn ra xa và tránh nhìn xuống nước. Nếu cảm thấy chóng mặt, hãy thông báo sớm cho hướng dẫn viên hoặc tài xế để được hỗ trợ.",
+    "tags": ["say xe", "say sóng", "kinh nghiệm"]
+  },
+  {
+    "id": "family-002",
+    "topic": "gia đình",
+    "title": "Kinh nghiệm đi du lịch với người lớn tuổi",
+    "content": "Hãy chọn điểm đến có thời tiết ôn hòa, ít phải leo dốc hoặc đi bộ xa. Chia nhỏ lịch trình, có nhiều khoảng thời gian nghỉ ngơi. Chuẩn bị đầy đủ thuốc men, sổ khám bệnh, đơn thuốc nếu có bệnh nền. Luôn để ý đến nhiệt độ phòng, tránh quá lạnh hoặc quá nóng.",
+    "tags": ["gia đình", "người lớn tuổi", "chăm sóc"]
+  },
+  {
+    "id": "solo-001",
+    "topic": "du lịch một mình",
+    "title": "Chọn chỗ ở khi đi du lịch một mình",
+    "content": "Khi đi solo, bạn nên chọn homestay, hostel hoặc khách sạn nhỏ ở khu vực trung tâm, gần chợ hoặc phố chính. Nên ưu tiên những nơi có review tích cực về an ninh và sạch sẽ, có lễ tân 24/7. Hạn chế ở nơi quá vắng hoặc xa khu dân cư nếu bạn chưa quen khu vực đó.",
+    "tags": ["solo travel", "chỗ ở", "an toàn"]
+  },
+  {
+    "id": "dalat-004",
+    "topic": "Đà Lạt",
+    "title": "Những điểm sống ảo dễ đi ở Đà Lạt",
+    "content": "Nếu bạn không muốn đi xa, có thể ghé Quảng trường Lâm Viên, hồ Xuân Hương, ga Đà Lạt, các quán café view đồi quanh trung tâm. Nếu có thêm thời gian, bạn có thể đi thêm đồi chè Cầu Đất, các nông trại dâu, vườn hoa. Luôn kiểm tra giờ mở cửa của mỗi điểm để sắp xếp lịch phù hợp.",
+    "tags": ["đà lạt", "check-in", "dễ đi"]
+  },
+  {
+    "id": "dalat-005",
+    "topic": "Đà Lạt",
+    "title": "Ăn gì buổi tối ở Đà Lạt",
+    "content": "Buổi tối Đà Lạt rất hợp ăn các món ấm nóng như lẩu gà lá é, lẩu bò, bánh tráng nướng, xiên nướng. Bạn có thể đi bộ quanh chợ đêm để thưởng thức nhiều món khác nhau. Hạn chế ăn quá khuya nếu bạn dễ bị đau bụng hoặc khó ngủ.",
+    "tags": ["đà lạt", "đồ ăn tối", "chợ đêm"]
+  },
+  {
+    "id": "danang-003-extra",
+    "topic": "Đà Nẵng",
+    "title": "Lưu ý khi tham quan Bà Nà Hills",
+    "content": "Nên đi sớm, có mặt từ 7h30–8h để tránh xếp hàng lâu và nắng trưa. Mang áo khoác mỏng vì trên đỉnh núi buổi sáng và chiều tối khá lạnh. Giày thể thao là lựa chọn tốt nhất vì phải đi bộ nhiều. Chuẩn bị sẵn nước uống, khăn giấy và pin dự phòng vì chụp hình rất nhiều.",
+    "tags": ["bà nà hills", "đà nẵng", "kinh nghiệm"]
+  },
+  {
+    "id": "hoian-004",
+    "topic": "Hội An",
+    "title": "Ăn gì ở Hội An cho đúng chất địa phương",
+    "content": "Nên thử cao lầu, mì Quảng, bánh mì Phượng hoặc Madam Khánh, chè bắp, nước mót. Bạn có thể vừa đi bộ quanh phố cổ vừa ghé các quán nhỏ ven đường, không nhất thiết phải vào nhà hàng lớn. Nhớ mang theo tiền mặt vì nhiều quán nhỏ chưa nhận chuyển khoản.",
+    "tags": ["hội an", "ẩm thực", "quán địa phương"]
+  },
+  {
+    "id": "hanoi-003",
+    "topic": "Hà Nội",
+    "title": "Kinh nghiệm đi bộ khám phá phố cổ Hà Nội",
+    "content": "Hãy mang giày thoải mái vì bạn sẽ đi bộ rất nhiều qua các phố như Hàng Đào, Hàng Ngang, Hàng Mã, chợ Đồng Xuân. Buổi tối có phố đi bộ quanh hồ Hoàn Kiếm rất đông vui. Bạn nên mang một ít tiền mặt mệnh giá nhỏ để mua quà vặt, nước uống. Cẩn thận túi xách và điện thoại ở nơi đông người.",
+    "tags": ["hà nội", "phố cổ", "đi bộ"]
+  },
+  {
+    "id": "hanoi-004",
+    "topic": "Hà Nội",
+    "title": "Ăn sáng kiểu Hà Nội",
+    "content": "Các món sáng đặc trưng: phở bò, bún thang, bún chả, bánh cuốn. Bạn có thể chọn quán quanh hồ Gươm, phố cổ hoặc các quận như Ba Đình, Đống Đa. Ăn sáng xong, bạn có thể tranh thủ đi tham quan Văn Miếu, Lăng Bác hoặc các bảo tàng gần đó.",
+    "tags": ["hà nội", "ăn sáng", "ẩm thực"]
+  },
+  {
+    "id": "hcm-003",
+    "topic": "TP.HCM",
+    "title": "Gợi ý lịch trình 1 ngày ở trung tâm Sài Gòn",
+    "content": "Buổi sáng, thăm Nhà thờ Đức Bà, Bưu điện Trung tâm, phố đi bộ Nguyễn Huệ. Trưa ăn cơm tấm hoặc phở. Chiều có thể ghé Dinh Độc Lập, Bảo tàng Chứng tích Chiến tranh. Tối dạo Bùi Viện hoặc chợ Bến Thành. Di chuyển chủ yếu bằng taxi hoặc Grab sẽ đỡ lo lắng chuyện gửi xe.",
+    "tags": ["sài gòn", "1 ngày", "trung tâm"]
+  },
+  {
+    "id": "nhatrang-002",
+    "topic": "Nha Trang",
+    "title": "Tắm biển Nha Trang an toàn và vui",
+    "content": "Nên tắm buổi sáng sớm hoặc chiều sau 16h, lúc đó nắng không quá gắt. Luôn tắm trong khu vực có phao giới hạn và quan sát cứu hộ. Không bơi quá xa bờ hoặc ra khu vực có sóng mạnh. Đừng mang đồ quý giá xuống bãi biển, dễ bị ướt hoặc thất lạc.",
+    "tags": ["nha trang", "tắm biển", "an toàn"]
+  },
+  {
+    "id": "cantho-004",
+    "topic": "Cần Thơ",
+    "title": "Kết hợp chợ nổi Cái Răng và tham quan vườn trái cây",
+    "content": "Sau khi đi chợ nổi buổi sáng, bạn có thể ghé các vườn trái cây gần đó để ăn và mua trái cây tại vườn. Nên hỏi giá trước khi ăn hoặc mua nhiều. Mang theo nón, nước uống và giày dễ đi vì đường vào vườn có thể trơn nếu trời mưa.",
+    "tags": ["cần thơ", "vườn trái cây", "chợ nổi"]
+  },
+  {
+    "id": "sapa-003",
+    "topic": "Sapa",
+    "title": "Chọn thời điểm đi Sapa để thấy ruộng bậc thang đẹp nhất",
+    "content": "Mùa nước đổ (tháng 5–6) và mùa lúa chín (tháng 9–10) là thời điểm ruộng bậc thang đẹp nhất. Thời tiết mát mẻ, cảnh sắc ấn tượng. Bạn nên đặt homestay ở bản Tả Van, Lao Chải để có tầm nhìn đẹp ra ruộng bậc thang.",
+    "tags": ["sapa", "ruộng bậc thang", "mùa đẹp"]
+  },
+  {
+    "id": "tips-shopping-001",
+    "topic": "mua sắm",
+    "title": "Mua quà như thế nào để không bị lãng phí",
+    "content": "Trước khi mua quà, hãy nghĩ rõ mình mua cho ai, thích gì và ngân sách là bao nhiêu. Thay vì mua nhiều đồ lặt vặt, bạn có thể chọn một vài món đặc sản vùng miền như cà phê, trà, bánh kẹo, khô cá, mắm… dễ chia và dễ bảo quản. Đừng mua những món quá cồng kềnh, khó mang về.",
+    "tags": ["mua quà", "đặc sản", "tiết kiệm"]
+  },
+  {
+    "id": "tips-scam-001",
+    "topic": "an toàn",
+    "title": "Nhận diện và tránh các chiêu trò chặt chém",
+    "content": "Tại một số điểm du lịch, có thể gặp tình trạng 'chụp hình tính phí', 'ghế ngồi tính giá cao', 'bảng giá mơ hồ'. Hãy luôn hỏi giá trước khi sử dụng dịch vụ, nếu thấy không rõ ràng thì nên từ chối. Bạn có thể hỏi người địa phương hoặc lễ tân khách sạn về các quán ăn, dịch vụ uy tín để tránh bị làm giá.",
+    "tags": ["chặt chém", "dịch vụ", "tỉnh táo"]
+  },
+  {
+    "id": "tips-guide-001",
+    "topic": "đi tour",
+    "title": "Chọn tour ghép sao cho phù hợp",
+    "content": "Nếu bạn ít thời gian và không muốn tự lên kế hoạch, tour ghép là lựa chọn hợp lý. Hãy đọc kỹ lịch trình, điểm dừng, số lượng khách tối đa, bữa ăn đi kèm. Nếu không thích đi quá đông, hãy chọn tour nhóm nhỏ hoặc private dù giá cao hơn.",
+    "tags": ["tour ghép", "lịch trình", "kinh nghiệm"]
+  },
+  {
+    "id": "tips-photo-001",
+    "topic": "chụp ảnh",
+    "title": "Mẹo chụp ảnh du lịch đẹp nhưng vẫn tận hưởng chuyến đi",
+    "content": "Hãy dành riêng một vài khung giờ trong ngày để tập trung chụp ảnh ở những điểm chính. Phần thời gian còn lại, hãy cất máy ảnh/điện thoại đi để thực sự tận hưởng không khí, trò chuyện với bạn bè hoặc người địa phương. Đừng để chuyến đi trở thành một buổi chụp hình liên tục.",
+    "tags": ["chụp ảnh", "tận hưởng", "cân bằng"]
+  }
+]

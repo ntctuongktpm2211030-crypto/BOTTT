@@ -1,0 +1,329 @@
+[
+  {
+    "id": "tour-sapa-3n2d",
+    "title": "Tour Sa Pa 3N2Đ: Bản Cát Cát – Fansipan – Nhà thờ đá",
+    "destinations": ["Sa Pa"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["thiên nhiên", "nghỉ dưỡng", "núi"],
+    "target": ["cặp đôi", "nhóm bạn", "gia đình"],
+    "pricePerPersonEstimate": { "low": 3200000, "high": 6500000, "currency": "VND" },
+    "includes": [
+      "Khách sạn 3–4 sao trung tâm",
+      "Xe giường nằm/limousine Hà Nội – Sa Pa",
+      "Vé cáp treo Fansipan (tùy gói)",
+      "City tour bản Cát Cát – Nhà thờ đá"
+    ],
+    "excludes": ["Ăn uống ngoài chương trình", "Vé tàu hỏa leo núi Fansipan", "Chi phí cá nhân"],
+    "highlights": [
+      "Check-in bản Cát Cát",
+      "Chinh phục Fansipan – nóc nhà Đông Dương",
+      "Ngắm hoàng hôn trên đồi Mây"
+    ],
+    "bestTime": "Tháng 9–4 (lúa chín hoặc mùa lạnh)",
+    "note": "Tour nhẹ nhàng phù hợp người đi Sa Pa lần đầu.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-halong-2n1d",
+    "title": "Tour Hạ Long 2N1Đ: Du thuyền – Hang Sửng Sốt – Kayak",
+    "destinations": ["Hạ Long"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "style": ["biển", "nghỉ dưỡng", "trải nghiệm"],
+    "target": ["gia đình", "cặp đôi"],
+    "pricePerPersonEstimate": { "low": 2600000, "high": 4800000, "currency": "VND" },
+    "includes": [
+      "Du thuyền 3–4 sao",
+      "3 bữa ăn trên du thuyền",
+      "Kayak hoặc thuyền nan",
+      "Tham quan hang Sửng Sốt và đảo Ti Tốp"
+    ],
+    "excludes": ["Đồ uống trên du thuyền", "Tips HDV & thủy thủ", "Xe đưa đón Hà Nội – Hạ Long"],
+    "highlights": ["Hoạt động kayak", "Tắm biển đảo Ti Tốp", "Check-in boong tàu view vịnh"],
+    "bestTime": "Tháng 10–4",
+    "note": "Hợp cho cặp đôi hoặc kỳ nghỉ cuối tuần.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-hue-3n2d",
+    "title": "Tour Huế 3N2Đ: Đại Nội – Chùa Thiên Mụ – Lăng Khải Định",
+    "destinations": ["Huế"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["văn hóa", "lịch sử"],
+    "target": ["gia đình", "nhóm bạn", "người lớn tuổi"],
+    "pricePerPersonEstimate": { "low": 3000000, "high": 5600000, "currency": "VND" },
+    "includes": [
+      "Khách sạn 3 sao trung tâm",
+      "Xe tham quan Đại Nội – chùa Thiên Mụ",
+      "Vé tham quan các điểm trong chương trình"
+    ],
+    "excludes": ["Ăn tối", "Vé thuyền Rồng (tùy chọn)"],
+    "highlights": ["Check-in Đại Nội Cố đô", "Dạo sông Hương", "Thưởng thức bún bò Huế"],
+    "bestTime": "Tháng 3–8",
+    "note": "Lịch trình nhẹ – phù hợp người lớn tuổi.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-hagiang-3n2d",
+    "title": "Tour Hà Giang 3N2Đ: Đèo Mã Pì Lèng – Dốc Thẩm Mã – Phố cổ Đồng Văn",
+    "destinations": ["Hà Giang"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["phượt", "núi", "trải nghiệm"],
+    "target": ["nhóm bạn trẻ"],
+    "pricePerPersonEstimate": { "low": 2900000, "high": 5200000, "currency": "VND" },
+    "includes": [
+      "Xe giường nằm Hà Nội – Hà Giang",
+      "Xe máy/vintage car (tùy gói)",
+      "1 đêm homestay – 1 đêm khách sạn"
+    ],
+    "excludes": ["Ăn trưa ngày đầu và ngày cuối", "Chi phí đổ xăng", "Phí thuê đồ giữ ấm"],
+    "highlights": ["Đèo Mã Pì Lèng", "Sông Nho Quế", "Dốc Thẩm Mã – Mèo Vạc"],
+    "bestTime": "Tháng 9–12 (mùa hoa tam giác mạch)",
+    "note": "Phù hợp người thích trải nghiệm & chụp ảnh.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-condao-3n2d",
+    "title": "Combo Côn Đảo 3N2Đ: Viếng mộ cô Sáu – Bãi Đầm Trầu – Lặn ngắm san hô",
+    "destinations": ["Côn Đảo"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["biển", "tâm linh", "nghỉ dưỡng"],
+    "target": ["gia đình", "người trung niên"],
+    "pricePerPersonEstimate": { "low": 4800000, "high": 8200000, "currency": "VND" },
+    "includes": ["Khách sạn 3 sao", "Xe tham quan", "Tour lặn ngắm san hô"],
+    "excludes": ["Vé máy bay", "Ăn uống ngoài chương trình"],
+    "highlights": ["Viếng mộ cô Sáu", "Bãi Đầm Trầu", "Chợ Côn Đảo"],
+    "bestTime": "Tháng 3–8",
+    "note": "Phù hợp du lịch tâm linh kết hợp nghỉ dưỡng.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-mientay-2n1d",
+    "title": "Tour Miền Tây 2N1Đ: Chợ nổi Cái Răng – Cồn Phụng – Làng nghề",
+    "destinations": ["Cần Thơ", "Bến Tre"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "style": ["miền sông nước", "ẩm thực"],
+    "target": ["gia đình", "nhóm bạn"],
+    "pricePerPersonEstimate": { "low": 1600000, "high": 3200000, "currency": "VND" },
+    "includes": ["Khách sạn 3 sao", "Thuyền chợ nổi", "Xe tham quan"],
+    "excludes": ["Ăn tối", "Đặc sản mua sắm"],
+    "highlights": ["Chợ nổi Cái Răng", "Lò hủ tiếu", "Cồn Phụng"],
+    "bestTime": "Quanh năm",
+    "note": "Tour nhẹ nhàng, thiên về trải nghiệm văn hóa miền Tây.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-quynhon-3n2d",
+    "title": "Tour Quy Nhơn 3N2Đ: Kỳ Co – Eo Gió – Ghềnh Ráng",
+    "destinations": ["Quy Nhơn"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["biển", "chụp ảnh"],
+    "target": ["cặp đôi", "nhóm bạn"],
+    "pricePerPersonEstimate": { "low": 3300000, "high": 5900000, "currency": "VND" },
+    "includes": ["Khách sạn gần biển", "Tour Kỳ Co – Eo Gió", "Ăn trưa hải sản"],
+    "excludes": ["Vé máy bay", "Chi phí chụp ảnh cano"],
+    "highlights": ["Bãi Kỳ Co", "Eo Gió", "Ghềnh Ráng – Mộ Hàn Mặc Tử"],
+    "bestTime": "Tháng 2–9",
+    "note": "Tour chụp ảnh đẹp, hợp couple.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-vinhhalong-catba-3n2d",
+    "title": "Tour Cát Bà – Vịnh Lan Hạ 3N2Đ: Kayak – Tắm biển – Hang tối",
+    "destinations": ["Cát Bà", "Lan Hạ"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["biển", "vui chơi"],
+    "target": ["nhóm bạn", "cặp đôi"],
+    "pricePerPersonEstimate": { "low": 2700000, "high": 5400000, "currency": "VND" },
+    "includes": ["Khách sạn", "Tour vịnh Lan Hạ", "Kayak xuyên hang"],
+    "excludes": ["Ăn tối", "Phụ thu lễ"],
+    "highlights": ["Kayak hang tối", "Tắm biển Cát Cò", "Check-in vịnh Lan Hạ"],
+    "bestTime": "Tháng 4–10",
+    "note": "Nên đi nhóm trẻ – nhiều hoạt động.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-ninhbinh-1n",
+    "title": "Tour Ninh Bình 1 ngày: Tràng An – Hang Múa – Cố đô Hoa Lư",
+    "destinations": ["Ninh Bình"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["ngày ngắn", "chụp ảnh"],
+    "target": ["nhóm bạn", "cặp đôi", "sinh viên"],
+    "pricePerPersonEstimate": { "low": 750000, "high": 1200000, "currency": "VND" },
+    "includes": ["Xe đưa đón Hà Nội – Ninh Bình", "Vé Tràng An", "Vé Hang Múa"],
+    "excludes": ["Ăn tối", "Mua sắm"],
+    "highlights": ["Trekking Hang Múa", "Thuyền Tràng An", "Hoa Lư"],
+    "bestTime": "Tháng 1–5",
+    "note": "Tour rẻ – phù hợp sinh viên.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-mocchau-2n1d",
+    "title": "Tour Mộc Châu 2N1Đ: Đồi chè – Thác Dải Yếm – Cầu kính",
+    "destinations": ["Mộc Châu"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "style": ["thiên nhiên", "an yên"],
+    "target": ["gia đình trẻ", "cặp đôi"],
+    "pricePerPersonEstimate": { "low": 1800000, "high": 3500000, "currency": "VND" },
+    "includes": ["Xe du lịch", "Khách sạn/Resort", "Vé tham quan"],
+    "excludes": ["Chi phí ăn tối"],
+    "highlights": ["Đồi chè trái tim", "Cầu kính Bạch Long", "Thác Dải Yếm"],
+    "bestTime": "Tháng 11–3 (mộc miên – hoa mận)",
+    "note": "Phù hợp gia đình có trẻ nhỏ.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-vungtau-2n1d",
+    "title": "Tour Vũng Tàu 2N1Đ: Tắm biển – Ngọn hải đăng – Bạch Dinh",
+    "destinations": ["Vũng Tàu"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "style": ["biển", "nghỉ dưỡng"],
+    "target": ["gia đình", "nhóm bạn"],
+    "pricePerPersonEstimate": { "low": 900000, "high": 1800000, "currency": "VND" },
+    "includes": ["Khách sạn", "Xe đưa đón từ TP.HCM"],
+    "excludes": ["Ăn tối", "Vé cáp treo hồ Mây"],
+    "highlights": ["Biển Bãi Sau", "Hải đăng Vũng Tàu", "Bạch Dinh"],
+    "bestTime": "Tháng 1–8",
+    "note": "Tour phổ biến cuối tuần.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-cantho-1n",
+    "title": "Tour Cần Thơ 1 ngày: Chợ nổi – Nhà cổ Bình Thủy – Thiền viện Trúc Lâm",
+    "destinations": ["Cần Thơ"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["miền Tây", "văn hóa"],
+    "target": ["gia đình", "người lớn tuổi"],
+    "pricePerPersonEstimate": { "low": 600000, "high": 900000, "currency": "VND" },
+    "includes": ["Thuyền chợ nổi", "Xe tham quan", "Vé điểm du lịch"],
+    "excludes": ["Ăn tối", "Đặc sản mang về"],
+    "highlights": ["Chợ nổi Cái Răng", "Nhà cổ Bình Thủy", "Thiền viện"],
+    "bestTime": "Quanh năm",
+    "note": "Hợp cho du khách miền Bắc vào miền Tây.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-bavi-1n",
+    "title": "Tour Ba Vì 1 ngày: Rừng quốc gia – Nhà thờ cổ – Vườn xương rồng",
+    "destinations": ["Ba Vì"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["sinh thái", "ngày ngắn"],
+    "target": ["nhóm bạn", "cặp đôi"],
+    "pricePerPersonEstimate": { "low": 550000, "high": 950000, "currency": "VND" },
+    "includes": ["Xe du lịch", "Vé tham quan"],
+    "excludes": ["Ăn trưa"],
+    "highlights": ["Nhà thờ cổ", "Vườn xương rồng", "Đi bộ rừng"],
+    "bestTime": "Tháng 9–4",
+    "note": "Tour giá rẻ – gần Hà Nội.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-camranh-3n2d",
+    "title": "Combo Cam Ranh 3N2Đ: Bãi Dài – Vinpearl – Tắm khoáng",
+    "destinations": ["Cam Ranh"],
+    "durationDays": 3,
+    "durationNights": 2,
+    "style": ["nghỉ dưỡng", "biển"],
+    "target": ["gia đình", "cặp đôi"],
+    "pricePerPersonEstimate": { "low": 4200000, "high": 7800000, "currency": "VND" },
+    "includes": ["Resort 4–5 sao", "Xe đưa đón sân bay"],
+    "excludes": ["Vé Vinpearl", "Tắm khoáng nóng"],
+    "highlights": ["Biển Bãi Dài", "Tắm khoáng I-resort"],
+    "bestTime": "Tháng 3–8",
+    "note": "Hợp nghỉ dưỡng cao cấp.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-bentre-1n",
+    "title": "Tour Bến Tre 1 ngày: Tàu sông Mekong – Lò kẹo dừa – Vườn trái cây",
+    "destinations": ["Bến Tre"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["miền Tây", "ẩm thực"],
+    "target": ["gia đình", "nhóm bạn"],
+    "pricePerPersonEstimate": { "low": 500000, "high": 850000, "currency": "VND" },
+    "includes": ["Tàu du lịch", "Xe tham quan"],
+    "excludes": ["Ăn trưa"],
+    "highlights": ["Tàu sông Mekong", "Lò kẹo dừa", "Xe ngựa"],
+    "bestTime": "Mùa trái cây (tháng 4–8)",
+    "note": "Tour trải nghiệm miền Tây đặc trưng.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-hoian-1n",
+    "title": "Tour Hội An 1 ngày: Phố cổ – Chùa Cầu – Thả đèn hoa đăng",
+    "destinations": ["Hội An"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["văn hóa", "chụp ảnh"],
+    "target": ["cặp đôi", "gia đình"],
+    "pricePerPersonEstimate": { "low": 550000, "high": 900000, "currency": "VND" },
+    "includes": ["Vé phố cổ", "Xe đưa đón Đà Nẵng – Hội An"],
+    "excludes": ["Ăn tối", "Thuyền hoa đăng"],
+    "highlights": ["Phố cổ buổi tối", "Thả hoa đăng", "Chùa Cầu"],
+    "bestTime": "Quanh năm",
+    "note": "Tour chiều – tối rất được ưa chuộng.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-saigon-1n",
+    "title": "Tour Sài Gòn 1 ngày: Dinh Độc Lập – Nhà thờ Đức Bà – Bưu điện",
+    "destinations": ["TP Hồ Chí Minh"],
+    "durationDays": 1,
+    "durationNights": 0,
+    "style": ["city tour", "lịch sử"],
+    "target": ["nhóm bạn", "khách quốc tế"],
+    "pricePerPersonEstimate": { "low": 450000, "high": 750000, "currency": "VND" },
+    "includes": ["Xe tham quan", "Vé Dinh Độc Lập"],
+    "excludes": ["Ăn trưa", "Tháp Bitexco"],
+    "highlights": ["Dinh Độc Lập", "Nhà thờ Đức Bà", "Bưu điện TP"],
+    "bestTime": "Tháng 12–4",
+    "note": "Phù hợp city tour nội thành.",
+    "sourceUrl": ""
+  },
+
+  {
+    "id": "tour-bavi-2n1d",
+    "title": "Tour Ba Vì 2N1Đ: Glamping – BBQ – Rừng thông",
+    "destinations": ["Ba Vì"],
+    "durationDays": 2,
+    "durationNights": 1,
+    "style": ["glamping", "thiên nhiên"],
+    "target": ["nhóm bạn", "couple"],
+    "pricePerPersonEstimate": { "low": 1500000, "high": 3000000, "currency": "VND" },
+    "includes": ["Lều glamping", "BBQ tối", "Xe du lịch"],
+    "excludes": ["Đồ uống", "Chi phí tự túc"],
+    "highlights": ["Glamping rừng thông", "BBQ buổi tối", "Ảnh chill"],
+    "bestTime": "Tháng 10–3",
+    "note": "Hot trend giới trẻ.",
+    "sourceUrl": ""
+  }
+]
