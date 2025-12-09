@@ -6,18 +6,64 @@ import fs from "fs";
 import path from "path";
 import Fuse from "fuse.js";
 import { fileURLToPath } from "url";
+import mongoose from "mongoose";
+
+import { Location } from "./models/Location.js"; // ✅ dùng data vị trí có sẵn
 
 dotenv.config();
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+/* ==========================
+   0. KẾT NỐI MONGO (LƯU LỊCH SỬ CHAT + LOCATION)
+========================== */
 
-// ===== 1. Đọc config LLM từ .env =====
+const MONGO_URI = process.env.MONGO_URI || "";
+const MONGO_DB_NAME = process.env.MONGO_DB_NAME || "tour_chatbot";
+const MONGO_ENABLED = !!MONGO_URI;
+
+if (!MONGO_ENABLED) {
+  console.warn(
+    "⚠️  Không có MONGO_URI, lịch sử chat & vị trí sẽ không lưu vào database."
+  );
+} else {
+  mongoose
+    .connect(MONGO_URI, { dbName: MONGO_DB_NAME })
+    .then(() => console.log("✅ MongoDB connected"))
+    .catch((err) =>
+      console.error("❌ MongoDB connect error:", err.message || err)
+    );
+}
+
+// Schema lưu lịch sử các message trong 1 cuộc hội thoại
+const MessageSchema = new mongoose.Schema(
+  {
+    role: { type: String, enum: ["user", "assistant"], required: true },
+    content: { type: String, required: true }
+  },
+  { _id: false, timestamps: true }
+);
+
+const ConversationSchema = new mongoose.Schema(
+  {
+    clientId: { type: String, required: true }, // FE lưu clientId trong localStorage
+    title: { type: String, default: "" },
+    messages: [MessageSchema]
+  },
+  { timestamps: true }
+);
+
+const Conversation = mongoose.model("Conversation", ConversationSchema);
+
+/* ==========================
+   1. CẤU HÌNH LLM
+========================== */
+
 const LLM_PROVIDER = process.env.LLM_PROVIDER || "openrouter";
 const LLM_API_KEY = process.env.LLM_API_KEY;
 const LLM_BASE_URL =
-  process.env.LLM_BASE_URL || "https://openrouter.ai/api/v1";
+  (process.env.LLM_BASE_URL || "https://openrouter.ai/api/v1").replace(
+    /\/$/,
+    ""
+  );
 const LLM_MODEL = process.env.LLM_MODEL || "google/gemma-2-9b-it";
 
 if (!LLM_API_KEY) {
@@ -26,7 +72,58 @@ if (!LLM_API_KEY) {
   );
 }
 
-// ===== 2. Helper: __dirname + bỏ dấu tiếng Việt =====
+async function callLLMChat({ system, user }) {
+  if (!LLM_API_KEY) {
+    console.warn("⚠️ Thiếu LLM_API_KEY, trả lời demo.");
+    return "Hiện tại mình chưa kết nối được tới LLM, bạn kiểm tra lại API key giúp mình nhé.";
+  }
+
+  const url = `${LLM_BASE_URL}/chat/completions`;
+
+  const body = {
+    model: LLM_MODEL,
+    messages: [
+      { role: "system", content: system },
+      { role: "user", content: user }
+    ],
+    temperature: 0.7
+  };
+
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${LLM_API_KEY}`
+  };
+
+  if (LLM_PROVIDER === "openrouter") {
+    headers["HTTP-Referer"] =
+      process.env.APP_PUBLIC_URL || "http://localhost:5173";
+    headers["X-Title"] = "Tour Recommendation Chatbot";
+  }
+
+  const resp = await fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body)
+  });
+
+  if (!resp.ok) {
+    const errBody = await resp.text().catch(() => "");
+    const error = new Error(`LLM API error: ${resp.status} ${resp.statusText}`);
+    error.status = resp.status;
+    error.rawBody = errBody;
+    console.error("⚠️ LLM error body:", errBody);
+    throw error;
+  }
+
+  const data = await resp.json();
+  const reply = data.choices?.[0]?.message?.content;
+  return reply || "Xin lỗi, mình chưa trả lời được câu hỏi này.";
+}
+
+/* ==========================
+   2. HELPER CHUNG
+========================== */
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -37,10 +134,29 @@ function removeVietnameseTones(str = "") {
   return s.toLowerCase();
 }
 
-// ✅ Bộ nhớ session đơn giản (nhớ lastLocation)
-const sessions = {};   // { sessionId: { lastLocation: string|null, lastUserMessage: string|null } }
+/* ========= SESSION TRONG RAM (NHỚ lastLocation & HISTORY) ========= */
 
-// ===== 3. Load dữ liệu nội bộ (destinations, flights, foods, tours, policies, tips) =====
+const MAX_HISTORY = 10;
+
+const sessions = {
+  // [sessionId]: {
+  //   lastLocation: string | null,
+  //   lastCoords: { lat, lng } | null,
+  //   history: [{ role: "user" | "assistant", content: string }]
+  // }
+};
+
+function appendHistory(session, role, content) {
+  if (!session.history) session.history = [];
+  session.history.push({ role, content });
+  if (session.history.length > MAX_HISTORY) {
+    session.history = session.history.slice(-MAX_HISTORY);
+  }
+}
+
+/* ==========================
+   3. LOAD DATA JSON (DEST, FLIGHTS, FOODS, TOURS, POLICIES, TIPS)
+========================== */
 
 // --- 3.1 Destinations ---
 const destinationsPath = path.join(__dirname, "data", "destinations.json");
@@ -123,7 +239,6 @@ try {
     };
   });
 
-  // global fuse (dùng fallback)
   foodsFuse = new Fuse(foods, {
     keys: ["searchKey"],
     includeScore: true,
@@ -223,212 +338,54 @@ try {
   console.error("⚠️ Không thể load travel_tips.json:", err.message);
 }
 
-// ===== 3.x Canonical locations (tỉnh/thành Việt Nam) =====
-// Dùng để fuzzy match tên địa điểm, sau đó detectLocationFromText trả về loc.name
-const canonicalLocations = [
-  // 5 thành phố trực thuộc TW
-  {
-    id: "ha-noi",
-    name: "Hà Nội",
-    extraAliases: ["hanoi", "tp ha noi", "thanh pho ha noi", "hn"]
-  },
-  {
-    id: "ho-chi-minh",
-    name: "TP. Hồ Chí Minh",
-    extraAliases: [
-      "ho chi minh",
-      "ho chi minh city",
-      "tp hcm",
-      "tphcm",
-      "hcm",
-      "sai gon",
-      "saigon",
-      "thanh pho ho chi minh"
-    ]
-  },
-  {
-    id: "hai-phong",
-    name: "Hải Phòng",
-    extraAliases: ["hai phong", "thanh pho hai phong"]
-  },
-  {
-    id: "da-nang",
-    name: "Đà Nẵng",
-    extraAliases: ["da nang", "danang", "thanh pho da nang"]
-  },
-  {
-    id: "can-tho",
-    name: "Cần Thơ",
-    extraAliases: ["can tho", "thanh pho can tho", "tay do"]
-  },
+/* ==========================
+   3.x DETECT LOCATION TỪ MONGODB
+========================== */
 
-  // Miền núi phía Bắc
-  { id: "ha-giang", name: "Hà Giang", extraAliases: ["ha giang"] },
-  { id: "cao-bang", name: "Cao Bằng", extraAliases: ["cao bang"] },
-  { id: "lao-cai", name: "Lào Cai", extraAliases: ["lao cai", "sapa", "sa pa"] },
-  { id: "dien-bien", name: "Điện Biên", extraAliases: ["dien bien"] },
-  { id: "lai-chau", name: "Lai Châu", extraAliases: ["lai chau"] },
-  { id: "son-la", name: "Sơn La", extraAliases: ["son la", "moc chau"] },
-  { id: "yen-bai", name: "Yên Bái", extraAliases: ["yen bai", "mu cang chai"] },
-  { id: "tuyen-quang", name: "Tuyên Quang", extraAliases: ["tuyen quang"] },
-  { id: "bac-kan", name: "Bắc Kạn", extraAliases: ["bac kan"] },
-  { id: "thai-nguyen", name: "Thái Nguyên", extraAliases: ["thai nguyen"] },
-  { id: "lang-son", name: "Lạng Sơn", extraAliases: ["lang son", "mau son"] },
-  { id: "phu-tho", name: "Phú Thọ", extraAliases: ["phu tho", "den hung"] },
-  { id: "vinh-phuc", name: "Vĩnh Phúc", extraAliases: ["vinh phuc", "tam dao"] },
-  { id: "quang-ninh", name: "Quảng Ninh", extraAliases: ["quang ninh", "ha long"] },
-  { id: "bac-giang", name: "Bắc Giang", extraAliases: ["bac giang"] },
-  { id: "bac-ninh", name: "Bắc Ninh", extraAliases: ["bac ninh", "quan ho"] },
-
-  // Đồng bằng Bắc Bộ
-  { id: "hai-duong", name: "Hải Dương", extraAliases: ["hai duong"] },
-  { id: "hung-yen", name: "Hưng Yên", extraAliases: ["hung yen", "pho hien"] },
-  { id: "hoa-binh", name: "Hòa Bình", extraAliases: ["hoa binh"] },
-  { id: "ha-nam", name: "Hà Nam", extraAliases: ["ha nam", "tam chuc"] },
-  { id: "thai-binh", name: "Thái Bình", extraAliases: ["thai binh"] },
-  { id: "nam-dinh", name: "Nam Định", extraAliases: ["nam dinh"] },
-  { id: "ninh-binh", name: "Ninh Bình", extraAliases: ["ninh binh", "trang an"] },
-
-  // Bắc Trung Bộ
-  { id: "thanh-hoa", name: "Thanh Hóa", extraAliases: ["thanh hoa", "sam son"] },
-  { id: "nghe-an", name: "Nghệ An", extraAliases: ["nghe an", "vinh"] },
-  { id: "ha-tinh", name: "Hà Tĩnh", extraAliases: ["ha tinh"] },
-  { id: "quang-binh", name: "Quảng Bình", extraAliases: ["quang binh", "phong nha"] },
-  { id: "quang-tri", name: "Quảng Trị", extraAliases: ["quang tri"] },
-  {
-    id: "thua-thien-hue",
-    name: "Thừa Thiên Huế",
-    extraAliases: ["thua thien hue", "hue", "co do hue"]
-  },
-
-  // Duyên hải Nam Trung Bộ
-  { id: "quang-nam", name: "Quảng Nam", extraAliases: ["quang nam", "hoi an"] },
-  { id: "quang-ngai", name: "Quảng Ngãi", extraAliases: ["quang ngai", "ly son"] },
-  { id: "binh-dinh", name: "Bình Định", extraAliases: ["binh dinh", "quy nhon"] },
-  { id: "phu-yen", name: "Phú Yên", extraAliases: ["phu yen", "tuy hoa"] },
-  { id: "khanh-hoa", name: "Khánh Hòa", extraAliases: ["khanh hoa", "nha trang"] },
-  { id: "ninh-thuan", name: "Ninh Thuận", extraAliases: ["ninh thuan", "phan rang"] },
-  {
-    id: "binh-thuan",
-    name: "Bình Thuận",
-    extraAliases: ["binh thuan", "phan thiet", "mui ne"]
-  },
-
-  // Tây Nguyên
-  { id: "kon-tum", name: "Kon Tum", extraAliases: ["kon tum"] },
-  { id: "gia-lai", name: "Gia Lai", extraAliases: ["gia lai", "pleiku"] },
-  { id: "dak-lak", name: "Đắk Lắk", extraAliases: ["dak lak", "buon ma thuot"] },
-  { id: "dak-nong", name: "Đắk Nông", extraAliases: ["dak nong"] },
-  { id: "lam-dong", name: "Lâm Đồng", extraAliases: ["lam dong", "da lat", "dalat"] },
-
-  // Đông Nam Bộ
-  {
-    id: "ba-ria-vung-tau",
-    name: "Bà Rịa – Vũng Tàu",
-    extraAliases: ["ba ria vung tau", "vung tau", "ba ria"]
-  },
-  { id: "binh-duong", name: "Bình Dương", extraAliases: ["binh duong"] },
-  { id: "binh-phuoc", name: "Bình Phước", extraAliases: ["binh phuoc"] },
-  { id: "dong-nai", name: "Đồng Nai", extraAliases: ["dong nai", "bien hoa"] },
-  { id: "tay-ninh", name: "Tây Ninh", extraAliases: ["tay ninh"] },
-  { id: "long-an", name: "Long An", extraAliases: ["long an"] },
-
-  // Đồng bằng sông Cửu Long
-  { id: "tien-giang", name: "Tiền Giang", extraAliases: ["tien giang", "my tho"] },
-  { id: "ben-tre", name: "Bến Tre", extraAliases: ["ben tre", "xu dua"] },
-  { id: "tra-vinh", name: "Trà Vinh", extraAliases: ["tra vinh"] },
-  { id: "vinh-long", name: "Vĩnh Long", extraAliases: ["vinh long"] },
-  { id: "dong-thap", name: "Đồng Tháp", extraAliases: ["dong thap", "sa dec"] },
-  { id: "an-giang", name: "An Giang", extraAliases: ["an giang", "chau doc", "long xuyen"] },
-  {
-    id: "kien-giang",
-    name: "Kiên Giang",
-    extraAliases: ["kien giang", "phu quoc", "rach gia"]
-  },
-  { id: "hau-giang", name: "Hậu Giang", extraAliases: ["hau giang", "vi thanh"] },
-  { id: "soc-trang", name: "Sóc Trăng", extraAliases: ["soc trang"] },
-  { id: "bac-lieu", name: "Bạc Liêu", extraAliases: ["bac lieu"] },
-  { id: "ca-mau", name: "Cà Mau", extraAliases: ["ca mau", "dat mui", "mui ca mau"] }
-];
-
-// ===== 3.7 Helper: detectLocationFromText (để cập nhật lastLocation) =====
-function detectLocationFromText(text) {
+/**
+ * Dùng data vị trí có sẵn trong MongoDB để tìm địa điểm.
+ * Trả về document location (name, lat, lng, ...) hoặc null nếu không tìm thấy.
+ */
+async function detectLocationFromTextDb(text) {
   const raw = text || "";
-  const query = removeVietnameseTones(raw);
-  if (!query) return null;
+  const q = removeVietnameseTones(raw);
+  if (!q) return null;
 
-  // 1️⃣ Xử lý một vài typo nặng thường gặp (ưu tiên nhất)
-  const hardTypos = [
-    { name: "Cần Thơ", patterns: ["can thor", "can tho2"] }
-    // có thể thêm nữa nếu em gặp thực tế
-  ];
+  const tokens = q.split(/[^a-z0-9]+/).filter((w) => w.length >= 3);
+  if (!tokens.length) return null;
 
-  for (const loc of hardTypos) {
-    if (loc.patterns.some((p) => query.includes(p))) {
-      return loc.name;
-    }
-  }
+  const main = tokens.join(" ");
+  const regex = new RegExp(main.replace(/\s+/g, ".*"), "i");
 
-  // 2️⃣ Dò theo canonicalLocations (tỉnh/thành) trước
-  let bestLoc = null;
-  let bestLen = 0;
+  // 1️⃣ ưu tiên searchKey / name / aliases
+  let loc =
+    (await Location.findOne({
+      $or: [
+        { searchKey: { $regex: regex } },
+        { name: { $regex: regex } },
+        { aliases: { $regex: regex } }
+      ]
+    }).lean()) || null;
 
-  for (const loc of canonicalLocations) {
-    const baseAliases = [loc.name, ...(loc.extraAliases || [])];
+  if (loc) return loc;
 
-    for (const alias of baseAliases) {
-      const aliasNorm = removeVietnameseTones(alias);
-      if (!aliasNorm || aliasNorm.length < 3) continue;
+  // 2️⃣ fallback: match từng token
+  const orArr = tokens.map((t) => ({
+    $or: [
+      { searchKey: { $regex: new RegExp(t, "i") } },
+      { name: { $regex: new RegExp(t, "i") } },
+      { aliases: { $regex: new RegExp(t, "i") } }
+    ]
+  }));
 
-      if (query.includes(aliasNorm) && aliasNorm.length > bestLen) {
-        bestLen = aliasNorm.length;
-        bestLoc = loc;
-      }
-    }
-  }
-
-  if (bestLoc) {
-    // Trả về name để các chỗ khác (FOODS, TOURS...) dùng .city so sánh
-    return bestLoc.name;
-  }
-
-  // 3️⃣ AUTO MATCH theo toàn bộ destinations.json như cũ
-  const qClean = query.replace(/[^a-z0-9]+/g, "");
-
-  let bestCity = null;
-  let bestCityLen = 0;
-
-  for (const d of destinations) {
-    if (!d.city) continue;
-    const cityNorm = removeVietnameseTones(d.city).replace(/[^a-z0-9]+/g, "");
-    if (!cityNorm || cityNorm.length < 3) continue;
-
-    if (qClean.includes(cityNorm) && cityNorm.length > bestCityLen) {
-      bestCityLen = cityNorm.length;
-      bestCity = d.city;
-    }
-  }
-
-  if (bestCity) {
-    return bestCity;
-  }
-
-  // 4️⃣ Fallback về Fuse trên destinations nếu vẫn không match
-  if (!destinationsFuse) return null;
-
-  const results = destinationsFuse.search(query);
-  if (!results.length) return null;
-
-  const best = results[0];
-  if (best.score != null && best.score > 0.6) {
-    return null;
-  }
-
-  const d = best.item;
-  return d.city || d.name || null;
+  loc = await Location.findOne({ $or: orArr }).lean();
+  return loc || null;
 }
 
-// ===== 4. System prompt chatbot du lịch =====
+/* ==========================
+   4. SYSTEM PROMPT (FULL)
+========================== */
+
 const systemPrompt = `
 Bạn là một trợ lý du lịch thân thiện, nói tiếng Việt tự nhiên, có thể tư vấn cả du lịch Việt Nam và quốc tế.
 
@@ -514,10 +471,11 @@ NGUYÊN TẮC:
     "Mình gợi ý thêm 1–2 quán khác, ngoài ra dữ liệu hiện tại chưa có thêm."
 
 - Tuyệt đối không được lặp nguyên tên quán/món y chang câu trả lời trước, trừ khi user yêu cầu mô tả chi tiết hơn về đúng quán đó.
-
 `;
 
-// ===== 5. Hàm build context (RAG mini) =====
+/* ==========================
+   5. BUILD CONTEXT (RAG MINI)
+========================== */
 function buildDestinationsContext(userMessage) {
   if (!destinations || destinations.length === 0) return "[]";
   const query = removeVietnameseTones(userMessage || "");
@@ -531,29 +489,24 @@ function buildDestinationsContext(userMessage) {
   return JSON.stringify(finalList, null, 2);
 }
 
-// ✅ SỬA Ở ĐÂY: FOODS dùng thêm lastLocation
 function buildFoodsContext(userMessage, lastLocation) {
   if (!foods || foods.length === 0) return "[]";
 
   const query = removeVietnameseTones(userMessage || "");
   let baseList = foods;
 
-  // Nếu đã nhớ lastLocation → ưu tiên món ăn ở đó
   if (lastLocation) {
     const locNorm = removeVietnameseTones(lastLocation);
     const filtered = foods.filter((f) =>
       removeVietnameseTones(f.city || "").includes(locNorm)
     );
-    if (filtered.length > 0) {
-      baseList = filtered;
-    }
+    if (filtered.length > 0) baseList = filtered;
   }
 
   if (!query) {
     return JSON.stringify(baseList.slice(0, 6), null, 2);
   }
 
-  // Fuzzy trên danh sách đã lọc
   const fuse = new Fuse(baseList, {
     keys: ["searchKey"],
     includeScore: true,
@@ -565,22 +518,20 @@ function buildFoodsContext(userMessage, lastLocation) {
   const finalList = bestMatches.length > 0 ? bestMatches : baseList.slice(0, 6);
   return JSON.stringify(finalList, null, 2);
 }
+
 function buildToursContext(userMessage, lastLocation) {
   if (!tours || tours.length === 0) return "[]";
 
   const query = removeVietnameseTones(userMessage || "");
   let baseList = tours;
 
-  // Ưu tiên tour có chứa địa điểm lastLocation
   if (lastLocation) {
     const locNorm = removeVietnameseTones(lastLocation);
     const filtered = tours.filter((t) => {
       const destStr = removeVietnameseTones((t.destinations || []).join(" "));
       return destStr.includes(locNorm);
     });
-    if (filtered.length > 0) {
-      baseList = filtered;
-    }
+    if (filtered.length > 0) baseList = filtered;
   }
 
   if (!query) {
@@ -595,47 +546,95 @@ function buildToursContext(userMessage, lastLocation) {
 
   const results = fuse.search(query);
   const bestMatches = results.slice(0, 4).map((r) => r.item);
-  const finalList = bestMatches.length > 0 ? bestMatches : baseList.slice(0, 4);
+  const finalList =
+    bestMatches.length > 0 ? bestMatches : baseList.slice(0, 4);
   return JSON.stringify(finalList, null, 2);
 }
+
 function buildPoliciesContext(userMessage) {
   if (!policies || policies.length === 0) return "[]";
-
   const query = removeVietnameseTones(userMessage || "");
   if (!policiesFuse || !query) {
-    // Nếu không có query hoặc chưa init Fuse → trả hết (hoặc giới hạn)
     return JSON.stringify(policies, null, 2);
   }
-
   const results = policiesFuse.search(query);
   const bestMatches = results.slice(0, 3).map((r) => r.item);
   const finalList = bestMatches.length > 0 ? bestMatches : policies;
-
   return JSON.stringify(finalList, null, 2);
 }
 
 function buildTipsContext(userMessage) {
   if (!travelTips || travelTips.length === 0) return "[]";
-
   const query = removeVietnameseTones(userMessage || "");
   if (!tipsFuse || !query) {
-    // Không có query → trả vài tips đầu
     return JSON.stringify(travelTips.slice(0, 4), null, 2);
   }
-
   const results = tipsFuse.search(query);
   const bestMatches = results.slice(0, 4).map((r) => r.item);
   const finalList =
     bestMatches.length > 0 ? bestMatches : travelTips.slice(0, 4);
-
   return JSON.stringify(finalList, null, 2);
 }
+
+/* ==========================
+   5.x FEATURED DESTINATIONS (ĐIỂM ĐẾN NỔI BẬT)
+========================== */
+
+function buildFeaturedDestinations(maxCount = 10) {
+  if (!destinations || destinations.length === 0) return "[]";
+
+  // Nếu trong destinations.json có isFeatured: true thì ưu tiên
+  const featured = destinations.filter((d) => d.isFeatured);
+  const base = featured.length > 0 ? featured : destinations;
+
+  const list = base.slice(0, maxCount).map((d) => ({
+    name: d.name || "",
+    city: d.city || "",
+    country: d.country || "",
+    region: d.region || "",
+    tags: d.tags || [],
+    bestTime: d.bestTime || "",
+    shortDesc: d.shortDesc || d.description || ""
+  }));
+
+  return JSON.stringify(list, null, 2);
+}
+
+/* ==========================
+   5.y CITY DESTINATIONS (ĐIỂM ĐẾN TRONG 1 TỈNH/THÀNH)
+========================== */
+
+function buildCityDestinationsContext(locationName, maxCount = 10) {
+  if (!destinations || destinations.length === 0 || !locationName) return "[]";
+
+  const locNorm = removeVietnameseTones(locationName);
+
+  const list = destinations
+    .filter((d) => {
+      const cityNorm = removeVietnameseTones(d.city || "");
+      return cityNorm.includes(locNorm);
+    })
+    .slice(0, maxCount)
+    .map((d) => ({
+      name: d.name || "",
+      city: d.city || "",
+      country: d.country || "",
+      region: d.region || "",
+      tags: d.tags || [],
+      bestTime: d.bestTime || "",
+      shortDesc: d.shortDesc || d.description || ""
+    }));
+
+  return JSON.stringify(list, null, 2);
+}
+/* ==========================
+   6. detectQueryIntent
+========================== */
 
 function detectQueryIntent(text = "") {
   const q = removeVietnameseTones(text || "");
   if (!q) return "other";
 
-  // 🍽️ Từ khóa liên quan ĂN UỐNG
   const foodKeywords = [
     "an gi",
     "an gi o",
@@ -665,7 +664,6 @@ function detectQueryIntent(text = "") {
     "ca phe"
   ];
 
-  // 📍 Từ khóa ĐỊA ĐIỂM / TOUR / LỊCH TRÌNH
   const placeKeywords = [
     "di dau",
     "di choi",
@@ -698,39 +696,50 @@ function detectQueryIntent(text = "") {
     "goi y lich trinh"
   ];
 
-  // 💡 Từ khóa MẸO / TIPS / KINH NGHIỆM
   const tipsKeywords = [
-    "meo", "meo du lich", "kinh nghiem", "tip", "tips",
-    "luu y", "chu y", "nen di thang may", "gia re nhat",
-    "thoi diem nao", "thang nao", "mua nao",
-    "thoi tiet", "thoi tiet o", "co mua khong", "mua nao dep",
-    "phuong tien", "di chuyen bang gi", "di bang gi",
-    "gia ve", "gia ve may bay", "bay thang nao re",
-    "hanh ly", "ky gui", "mang gi khi di", "can chuan bi gi",
-    "doi tra", "huy tour", "huy ve", "bao gom gi",
-    "an toan", "bao hiem du lich", "tui tien"
+    "meo",
+    "meo du lich",
+    "kinh nghiem",
+    "tip",
+    "tips",
+    "luu y",
+    "chu y",
+    "nen di thang may",
+    "gia re nhat",
+    "thoi diem nao",
+    "thang nao",
+    "mua nao",
+    "thoi tiet",
+    "thoi tiet o",
+    "co mua khong",
+    "mua nao dep",
+    "phuong tien",
+    "di chuyen bang gi",
+    "di bang gi",
+    "gia ve",
+    "gia ve may bay",
+    "bay thang nao re",
+    "hanh ly",
+    "ky gui",
+    "mang gi khi di",
+    "can chuan bi gi",
+    "doi tra",
+    "huy tour",
+    "huy ve",
+    "bao gom gi",
+    "an toan",
+    "bao hiem du lich",
+    "tui tien"
   ];
 
   let foodScore = 0;
   let placeScore = 0;
   let tipsScore = 0;
 
-  // Đếm điểm food
-  for (const kw of foodKeywords) {
-    if (q.includes(kw)) foodScore += 2;
-  }
+  for (const kw of foodKeywords) if (q.includes(kw)) foodScore += 2;
+  for (const kw of placeKeywords) if (q.includes(kw)) placeScore += 2;
+  for (const kw of tipsKeywords) if (q.includes(kw)) tipsScore += 2;
 
-  // Đếm điểm place
-  for (const kw of placeKeywords) {
-    if (q.includes(kw)) placeScore += 2;
-  }
-
-  // Đếm điểm tips
-  for (const kw of tipsKeywords) {
-    if (q.includes(kw)) tipsScore += 2;
-  }
-
-  // Một số pattern boost nhanh:
   if (/an gi o /.test(q)) foodScore += 3;
   if (/goi y quan/.test(q)) foodScore += 2;
   if (/quan nao/.test(q)) foodScore += 2;
@@ -739,117 +748,233 @@ function detectQueryIntent(text = "") {
   if (/lich trinh/.test(q)) placeScore += 3;
   if (/tour /.test(q)) placeScore += 3;
 
-  // 🔎 Tính max + quyết định
   const scores = { food: foodScore, place: placeScore, tips: tipsScore };
   const maxScore = Math.max(foodScore, placeScore, tipsScore);
-
-  // Không trúng gì rõ ràng
   if (maxScore <= 0) return "other";
 
-  // Lấy tất cả intent có điểm = max
   const topIntents = Object.entries(scores)
     .filter(([, v]) => v === maxScore)
     .map(([k]) => k);
-
-  // Chỉ có 1 loại thắng rõ ràng
-  if (topIntents.length === 1) {
-    return topIntents[0]; // "food" | "place" | "tips"
-  }
-
-  // Nhiều loại cùng cao → mixed
+  if (topIntents.length === 1) return topIntents[0];
   return "mixed";
 }
 
-// ===== 6. Hàm gọi LLM qua OpenRouter (hoặc provider khác) =====
-async function callLLMChat({ system, user }) {
-  if (!LLM_API_KEY) {
-    throw new Error("Thiếu LLM_API_KEY, không gọi được LLM.");
-  }
+/* ==========================
+   6.1 NHẬN DIỆN CÂU HỎI "CÓ NHỮNG NƠI NÀO / ĐI ĐÂU"
+========================== */
 
-  const base = LLM_BASE_URL.replace(/\/$/, "");
-  const url = `${base}/chat/completions`;
+function isGenericPlaceQuestion(text = "") {
+  const q = removeVietnameseTones(text || "");
+  if (!q) return false;
 
-  const body = {
-    model: LLM_MODEL,
-    messages: [
-      { role: "system", content: system },
-      { role: "user", content: user }
-    ],
-    temperature: 0.7
-  };
+  const patterns = [
+    "co nhung noi nao",
+    "co nhung dia diem nao",
+    "nhung noi nao dep",
+    "nhung dia diem nao dep",
+    "nen di dau",
+    "nen di choi dau",
+    "nen di du lich o dau",
+    "goi y diem den",
+    "goi y vai noi",
+    "goi y vai dia diem",
+    "di choi o dau",
+    "di du lich o dau",
+    "o viet nam nen di dau",
+    "o vn nen di dau"
+  ];
 
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${LLM_API_KEY}`
-  };
-
-  if (LLM_PROVIDER === "openrouter") {
-    headers["HTTP-Referer"] = "http://localhost:5173";
-    headers["X-Title"] = "Tour Recommendation Chatbot";
-  }
-
-  const resp = await fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body)
-  });
-
-  if (!resp.ok) {
-    const errBody = await resp.text().catch(() => "");
-    const error = new Error(`LLM API error: ${resp.status} ${resp.statusText}`);
-    error.status = resp.status;
-    error.rawBody = errBody;
-    console.error("⚠️ LLM error body:", errBody);
-    throw error;
-  }
-
-  const data = await resp.json();
-  const reply = data.choices?.[0]?.message?.content;
-  return reply || "Xin lỗi, mình chưa trả lời được câu hỏi này.";
+  return patterns.some((p) => q.includes(p));
 }
 
-// ===== 7. Endpoint /api/chat =====
+/* ==========================
+   6.2 NHẬN DIỆN CÂU HỎI "Ở <TỈNH/THÀNH> CÓ NHỮNG ĐỊA ĐIỂM NÀO"
+========================== */
+
+function isCityPlacesQuestion(text = "") {
+  const q = removeVietnameseTones(text || "");
+  if (!q) return false;
+
+  const keyPatterns = [
+    "co nhung dia diem nao",
+    "co nhung noi nao",
+    "nhung dia diem nao",
+    "nhung noi nao",
+    "cho nao dep",
+    "noi nao dep",
+    "co cho nao choi",
+    "co cho nao tham quan",
+    "co diem nao tham quan"
+  ];
+
+  return keyPatterns.some((p) => q.includes(p));
+}
+/* ==========================
+   7. LƯU CONVERSATION VÀO MONGO
+========================== */
+
+async function saveConversationTurn({
+  clientId,
+  conversationId,
+  userMessage,
+  assistantReply
+}) {
+  if (!MONGO_ENABLED || !clientId) return { conversationId };
+
+  if (mongoose.connection.readyState !== 1) {
+    return { conversationId };
+  }
+
+  let conv = null;
+  if (conversationId) {
+    conv = await Conversation.findById(conversationId).catch(() => null);
+  }
+
+  if (!conv) {
+    const title = userMessage.slice(0, 40);
+    conv = await Conversation.create({
+      clientId,
+      title,
+      messages: [
+        { role: "user", content: userMessage },
+        { role: "assistant", content: assistantReply }
+      ]
+    });
+  } else {
+    conv.messages.push({ role: "user", content: userMessage });
+    conv.messages.push({ role: "assistant", content: assistantReply });
+    if (!conv.title) conv.title = userMessage.slice(0, 40);
+    await conv.save();
+  }
+
+  return { conversationId: conv._id.toString() };
+}
+
+/* ==========================
+   8. EXPRESS APP + ROUTES
+========================== */
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// Health check
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    provider: LLM_PROVIDER,
+    dataLoaded: {
+      destinations: destinations.length,
+      foods: foods.length,
+      tours: tours.length
+    }
+  });
+});
+/* ----- 8.1 API CHAT ----- */
+
 app.post("/api/chat", async (req, res) => {
   try {
-    const { message, sessionId, origin, destination, tripType } = req.body;
+    const {
+      message,
+      sessionId,
+      origin,
+      destination,
+      tripType,
+      clientId,
+      conversationId
+    } = req.body;
 
     if (!message || typeof message !== "string") {
       return res.status(400).json({ error: "Thiếu message" });
     }
 
-    // 👉 NEW: detect intent
     const intent = detectQueryIntent(message);
 
-    // ==== SESSION + NGỮ CẢNH =====
+    // SESSION
     const sid = sessionId || "default";
     if (!sessions[sid]) {
-      sessions[sid] = { lastLocation: null, lastUserMessage: null };
+      sessions[sid] = { lastLocation: null, lastCoords: null, history: [] };
+    }
+    const session = sessions[sid];
+
+    const previousUserMessage =
+      session.history
+        ?.filter((m) => m.role === "user")
+        .slice(-1)[0]?.content || null;
+
+    /* 🔍 Dò địa điểm từ MongoDB (Location) */
+    let detectedLocName = null;
+    let detectedCoords = null;
+
+    try {
+      const locDoc = await detectLocationFromTextDb(message);
+      if (locDoc) {
+        detectedLocName = locDoc.name || null;
+        if (locDoc.lat != null && locDoc.lng != null) {
+          detectedCoords = { lat: locDoc.lat, lng: locDoc.lng };
+        }
+      }
+    } catch (e) {
+      console.warn("⚠️ detectLocationFromTextDb error:", e.message || e);
     }
 
-    const previousUserMessage = sessions[sid].lastUserMessage;
-
-    // Cập nhật lastLocation nếu message chứa tên địa điểm (fuzzy)
-    const detectedLoc = detectLocationFromText(message);
-    if (detectedLoc) {
-      sessions[sid].lastLocation = detectedLoc;
-      console.log("🧭 Cập nhật lastLocation:", sid, "=>", detectedLoc);
+    // Cập nhật lastLocation / lastCoords trong session nếu tìm được location
+    if (detectedLocName) {
+      session.lastLocation = detectedLocName;
+      if (detectedCoords) {
+        session.lastCoords = detectedCoords;
+      }
+      console.log(
+        "🧭 Cập nhật lastLocation:",
+        sid,
+        "=>",
+        detectedLocName,
+        detectedCoords ? JSON.stringify(detectedCoords) : ""
+      );
     }
 
-    const currentLocation = sessions[sid].lastLocation;
+    const currentLocation = session.lastLocation;
+    const currentCoords = session.lastCoords || null;
 
-    // Text đưa vào RAG: câu trước + câu hiện tại (nếu có)
-    const ragText = previousUserMessage
-      ? `${previousUserMessage}\n${message}`
-      : message;
+    // 🆕 1) Hỏi chung chung "có những nơi nào / nên đi đâu" (KHÔNG có location)
+    const genericPlaceQuestion =
+      intent === "place" &&
+      !detectedLocName &&
+      isGenericPlaceQuestion(message);
 
-    // ==== RAG: build các context =====
+    // 🆕 2) Hỏi "Ở <tỉnh/thành> có những địa điểm nào" (CÓ location)
+    const cityPlacesQuestion =
+      !!detectedLocName &&
+      intent === "place" &&
+      isCityPlacesQuestion(message);
+
+    // Thêm history user
+    appendHistory(session, "user", message);
+
+    // Text đưa vào RAG: ghép các câu user gần nhất
+    const ragText = session.history
+      .filter((m) => m.role === "user")
+      .map((m) => m.content)
+      .join("\n");
+
+    // Build context
     const destinationsContext = buildDestinationsContext(ragText);
     const foodsContext = buildFoodsContext(ragText, currentLocation);
-const toursContext = buildToursContext(ragText, currentLocation);
+    const toursContext = buildToursContext(ragText, currentLocation);
     const policiesContext = buildPoliciesContext(ragText);
     const tipsContext = buildTipsContext(ragText);
 
-    // ==== Giá vé (nếu có origin/destination) ====
+    // 🆕 Context điểm đến nổi bật toàn quốc (khi genericPlaceQuestion)
+    const featuredDestinationsContext = genericPlaceQuestion
+      ? buildFeaturedDestinations(12)
+      : "";
+
+    // 🆕 Context điểm đến trong tỉnh/thành hiện tại (khi cityPlacesQuestion)
+    const cityDestinationsContext = cityPlacesQuestion
+      ? buildCityDestinationsContext(currentLocation, 12)
+      : "";
+
+    // Giá vé nếu có origin/destination
     let flightContextText = "";
     if (origin && destination) {
       const estimate = findFlightEstimate(origin, destination);
@@ -874,13 +999,14 @@ YÊU CẦU:
       }
     }
 
-const userPrompt = `
+    const userPrompt = `
 Ý ĐỊNH CÂU HỎI (intent): ${intent}
 
 LỊCH SỬ NGẮN:
 - Câu trước của user: ${previousUserMessage || "(chưa có)"}
 - Câu hiện tại của user: "${message}"
 - Địa điểm đang được hiểu (lastLocation): ${currentLocation || "chưa xác định"}
+- Tọa độ hiện tại (nếu có): ${currentCoords ? JSON.stringify(currentCoords) : "chưa có"}
 
 DỮ LIỆU NỘI BỘ (JSON):
 
@@ -898,6 +1024,13 @@ ${policiesContext}
 
 5. TIPS (kinh nghiệm du lịch):
 ${tipsContext}
+${genericPlaceQuestion ? `
+6. FEATURED_DESTINATIONS (danh sách điểm đến nổi bật toàn quốc):
+${featuredDestinationsContext}
+` : ""}${cityPlacesQuestion ? `
+7. CITY_DESTINATIONS (danh sách địa điểm trong tỉnh/thành hiện tại):
+${cityDestinationsContext}
+` : ""}
 
 QUY TẮC THEO Ý ĐỊNH CÂU HỎI:
 - Nếu intent = "place": ƯU TIÊN dùng DESTINATIONS + TOURS (địa điểm, lịch trình, tour).
@@ -905,6 +1038,28 @@ QUY TẮC THEO Ý ĐỊNH CÂU HỎI:
 - Nếu intent = "tips": ƯU TIÊN dùng TIPS + POLICIES (mẹo, kinh nghiệm, lưu ý).
 - Nếu intent = "mixed": Kết hợp hợp lý theo nội dung người dùng hỏi.
 - Nếu intent = "other": Trả lời chung, dựa trên toàn bộ context.
+
+${genericPlaceQuestion ? `
+HƯỚNG DẪN ĐẶC BIỆT KHI USER HỎI CHUNG CHUNG "CÓ NHỮNG NƠI NÀO / NÊN ĐI ĐÂU":
+
+- Người dùng đang hỏi chung chung về điểm đến, CHƯA nhắc tỉnh/thành cụ thể.
+- Hãy ưu tiên dùng FEATURED_DESTINATIONS để gợi ý 5–8 điểm đến nổi bật, có thể chia theo vùng miền (Bắc – Trung – Nam).
+- Với mỗi điểm đến nên nêu:
+  + Tên thành phố/tỉnh.
+  + 1–2 điểm nổi bật: cảnh, hoạt động chính.
+  + Thời điểm đi đẹp nhất (nếu có bestTime).
+- Nếu user nói thêm về "thích biển / núi / nghỉ dưỡng / phượt" thì chọn trong FEATURED_DESTINATIONS những nơi phù hợp.
+` : ""}
+
+${cityPlacesQuestion ? `
+HƯỚNG DẪN ĐẶC BIỆT KHI USER HỎI "Ở ${currentLocation} CÓ NHỮNG ĐỊA ĐIỂM NÀO":
+
+- Hãy dùng CITY_DESTINATIONS để gợi ý 4–8 địa điểm cụ thể tại ${currentLocation}.
+- Với mỗi địa điểm:
+  + Nêu tên, mô tả ngắn lý do nên đi (view đẹp, trải nghiệm đặc trưng...).
+  + Nếu có bestTime thì mô tả sơ mùa/tháng đẹp.
+- Không gợi ý tỉnh/thành khác ngoài ${currentLocation}, trừ khi user hỏi thêm về nơi khác.
+` : ""}
 
 ${flightContextText ? flightContextText : ""}
 
@@ -930,12 +1085,21 @@ HƯỚNG DẪN TRẢ LỜI:
       user: userPrompt
     });
 
-    // Lưu lại câu hiện tại làm "câu trước" cho lượt sau
-    sessions[sid].lastUserMessage = message;
+    // Lưu vào session history
+    appendHistory(session, "assistant", reply);
+
+    // Lưu vào Mongo (conversation list giống ChatGPT)
+    const saveResult = await saveConversationTurn({
+      clientId,
+      conversationId,
+      userMessage: message,
+      assistantReply: reply
+    });
 
     return res.json({
       reply,
-      sessionId: sid
+      sessionId: sid,
+      conversationId: saveResult.conversationId || conversationId || null
     });
   } catch (err) {
     console.error("❌ Lỗi /api/chat:", err);
@@ -960,7 +1124,8 @@ HƯỚNG DẪN TRẢ LỜI:
   }
 });
 
-// ===== 8. Endpoint /api/flights/estimate-local =====
+/* ----- 8.2 API FLIGHT LOCAL ESTIMATE ----- */
+
 app.get("/api/flights/estimate-local", (req, res) => {
   const { origin, destination, tripType } = req.query;
 
@@ -1005,7 +1170,63 @@ app.get("/api/flights/estimate-local", (req, res) => {
   });
 });
 
-// ===== 9. Start server =====
+/* ----- 8.3 API LỊCH SỬ CONVERSATION (SIDEBAR) ----- */
+
+app.get("/api/conversations", async (req, res) => {
+  try {
+    if (!MONGO_ENABLED) {
+      return res.status(400).json({ error: "MongoDB chưa được cấu hình." });
+    }
+
+    const { clientId } = req.query;
+    if (!clientId) {
+      return res.status(400).json({ error: "Thiếu clientId" });
+    }
+
+    const conversations = await Conversation.find({ clientId })
+      .sort({ updatedAt: -1 })
+      .select("_id title createdAt updatedAt")
+      .lean();
+
+    res.json(conversations);
+  } catch (err) {
+    console.error("❌ Lỗi /api/conversations:", err);
+    res
+      .status(500)
+      .json({ error: "Lỗi server khi lấy danh sách cuộc trò chuyện." });
+  }
+});
+
+app.get("/api/conversations/:id", async (req, res) => {
+  try {
+    if (!MONGO_ENABLED) {
+      return res.status(400).json({ error: "MongoDB chưa được cấu hình." });
+    }
+
+    const { clientId } = req.query;
+    const { id } = req.params;
+    if (!clientId) {
+      return res.status(400).json({ error: "Thiếu clientId" });
+    }
+
+    const conv = await Conversation.findOne({ _id: id, clientId }).lean();
+    if (!conv) {
+      return res.status(404).json({ error: "Không tìm thấy cuộc trò chuyện" });
+    }
+
+    res.json(conv);
+  } catch (err) {
+    console.error("❌ Lỗi /api/conversations/:id:", err);
+    res
+      .status(500)
+      .json({ error: "Lỗi server khi lấy chi tiết cuộc trò chuyện." });
+  }
+});
+
+/* ==========================
+   9. START SERVER
+========================== */
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(
